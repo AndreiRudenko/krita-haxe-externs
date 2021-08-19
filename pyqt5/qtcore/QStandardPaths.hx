@@ -21,8 +21,8 @@ extern class QStandardPaths {
 	function new();
 }
 
-@:pythonImport("PyQt5.QtCore", "StandardLocation")
-@:native("QStandardPaths.StandardLocation")
+@:pythonImport("PyQt5.QtCore", "QStandardPaths")
+@:native("QStandardPaths")
 extern enum abstract QStandardPathsStandardLocation(Int) from Int to Int {
 	var DesktopLocation;
 	var DocumentsLocation;
@@ -46,8 +46,8 @@ extern enum abstract QStandardPathsStandardLocation(Int) from Int to Int {
 	var AppConfigLocation;
 }
 
-@:pythonImport("PyQt5.QtCore", "LocateOption")
-@:native("QStandardPaths.LocateOption")
+@:pythonImport("PyQt5.QtCore", "QStandardPaths")
+@:native("QStandardPaths")
 extern enum abstract QStandardPathsLocateOption(Int) from Int to Int {
 	var LocateFile;
 	var LocateDirectory;

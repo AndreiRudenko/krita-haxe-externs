@@ -21,8 +21,8 @@ extern class QStyleOption {
 	function initFrom(w:QWidget):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "OptionType")
-@:native("QStyleOption.OptionType")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOption")
+@:native("QStyleOption")
 extern enum abstract QStyleOptionOptionType(Int) from Int to Int {
 	var SO_Default;
 	var SO_FocusRect;
@@ -52,14 +52,14 @@ extern enum abstract QStyleOptionOptionType(Int) from Int to Int {
 	var SO_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StyleOptionType")
-@:native("QStyleOption.StyleOptionType")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOption")
+@:native("QStyleOption")
 extern enum abstract QStyleOptionStyleOptionType(Int) from Int to Int {
 	var Type;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StyleOptionVersion")
-@:native("QStyleOption.StyleOptionVersion")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOption")
+@:native("QStyleOption")
 extern enum abstract QStyleOptionStyleOptionVersion(Int) from Int to Int {
 	var Version;
 }
@@ -78,8 +78,8 @@ extern class QStyleOptionFrame extends QStyleOption {
 	function new(other:QStyleOptionFrame);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "FrameFeature")
-@:native("QStyleOptionFrame.FrameFeature")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionFrame")
+@:native("QStyleOptionFrame")
 extern enum abstract QStyleOptionFrameFrameFeature(Int) from Int to Int {
 	var None;
 	var Flat;
@@ -107,8 +107,8 @@ extern class QStyleOptionHeader extends QStyleOption {
 	function new(other:QStyleOptionHeader);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SectionPosition")
-@:native("QStyleOptionHeader.SectionPosition")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionHeader")
+@:native("QStyleOptionHeader")
 extern enum abstract QStyleOptionHeaderSectionPosition(Int) from Int to Int {
 	var Beginning;
 	var Middle;
@@ -116,8 +116,8 @@ extern enum abstract QStyleOptionHeaderSectionPosition(Int) from Int to Int {
 	var OnlyOneSection;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SelectedPosition")
-@:native("QStyleOptionHeader.SelectedPosition")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionHeader")
+@:native("QStyleOptionHeader")
 extern enum abstract QStyleOptionHeaderSelectedPosition(Int) from Int to Int {
 	var NotAdjacent;
 	var NextIsSelected;
@@ -125,8 +125,8 @@ extern enum abstract QStyleOptionHeaderSelectedPosition(Int) from Int to Int {
 	var NextAndPreviousAreSelected;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SortIndicator")
-@:native("QStyleOptionHeader.SortIndicator")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionHeader")
+@:native("QStyleOptionHeader")
 extern enum abstract QStyleOptionHeaderSortIndicator(Int) from Int to Int {
 	var None;
 	var SortUp;
@@ -140,8 +140,8 @@ extern class QStyleOptionButton extends QStyleOption {
 	function new(other:QStyleOptionButton);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ButtonFeature")
-@:native("QStyleOptionButton.ButtonFeature")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionButton")
+@:native("QStyleOptionButton")
 extern enum abstract QStyleOptionButtonButtonFeature(Int) from Int to Int {
 	var None;
 	var Flat;
@@ -158,8 +158,8 @@ extern class QStyleOptionTab extends QStyleOption {
 	function new(other:QStyleOptionTab);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "TabPosition")
-@:native("QStyleOptionTab.TabPosition")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionTab")
+@:native("QStyleOptionTab")
 extern enum abstract QStyleOptionTabTabPosition(Int) from Int to Int {
 	var Beginning;
 	var Middle;
@@ -167,16 +167,16 @@ extern enum abstract QStyleOptionTabTabPosition(Int) from Int to Int {
 	var OnlyOneTab;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "CornerWidget")
-@:native("QStyleOptionTab.CornerWidget")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionTab")
+@:native("QStyleOptionTab")
 extern enum abstract QStyleOptionTabCornerWidget(Int) from Int to Int {
 	var NoCornerWidgets;
 	var LeftCornerWidget;
 	var RightCornerWidget;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "TabFeature")
-@:native("QStyleOptionTab.TabFeature")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionTab")
+@:native("QStyleOptionTab")
 extern enum abstract QStyleOptionTabTabFeature(Int) from Int to Int {
 	var None;
 	var HasFrame;
@@ -202,8 +202,8 @@ extern class QStyleOptionMenuItem extends QStyleOption {
 	function new(other:QStyleOptionMenuItem);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "MenuItemType")
-@:native("QStyleOptionMenuItem.MenuItemType")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionMenuItem")
+@:native("QStyleOptionMenuItem")
 extern enum abstract QStyleOptionMenuItemMenuItemType(Int) from Int to Int {
 	var Normal;
 	var DefaultItem;
@@ -215,8 +215,8 @@ extern enum abstract QStyleOptionMenuItemMenuItemType(Int) from Int to Int {
 	var EmptyArea;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "CheckType")
-@:native("QStyleOptionMenuItem.CheckType")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionMenuItem")
+@:native("QStyleOptionMenuItem")
 extern enum abstract QStyleOptionMenuItemCheckType(Int) from Int to Int {
 	var NotCheckable;
 	var Exclusive;
@@ -237,8 +237,8 @@ extern class QStyleOptionViewItem extends QStyleOption {
 	function new(other:QStyleOptionViewItem);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Position")
-@:native("QStyleOptionViewItem.Position")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionViewItem")
+@:native("QStyleOptionViewItem")
 extern enum abstract QStyleOptionViewItemPosition(Int) from Int to Int {
 	var Left;
 	var Right;
@@ -246,8 +246,8 @@ extern enum abstract QStyleOptionViewItemPosition(Int) from Int to Int {
 	var Bottom;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ViewItemFeature")
-@:native("QStyleOptionViewItem.ViewItemFeature")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionViewItem")
+@:native("QStyleOptionViewItem")
 extern enum abstract QStyleOptionViewItemViewItemFeature(Int) from Int to Int {
 	var None;
 	var WrapText;
@@ -257,8 +257,8 @@ extern enum abstract QStyleOptionViewItemViewItemFeature(Int) from Int to Int {
 	var HasDecoration;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ViewItemPosition")
-@:native("QStyleOptionViewItem.ViewItemPosition")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionViewItem")
+@:native("QStyleOptionViewItem")
 extern enum abstract QStyleOptionViewItemViewItemPosition(Int) from Int to Int {
 	var Invalid;
 	var Beginning;
@@ -309,8 +309,8 @@ extern class QStyleOptionToolButton extends QStyleOptionComplex {
 	function new(other:QStyleOptionToolButton);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ToolButtonFeature")
-@:native("QStyleOptionToolButton.ToolButtonFeature")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionToolButton")
+@:native("QStyleOptionToolButton")
 extern enum abstract QStyleOptionToolButtonToolButtonFeature(Int) from Int to Int {
 	var None;
 	var Arrow;
@@ -340,8 +340,8 @@ extern class QStyleHintReturn {
 	function new(?version:Int, ?type:Int);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "HintReturnType")
-@:native("QStyleHintReturn.HintReturnType")
+@:pythonImport("PyQt5.QtWidgets", "QStyleHintReturn")
+@:native("QStyleHintReturn")
 extern enum abstract QStyleHintReturnHintReturnType(Int) from Int to Int {
 	var SH_Default;
 	var SH_Mask;
@@ -361,8 +361,8 @@ extern class QStyleOptionToolBar extends QStyleOption {
 	function new(other:QStyleOptionToolBar);
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ToolBarPosition")
-@:native("QStyleOptionToolBar.ToolBarPosition")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionToolBar")
+@:native("QStyleOptionToolBar")
 extern enum abstract QStyleOptionToolBarToolBarPosition(Int) from Int to Int {
 	var Beginning;
 	var Middle;
@@ -370,8 +370,8 @@ extern enum abstract QStyleOptionToolBarToolBarPosition(Int) from Int to Int {
 	var OnlyOne;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ToolBarFeature")
-@:native("QStyleOptionToolBar.ToolBarFeature")
+@:pythonImport("PyQt5.QtWidgets", "QStyleOptionToolBar")
+@:native("QStyleOptionToolBar")
 extern enum abstract QStyleOptionToolBarToolBarFeature(Int) from Int to Int {
 	var None;
 	var Movable;

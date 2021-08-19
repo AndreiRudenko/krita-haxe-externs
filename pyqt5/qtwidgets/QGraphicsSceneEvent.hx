@@ -62,8 +62,8 @@ extern class QGraphicsSceneContextMenuEvent extends QGraphicsSceneEvent {
 	function reason():QGraphicsSceneContextMenuEventReason;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Reason")
-@:native("QGraphicsSceneContextMenuEvent.Reason")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsSceneContextMenuEvent")
+@:native("QGraphicsSceneContextMenuEvent")
 extern enum abstract QGraphicsSceneContextMenuEventReason(Int) from Int to Int {
 	var Mouse;
 	var Keyboard;

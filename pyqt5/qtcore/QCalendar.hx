@@ -15,8 +15,8 @@ extern class YearMonthDay {
 	function isValid():Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "System")
-@:native("QCalendar.System")
+@:pythonImport("PyQt5.QtCore", "QCalendar")
+@:native("QCalendar")
 extern enum abstract QCalendarSystem(Int) from Int to Int {
 	var Gregorian;
 	var Julian;

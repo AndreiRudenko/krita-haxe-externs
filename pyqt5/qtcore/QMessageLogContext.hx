@@ -1,8 +1,8 @@
 package pyqt5.qtcore;
 
 
-@:pythonImport("PyQt5.QtCore", "QtMsgType")
-@:native("QMessageLogContext.QtMsgType")
+@:pythonImport("PyQt5.QtCore", "QMessageLogContext")
+@:native("QMessageLogContext")
 extern enum abstract QMessageLogContextQtMsgType(Int) from Int to Int {
 	var QtDebugMsg;
 	var QtWarningMsg;

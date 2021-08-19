@@ -26,8 +26,8 @@ extern class QEasingCurve {
 	function toCubicSpline():QVector<QPointF>;
 }
 
-@:pythonImport("PyQt5.QtCore", "Type")
-@:native("QEasingCurve.Type")
+@:pythonImport("PyQt5.QtCore", "QEasingCurve")
+@:native("QEasingCurve")
 extern enum abstract QEasingCurveType(Int) from Int to Int {
 	var Linear;
 	var InQuad;

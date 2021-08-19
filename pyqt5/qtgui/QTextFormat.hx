@@ -28,8 +28,8 @@ extern class QTextLength {
 	function rawValue():Float;
 }
 
-@:pythonImport("PyQt5.QtGui", "Type")
-@:native("QTextLength.Type")
+@:pythonImport("PyQt5.QtGui", "QTextLength")
+@:native("QTextLength")
 extern enum abstract QTextLengthType(Int) from Int to Int {
 	var VariableLength;
 	var FixedLength;
@@ -93,8 +93,8 @@ extern class QTextFormat {
 	function isEmpty():Bool;
 }
 
-@:pythonImport("PyQt5.QtGui", "FormatType")
-@:native("QTextFormat.FormatType")
+@:pythonImport("PyQt5.QtGui", "QTextFormat")
+@:native("QTextFormat")
 extern enum abstract QTextFormatFormatType(Int) from Int to Int {
 	var InvalidFormat;
 	var BlockFormat;
@@ -105,8 +105,8 @@ extern enum abstract QTextFormatFormatType(Int) from Int to Int {
 	var UserFormat;
 }
 
-@:pythonImport("PyQt5.QtGui", "ObjectTypes")
-@:native("QTextFormat.ObjectTypes")
+@:pythonImport("PyQt5.QtGui", "QTextFormat")
+@:native("QTextFormat")
 extern enum abstract QTextFormatObjectTypes(Int) from Int to Int {
 	var NoObject;
 	var ImageObject;
@@ -115,16 +115,16 @@ extern enum abstract QTextFormatObjectTypes(Int) from Int to Int {
 	var UserObject;
 }
 
-@:pythonImport("PyQt5.QtGui", "PageBreakFlag")
-@:native("QTextFormat.PageBreakFlag")
+@:pythonImport("PyQt5.QtGui", "QTextFormat")
+@:native("QTextFormat")
 extern enum abstract QTextFormatPageBreakFlag(Int) from Int to Int {
 	var PageBreak_Auto;
 	var PageBreak_AlwaysBefore;
 	var PageBreak_AlwaysAfter;
 }
 
-@:pythonImport("PyQt5.QtGui", "Property")
-@:native("QTextFormat.Property")
+@:pythonImport("PyQt5.QtGui", "QTextFormat")
+@:native("QTextFormat")
 extern enum abstract QTextFormatProperty(Int) from Int to Int {
 	var ObjectIndex;
 	var CssFloat;
@@ -302,8 +302,8 @@ extern class QTextCharFormat extends QTextFormat {
 	function fontStyleName():QVariant;
 }
 
-@:pythonImport("PyQt5.QtGui", "VerticalAlignment")
-@:native("QTextCharFormat.VerticalAlignment")
+@:pythonImport("PyQt5.QtGui", "QTextCharFormat")
+@:native("QTextCharFormat")
 extern enum abstract QTextCharFormatVerticalAlignment(Int) from Int to Int {
 	var AlignNormal;
 	var AlignSuperScript;
@@ -314,8 +314,8 @@ extern enum abstract QTextCharFormatVerticalAlignment(Int) from Int to Int {
 	var AlignBaseline;
 }
 
-@:pythonImport("PyQt5.QtGui", "UnderlineStyle")
-@:native("QTextCharFormat.UnderlineStyle")
+@:pythonImport("PyQt5.QtGui", "QTextCharFormat")
+@:native("QTextCharFormat")
 extern enum abstract QTextCharFormatUnderlineStyle(Int) from Int to Int {
 	var NoUnderline;
 	var SingleUnderline;
@@ -327,8 +327,8 @@ extern enum abstract QTextCharFormatUnderlineStyle(Int) from Int to Int {
 	var SpellCheckUnderline;
 }
 
-@:pythonImport("PyQt5.QtGui", "FontPropertiesInheritanceBehavior")
-@:native("QTextCharFormat.FontPropertiesInheritanceBehavior")
+@:pythonImport("PyQt5.QtGui", "QTextCharFormat")
+@:native("QTextCharFormat")
 extern enum abstract QTextCharFormatFontPropertiesInheritanceBehavior(Int) from Int to Int {
 	var FontPropertiesSpecifiedOnly;
 	var FontPropertiesAll;
@@ -370,8 +370,8 @@ extern class QTextBlockFormat extends QTextFormat {
 	function marker():QTextBlockFormatMarkerType;
 }
 
-@:pythonImport("PyQt5.QtGui", "LineHeightTypes")
-@:native("QTextBlockFormat.LineHeightTypes")
+@:pythonImport("PyQt5.QtGui", "QTextBlockFormat")
+@:native("QTextBlockFormat")
 extern enum abstract QTextBlockFormatLineHeightTypes(Int) from Int to Int {
 	var SingleHeight;
 	var ProportionalHeight;
@@ -380,8 +380,8 @@ extern enum abstract QTextBlockFormatLineHeightTypes(Int) from Int to Int {
 	var LineDistanceHeight;
 }
 
-@:pythonImport("PyQt5.QtGui", "MarkerType")
-@:native("QTextBlockFormat.MarkerType")
+@:pythonImport("PyQt5.QtGui", "QTextBlockFormat")
+@:native("QTextBlockFormat")
 extern enum abstract QTextBlockFormatMarkerType(Int) from Int to Int {
 	var NoMarker;
 	var Unchecked;
@@ -404,8 +404,8 @@ extern class QTextListFormat extends QTextFormat {
 	function setNumberSuffix(ns:QString):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "Style")
-@:native("QTextListFormat.Style")
+@:pythonImport("PyQt5.QtGui", "QTextListFormat")
+@:native("QTextListFormat")
 extern enum abstract QTextListFormatStyle(Int) from Int to Int {
 	var ListDisc;
 	var ListCircle;
@@ -469,16 +469,16 @@ extern class QTextFrameFormat extends QTextFormat {
 	function setRightMargin(amargin:Float):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "Position")
-@:native("QTextFrameFormat.Position")
+@:pythonImport("PyQt5.QtGui", "QTextFrameFormat")
+@:native("QTextFrameFormat")
 extern enum abstract QTextFrameFormatPosition(Int) from Int to Int {
 	var InFlow;
 	var FloatLeft;
 	var FloatRight;
 }
 
-@:pythonImport("PyQt5.QtGui", "BorderStyle")
-@:native("QTextFrameFormat.BorderStyle")
+@:pythonImport("PyQt5.QtGui", "QTextFrameFormat")
+@:native("QTextFrameFormat")
 extern enum abstract QTextFrameFormatBorderStyle(Int) from Int to Int {
 	var BorderStyle_None;
 	var BorderStyle_Dotted;

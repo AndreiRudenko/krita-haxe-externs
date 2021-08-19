@@ -148,16 +148,16 @@ extern class QAbstractItemModel extends QObject {
 	function checkIndex(index:QModelIndex, ?options:QAbstractItemModelCheckIndexOptions):Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "LayoutChangeHint")
-@:native("QAbstractItemModel.LayoutChangeHint")
+@:pythonImport("PyQt5.QtCore", "QAbstractItemModel")
+@:native("QAbstractItemModel")
 extern enum abstract QAbstractItemModelLayoutChangeHint(Int) from Int to Int {
 	var NoLayoutChangeHint;
 	var VerticalSortHint;
 	var HorizontalSortHint;
 }
 
-@:pythonImport("PyQt5.QtCore", "CheckIndexOption")
-@:native("QAbstractItemModel.CheckIndexOption")
+@:pythonImport("PyQt5.QtCore", "QAbstractItemModel")
+@:native("QAbstractItemModel")
 extern enum abstract QAbstractItemModelCheckIndexOption(Int) from Int to Int {
 	var NoOption;
 	var IndexIsValid;

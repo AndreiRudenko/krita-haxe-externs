@@ -34,8 +34,8 @@ extern class QJsonValue {
 	function swap(other:QJsonValue):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "Type")
-@:native("QJsonValue.Type")
+@:pythonImport("PyQt5.QtCore", "QJsonValue")
+@:native("QJsonValue")
 extern enum abstract QJsonValueType(Int) from Int to Int {
 	var Null;
 	var Bool;

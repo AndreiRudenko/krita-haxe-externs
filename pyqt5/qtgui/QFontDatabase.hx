@@ -42,8 +42,8 @@ extern class QFontDatabase {
 	function isPrivateFamily(family:QString):Bool;
 }
 
-@:pythonImport("PyQt5.QtGui", "WritingSystem")
-@:native("QFontDatabase.WritingSystem")
+@:pythonImport("PyQt5.QtGui", "QFontDatabase")
+@:native("QFontDatabase")
 extern enum abstract QFontDatabaseWritingSystem(Int) from Int to Int {
 	var Any;
 	var Latin;
@@ -82,8 +82,8 @@ extern enum abstract QFontDatabaseWritingSystem(Int) from Int to Int {
 	var Nko;
 }
 
-@:pythonImport("PyQt5.QtGui", "SystemFont")
-@:native("QFontDatabase.SystemFont")
+@:pythonImport("PyQt5.QtGui", "QFontDatabase")
+@:native("QFontDatabase")
 extern enum abstract QFontDatabaseSystemFont(Int) from Int to Int {
 	var GeneralFont;
 	var FixedFont;

@@ -85,8 +85,8 @@ extern class QPainterPath {
 	function capacity():Int;
 }
 
-@:pythonImport("PyQt5.QtGui", "ElementType")
-@:native("QPainterPath.ElementType")
+@:pythonImport("PyQt5.QtGui", "QPainterPath")
+@:native("QPainterPath")
 extern enum abstract QPainterPathElementType(Int) from Int to Int {
 	var MoveToElement;
 	var LineToElement;

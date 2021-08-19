@@ -59,8 +59,8 @@ extern class QDirModel extends QAbstractItemModel {
 	function fileInfo(index:QModelIndex):QFileInfo;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Roles")
-@:native("QDirModel.Roles")
+@:pythonImport("PyQt5.QtWidgets", "QDirModel")
+@:native("QDirModel")
 extern enum abstract QDirModelRoles(Int) from Int to Int {
 	var FileIconRole;
 	var FilePathRole;

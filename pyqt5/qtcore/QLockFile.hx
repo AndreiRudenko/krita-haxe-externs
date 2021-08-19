@@ -19,8 +19,8 @@ extern class QLockFile {
 	function error():QLockFileLockError;
 }
 
-@:pythonImport("PyQt5.QtCore", "LockError")
-@:native("QLockFile.LockError")
+@:pythonImport("PyQt5.QtCore", "QLockFile")
+@:native("QLockFile")
 extern enum abstract QLockFileLockError(Int) from Int to Int {
 	var NoError;
 	var LockFailedError;

@@ -58,16 +58,16 @@ extern class QCompleter extends QObject {
 	function filterMode():QtMatchFlags;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "CompletionMode")
-@:native("QCompleter.CompletionMode")
+@:pythonImport("PyQt5.QtWidgets", "QCompleter")
+@:native("QCompleter")
 extern enum abstract QCompleterCompletionMode(Int) from Int to Int {
 	var PopupCompletion;
 	var UnfilteredPopupCompletion;
 	var InlineCompletion;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ModelSorting")
-@:native("QCompleter.ModelSorting")
+@:pythonImport("PyQt5.QtWidgets", "QCompleter")
+@:native("QCompleter")
 extern enum abstract QCompleterModelSorting(Int) from Int to Int {
 	var UnsortedModel;
 	var CaseSensitivelySortedModel;

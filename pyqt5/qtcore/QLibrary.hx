@@ -32,8 +32,8 @@ extern class QLibrary extends QObject {
 	function setLoadHints(hints:QLibraryLoadHints):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "LoadHint")
-@:native("QLibrary.LoadHint")
+@:pythonImport("PyQt5.QtCore", "QLibrary")
+@:native("QLibrary")
 extern enum abstract QLibraryLoadHint(Int) from Int to Int {
 	var ResolveAllSymbolsHint;
 	var ExportExternalSymbolsHint;

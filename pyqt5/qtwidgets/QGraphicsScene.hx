@@ -144,15 +144,15 @@ extern class QGraphicsScene extends QObject {
 	function setFocusOnTouch(enabled:Bool):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ItemIndexMethod")
-@:native("QGraphicsScene.ItemIndexMethod")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsScene")
+@:native("QGraphicsScene")
 extern enum abstract QGraphicsSceneItemIndexMethod(Int) from Int to Int {
 	var BspTreeIndex;
 	var NoIndex;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SceneLayer")
-@:native("QGraphicsScene.SceneLayer")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsScene")
+@:native("QGraphicsScene")
 extern enum abstract QGraphicsSceneSceneLayer(Int) from Int to Int {
 	var ItemLayer;
 	var BackgroundLayer;

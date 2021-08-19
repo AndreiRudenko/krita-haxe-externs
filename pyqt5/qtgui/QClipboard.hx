@@ -36,8 +36,8 @@ extern class QClipboard extends QObject {
 	function setPixmap(?v:QPixmap, ?mode:QClipboardMode):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "Mode")
-@:native("QClipboard.Mode")
+@:pythonImport("PyQt5.QtGui", "QClipboard")
+@:native("QClipboard")
 extern enum abstract QClipboardMode(Int) from Int to Int {
 	var Clipboard;
 	var Selection;

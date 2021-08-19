@@ -51,16 +51,16 @@ extern class QTimeZone {
 	function transitions(fromDateTime:QDateTime, toDateTime:QDateTime):QTimeZoneOffsetDataList;
 }
 
-@:pythonImport("PyQt5.QtCore", "TimeType")
-@:native("QTimeZone.TimeType")
+@:pythonImport("PyQt5.QtCore", "QTimeZone")
+@:native("QTimeZone")
 extern enum abstract QTimeZoneTimeType(Int) from Int to Int {
 	var StandardTime;
 	var DaylightTime;
 	var GenericTime;
 }
 
-@:pythonImport("PyQt5.QtCore", "NameType")
-@:native("QTimeZone.NameType")
+@:pythonImport("PyQt5.QtCore", "QTimeZone")
+@:native("QTimeZone")
 extern enum abstract QTimeZoneNameType(Int) from Int to Int {
 	var DefaultName;
 	var LongName;

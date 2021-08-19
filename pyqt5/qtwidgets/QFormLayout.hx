@@ -68,24 +68,24 @@ extern class QFormLayout extends QLayout {
 	function takeRow(row:Int):TakeRowResult;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "FieldGrowthPolicy")
-@:native("QFormLayout.FieldGrowthPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QFormLayout")
+@:native("QFormLayout")
 extern enum abstract QFormLayoutFieldGrowthPolicy(Int) from Int to Int {
 	var FieldsStayAtSizeHint;
 	var ExpandingFieldsGrow;
 	var AllNonFixedFieldsGrow;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "RowWrapPolicy")
-@:native("QFormLayout.RowWrapPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QFormLayout")
+@:native("QFormLayout")
 extern enum abstract QFormLayoutRowWrapPolicy(Int) from Int to Int {
 	var DontWrapRows;
 	var WrapLongRows;
 	var WrapAllRows;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ItemRole")
-@:native("QFormLayout.ItemRole")
+@:pythonImport("PyQt5.QtWidgets", "QFormLayout")
+@:native("QFormLayout")
 extern enum abstract QFormLayoutItemRole(Int) from Int to Int {
 	var LabelRole;
 	var FieldRole;

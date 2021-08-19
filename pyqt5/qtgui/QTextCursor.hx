@@ -87,15 +87,15 @@ extern class QTextCursor {
 	function swap(other:QTextCursor):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "MoveMode")
-@:native("QTextCursor.MoveMode")
+@:pythonImport("PyQt5.QtGui", "QTextCursor")
+@:native("QTextCursor")
 extern enum abstract QTextCursorMoveMode(Int) from Int to Int {
 	var MoveAnchor;
 	var KeepAnchor;
 }
 
-@:pythonImport("PyQt5.QtGui", "MoveOperation")
-@:native("QTextCursor.MoveOperation")
+@:pythonImport("PyQt5.QtGui", "QTextCursor")
+@:native("QTextCursor")
 extern enum abstract QTextCursorMoveOperation(Int) from Int to Int {
 	var NoMove;
 	var Start;
@@ -124,8 +124,8 @@ extern enum abstract QTextCursorMoveOperation(Int) from Int to Int {
 	var PreviousRow;
 }
 
-@:pythonImport("PyQt5.QtGui", "SelectionType")
-@:native("QTextCursor.SelectionType")
+@:pythonImport("PyQt5.QtGui", "QTextCursor")
+@:native("QTextCursor")
 extern enum abstract QTextCursorSelectionType(Int) from Int to Int {
 	var WordUnderCursor;
 	var LineUnderCursor;

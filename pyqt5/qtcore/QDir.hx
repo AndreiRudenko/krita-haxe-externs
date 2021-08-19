@@ -80,8 +80,8 @@ extern class QDir {
 	function isEmpty(?filters:QDirFilters):Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "Filter")
-@:native("QDir.Filter")
+@:pythonImport("PyQt5.QtCore", "QDir")
+@:native("QDir")
 extern enum abstract QDirFilter(Int) from Int to Int {
 	var Dirs;
 	var Files;
@@ -105,8 +105,8 @@ extern enum abstract QDirFilter(Int) from Int to Int {
 	var NoDotDot;
 }
 
-@:pythonImport("PyQt5.QtCore", "SortFlag")
-@:native("QDir.SortFlag")
+@:pythonImport("PyQt5.QtCore", "QDir")
+@:native("QDir")
 extern enum abstract QDirSortFlag(Int) from Int to Int {
 	var Name;
 	var Time;

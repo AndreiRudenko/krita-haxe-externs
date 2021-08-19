@@ -18,8 +18,8 @@ extern class QSocketNotifier extends QObject {
 	function event(?v:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "Type")
-@:native("QSocketNotifier.Type")
+@:pythonImport("PyQt5.QtCore", "QSocketNotifier")
+@:native("QSocketNotifier")
 extern enum abstract QSocketNotifierType(Int) from Int to Int {
 	var Read;
 	var Write;

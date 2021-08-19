@@ -44,8 +44,8 @@ extern class QScroller extends QObject {
 	function resendPrepareEvent():Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "State")
-@:native("QScroller.State")
+@:pythonImport("PyQt5.QtWidgets", "QScroller")
+@:native("QScroller")
 extern enum abstract QScrollerState(Int) from Int to Int {
 	var Inactive;
 	var Pressed;
@@ -53,8 +53,8 @@ extern enum abstract QScrollerState(Int) from Int to Int {
 	var Scrolling;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ScrollerGestureType")
-@:native("QScroller.ScrollerGestureType")
+@:pythonImport("PyQt5.QtWidgets", "QScroller")
+@:native("QScroller")
 extern enum abstract QScrollerScrollerGestureType(Int) from Int to Int {
 	var TouchGesture;
 	var LeftMouseButtonGesture;
@@ -62,8 +62,8 @@ extern enum abstract QScrollerScrollerGestureType(Int) from Int to Int {
 	var MiddleMouseButtonGesture;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Input")
-@:native("QScroller.Input")
+@:pythonImport("PyQt5.QtWidgets", "QScroller")
+@:native("QScroller")
 extern enum abstract QScrollerInput(Int) from Int to Int {
 	var InputPress;
 	var InputMove;

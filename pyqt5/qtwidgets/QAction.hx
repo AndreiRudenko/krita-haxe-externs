@@ -86,15 +86,15 @@ extern class QAction extends QObject {
 	function isShortcutVisibleInContextMenu():Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ActionEvent")
-@:native("QAction.ActionEvent")
+@:pythonImport("PyQt5.QtWidgets", "QAction")
+@:native("QAction")
 extern enum abstract QActionActionEvent(Int) from Int to Int {
 	var Trigger;
 	var Hover;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "MenuRole")
-@:native("QAction.MenuRole")
+@:pythonImport("PyQt5.QtWidgets", "QAction")
+@:native("QAction")
 extern enum abstract QActionMenuRole(Int) from Int to Int {
 	var NoRole;
 	var TextHeuristicRole;
@@ -105,8 +105,8 @@ extern enum abstract QActionMenuRole(Int) from Int to Int {
 	var QuitRole;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Priority")
-@:native("QAction.Priority")
+@:pythonImport("PyQt5.QtWidgets", "QAction")
+@:native("QAction")
 extern enum abstract QActionPriority(Int) from Int to Int {
 	var LowPriority;
 	var NormalPriority;

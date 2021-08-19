@@ -44,8 +44,8 @@ extern class QDialogButtonBox extends QWidget {
 	function event(event:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ButtonLayout")
-@:native("QDialogButtonBox.ButtonLayout")
+@:pythonImport("PyQt5.QtWidgets", "QDialogButtonBox")
+@:native("QDialogButtonBox")
 extern enum abstract QDialogButtonBoxButtonLayout(Int) from Int to Int {
 	var WinLayout;
 	var MacLayout;
@@ -54,8 +54,8 @@ extern enum abstract QDialogButtonBoxButtonLayout(Int) from Int to Int {
 	var AndroidLayout;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ButtonRole")
-@:native("QDialogButtonBox.ButtonRole")
+@:pythonImport("PyQt5.QtWidgets", "QDialogButtonBox")
+@:native("QDialogButtonBox")
 extern enum abstract QDialogButtonBoxButtonRole(Int) from Int to Int {
 	var InvalidRole;
 	var AcceptRole;
@@ -69,8 +69,8 @@ extern enum abstract QDialogButtonBoxButtonRole(Int) from Int to Int {
 	var ApplyRole;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StandardButton")
-@:native("QDialogButtonBox.StandardButton")
+@:pythonImport("PyQt5.QtWidgets", "QDialogButtonBox")
+@:native("QDialogButtonBox")
 extern enum abstract QDialogButtonBoxStandardButton(Int) from Int to Int {
 	var NoButton;
 	var Ok;

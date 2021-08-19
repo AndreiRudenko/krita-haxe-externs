@@ -122,8 +122,8 @@ extern class QLineEdit extends QWidget {
 	function selectionLength():Int;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "EchoMode")
-@:native("QLineEdit.EchoMode")
+@:pythonImport("PyQt5.QtWidgets", "QLineEdit")
+@:native("QLineEdit")
 extern enum abstract QLineEditEchoMode(Int) from Int to Int {
 	var Normal;
 	var NoEcho;
@@ -131,8 +131,8 @@ extern enum abstract QLineEditEchoMode(Int) from Int to Int {
 	var PasswordEchoOnEdit;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ActionPosition")
-@:native("QLineEdit.ActionPosition")
+@:pythonImport("PyQt5.QtWidgets", "QLineEdit")
+@:native("QLineEdit")
 extern enum abstract QLineEditActionPosition(Int) from Int to Int {
 	var LeadingPosition;
 	var TrailingPosition;

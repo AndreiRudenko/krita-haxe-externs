@@ -26,15 +26,15 @@ extern class QSharedMemory extends QObject {
 	function nativeKey():QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "AccessMode")
-@:native("QSharedMemory.AccessMode")
+@:pythonImport("PyQt5.QtCore", "QSharedMemory")
+@:native("QSharedMemory")
 extern enum abstract QSharedMemoryAccessMode(Int) from Int to Int {
 	var ReadOnly;
 	var ReadWrite;
 }
 
-@:pythonImport("PyQt5.QtCore", "SharedMemoryError")
-@:native("QSharedMemory.SharedMemoryError")
+@:pythonImport("PyQt5.QtCore", "QSharedMemory")
+@:native("QSharedMemory")
 extern enum abstract QSharedMemorySharedMemoryError(Int) from Int to Int {
 	var NoError;
 	var PermissionDenied;

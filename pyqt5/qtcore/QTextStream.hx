@@ -57,16 +57,16 @@ extern class QTextStream {
 	function locale():QLocale;
 }
 
-@:pythonImport("PyQt5.QtCore", "RealNumberNotation")
-@:native("QTextStream.RealNumberNotation")
+@:pythonImport("PyQt5.QtCore", "QTextStream")
+@:native("QTextStream")
 extern enum abstract QTextStreamRealNumberNotation(Int) from Int to Int {
 	var SmartNotation;
 	var FixedNotation;
 	var ScientificNotation;
 }
 
-@:pythonImport("PyQt5.QtCore", "FieldAlignment")
-@:native("QTextStream.FieldAlignment")
+@:pythonImport("PyQt5.QtCore", "QTextStream")
+@:native("QTextStream")
 extern enum abstract QTextStreamFieldAlignment(Int) from Int to Int {
 	var AlignLeft;
 	var AlignRight;
@@ -74,8 +74,8 @@ extern enum abstract QTextStreamFieldAlignment(Int) from Int to Int {
 	var AlignAccountingStyle;
 }
 
-@:pythonImport("PyQt5.QtCore", "NumberFlag")
-@:native("QTextStream.NumberFlag")
+@:pythonImport("PyQt5.QtCore", "QTextStream")
+@:native("QTextStream")
 extern enum abstract QTextStreamNumberFlag(Int) from Int to Int {
 	var ShowBase;
 	var ForcePoint;
@@ -84,8 +84,8 @@ extern enum abstract QTextStreamNumberFlag(Int) from Int to Int {
 	var UppercaseDigits;
 }
 
-@:pythonImport("PyQt5.QtCore", "Status")
-@:native("QTextStream.Status")
+@:pythonImport("PyQt5.QtCore", "QTextStream")
+@:native("QTextStream")
 extern enum abstract QTextStreamStatus(Int) from Int to Int {
 	var Ok;
 	var ReadPastEnd;

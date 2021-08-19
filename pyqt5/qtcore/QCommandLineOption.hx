@@ -30,8 +30,8 @@ extern class QCommandLineOption {
 	function setFlags(aflags:QCommandLineOptionFlags):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "Flag")
-@:native("QCommandLineOption.Flag")
+@:pythonImport("PyQt5.QtCore", "QCommandLineOption")
+@:native("QCommandLineOption")
 extern enum abstract QCommandLineOptionFlag(Int) from Int to Int {
 	var HiddenFromHelp;
 	var ShortOptionStyle;

@@ -72,8 +72,8 @@ extern class QImageReader {
 	function gamma():Float;
 }
 
-@:pythonImport("PyQt5.QtGui", "ImageReaderError")
-@:native("QImageReader.ImageReaderError")
+@:pythonImport("PyQt5.QtGui", "QImageReader")
+@:native("QImageReader")
 extern enum abstract QImageReaderImageReaderError(Int) from Int to Int {
 	var UnknownError;
 	var FileNotFoundError;

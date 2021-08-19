@@ -88,8 +88,8 @@ extern class QCborStreamReader {
 	function toInteger():Int;
 }
 
-@:pythonImport("PyQt5.QtCore", "Type")
-@:native("QCborStreamReader.Type")
+@:pythonImport("PyQt5.QtCore", "QCborStreamReader")
+@:native("QCborStreamReader")
 extern enum abstract QCborStreamReaderType(Int) from Int to Int {
 	var UnsignedInteger;
 	var NegativeInteger;
@@ -108,8 +108,8 @@ extern enum abstract QCborStreamReaderType(Int) from Int to Int {
 	var Invalid;
 }
 
-@:pythonImport("PyQt5.QtCore", "StringResultCode")
-@:native("QCborStreamReader.StringResultCode")
+@:pythonImport("PyQt5.QtCore", "QCborStreamReader")
+@:native("QCborStreamReader")
 extern enum abstract QCborStreamReaderStringResultCode(Int) from Int to Int {
 	var EndOfString;
 	var Ok;

@@ -59,15 +59,15 @@ extern class QRawFont {
 	function capHeight():Float;
 }
 
-@:pythonImport("PyQt5.QtGui", "AntialiasingType")
-@:native("QRawFont.AntialiasingType")
+@:pythonImport("PyQt5.QtGui", "QRawFont")
+@:native("QRawFont")
 extern enum abstract QRawFontAntialiasingType(Int) from Int to Int {
 	var PixelAntialiasing;
 	var SubPixelAntialiasing;
 }
 
-@:pythonImport("PyQt5.QtGui", "LayoutFlag")
-@:native("QRawFont.LayoutFlag")
+@:pythonImport("PyQt5.QtGui", "QRawFont")
+@:native("QRawFont")
 extern enum abstract QRawFontLayoutFlag(Int) from Int to Int {
 	var SeparateAdvances;
 	var KernedAdvances;

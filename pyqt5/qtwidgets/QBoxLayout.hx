@@ -47,8 +47,8 @@ extern class QBoxLayout extends QLayout {
 	function insertItem(index:Int, ?v:QLayoutItem):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Direction")
-@:native("QBoxLayout.Direction")
+@:pythonImport("PyQt5.QtWidgets", "QBoxLayout")
+@:native("QBoxLayout")
 extern enum abstract QBoxLayoutDirection(Int) from Int to Int {
 	var LeftToRight;
 	var RightToLeft;

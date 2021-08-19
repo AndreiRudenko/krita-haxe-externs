@@ -62,16 +62,16 @@ extern class QMovie extends QObject {
 	function lastErrorString():QString;
 }
 
-@:pythonImport("PyQt5.QtGui", "MovieState")
-@:native("QMovie.MovieState")
+@:pythonImport("PyQt5.QtGui", "QMovie")
+@:native("QMovie")
 extern enum abstract QMovieMovieState(Int) from Int to Int {
 	var NotRunning;
 	var Paused;
 	var Running;
 }
 
-@:pythonImport("PyQt5.QtGui", "CacheMode")
-@:native("QMovie.CacheMode")
+@:pythonImport("PyQt5.QtGui", "QMovie")
+@:native("QMovie")
 extern enum abstract QMovieCacheMode(Int) from Int to Int {
 	var CacheNone;
 	var CacheAll;

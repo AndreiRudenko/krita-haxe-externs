@@ -79,16 +79,16 @@ extern class QInputDialog extends QDialog {
 	function doubleStep():Float;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "InputDialogOption")
-@:native("QInputDialog.InputDialogOption")
+@:pythonImport("PyQt5.QtWidgets", "QInputDialog")
+@:native("QInputDialog")
 extern enum abstract QInputDialogInputDialogOption(Int) from Int to Int {
 	var NoButtons;
 	var UseListViewForComboBoxItems;
 	var UsePlainTextEditForTextInput;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "InputMode")
-@:native("QInputDialog.InputMode")
+@:pythonImport("PyQt5.QtWidgets", "QInputDialog")
+@:native("QInputDialog")
 extern enum abstract QInputDialogInputMode(Int) from Int to Int {
 	var TextInput;
 	var IntInput;

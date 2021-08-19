@@ -128,23 +128,23 @@ extern class QTextDocument extends QObject {
 	function setMarkdown(markdown:QString, ?features:QTextDocumentMarkdownFeatures):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "MetaInformation")
-@:native("QTextDocument.MetaInformation")
+@:pythonImport("PyQt5.QtGui", "QTextDocument")
+@:native("QTextDocument")
 extern enum abstract QTextDocumentMetaInformation(Int) from Int to Int {
 	var DocumentTitle;
 	var DocumentUrl;
 }
 
-@:pythonImport("PyQt5.QtGui", "FindFlag")
-@:native("QTextDocument.FindFlag")
+@:pythonImport("PyQt5.QtGui", "QTextDocument")
+@:native("QTextDocument")
 extern enum abstract QTextDocumentFindFlag(Int) from Int to Int {
 	var FindBackward;
 	var FindCaseSensitively;
 	var FindWholeWords;
 }
 
-@:pythonImport("PyQt5.QtGui", "ResourceType")
-@:native("QTextDocument.ResourceType")
+@:pythonImport("PyQt5.QtGui", "QTextDocument")
+@:native("QTextDocument")
 extern enum abstract QTextDocumentResourceType(Int) from Int to Int {
 	var UnknownResource;
 	var HtmlResource;
@@ -154,16 +154,16 @@ extern enum abstract QTextDocumentResourceType(Int) from Int to Int {
 	var UserResource;
 }
 
-@:pythonImport("PyQt5.QtGui", "Stacks")
-@:native("QTextDocument.Stacks")
+@:pythonImport("PyQt5.QtGui", "QTextDocument")
+@:native("QTextDocument")
 extern enum abstract QTextDocumentStacks(Int) from Int to Int {
 	var UndoStack;
 	var RedoStack;
 	var UndoAndRedoStacks;
 }
 
-@:pythonImport("PyQt5.QtGui", "MarkdownFeature")
-@:native("QTextDocument.MarkdownFeature")
+@:pythonImport("PyQt5.QtGui", "QTextDocument")
+@:native("QTextDocument")
 extern enum abstract QTextDocumentMarkdownFeature(Int) from Int to Int {
 	var MarkdownNoHTML;
 	var MarkdownDialectCommonMark;

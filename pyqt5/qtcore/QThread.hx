@@ -45,8 +45,8 @@ extern class QThread extends QObject {
 	function loopLevel():Int;
 }
 
-@:pythonImport("PyQt5.QtCore", "Priority")
-@:native("QThread.Priority")
+@:pythonImport("PyQt5.QtCore", "QThread")
+@:native("QThread")
 extern enum abstract QThreadPriority(Int) from Int to Int {
 	var IdlePriority;
 	var LowestPriority;

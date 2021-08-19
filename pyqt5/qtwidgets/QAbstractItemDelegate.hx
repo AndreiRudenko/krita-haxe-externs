@@ -31,8 +31,8 @@ extern class QAbstractItemDelegate extends QObject {
 	function helpEvent(event:QHelpEvent, view:QAbstractItemView, option:QStyleOptionViewItem, index:QModelIndex):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "EndEditHint")
-@:native("QAbstractItemDelegate.EndEditHint")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemDelegate")
+@:native("QAbstractItemDelegate")
 extern enum abstract QAbstractItemDelegateEndEditHint(Int) from Int to Int {
 	var NoHint;
 	var EditNextItem;

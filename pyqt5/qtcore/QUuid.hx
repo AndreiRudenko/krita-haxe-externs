@@ -28,8 +28,8 @@ extern class QUuid {
 	function toRfc4122():QByteArray;
 }
 
-@:pythonImport("PyQt5.QtCore", "Variant")
-@:native("QUuid.Variant")
+@:pythonImport("PyQt5.QtCore", "QUuid")
+@:native("QUuid")
 extern enum abstract QUuidVariant(Int) from Int to Int {
 	var VarUnknown;
 	var NCS;
@@ -38,8 +38,8 @@ extern enum abstract QUuidVariant(Int) from Int to Int {
 	var Reserved;
 }
 
-@:pythonImport("PyQt5.QtCore", "Version")
-@:native("QUuid.Version")
+@:pythonImport("PyQt5.QtCore", "QUuid")
+@:native("QUuid")
 extern enum abstract QUuidVersion(Int) from Int to Int {
 	var VerUnknown;
 	var Time;
@@ -50,8 +50,8 @@ extern enum abstract QUuidVersion(Int) from Int to Int {
 	var Sha1;
 }
 
-@:pythonImport("PyQt5.QtCore", "StringFormat")
-@:native("QUuid.StringFormat")
+@:pythonImport("PyQt5.QtCore", "QUuid")
+@:native("QUuid")
 extern enum abstract QUuidStringFormat(Int) from Int to Int {
 	var WithBraces;
 	var WithoutBraces;

@@ -82,8 +82,8 @@ extern class QFileSystemModel extends QAbstractItemModel {
 	function options():QFileSystemModelOptions;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Roles")
-@:native("QFileSystemModel.Roles")
+@:pythonImport("PyQt5.QtWidgets", "QFileSystemModel")
+@:native("QFileSystemModel")
 extern enum abstract QFileSystemModelRoles(Int) from Int to Int {
 	var FileIconRole;
 	var FilePathRole;
@@ -91,8 +91,8 @@ extern enum abstract QFileSystemModelRoles(Int) from Int to Int {
 	var FilePermissions;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Option")
-@:native("QFileSystemModel.Option")
+@:pythonImport("PyQt5.QtWidgets", "QFileSystemModel")
+@:native("QFileSystemModel")
 extern enum abstract QFileSystemModelOption(Int) from Int to Int {
 	var DontWatchForChanges;
 	var DontResolveSymlinks;

@@ -31,8 +31,8 @@ extern class QVariant {
 	function swap(other:QVariant):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "Type")
-@:native("QVariant.Type")
+@:pythonImport("PyQt5.QtCore", "QVariant")
+@:native("QVariant")
 extern enum abstract QVariantType(Int) from Int to Int {
 	var Invalid;
 	var Bool;

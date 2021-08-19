@@ -27,8 +27,8 @@ extern class QPaintDevice {
 	function devicePixelRatioF():Float;
 }
 
-@:pythonImport("PyQt5.QtGui", "PaintDeviceMetric")
-@:native("QPaintDevice.PaintDeviceMetric")
+@:pythonImport("PyQt5.QtGui", "QPaintDevice")
+@:native("QPaintDevice")
 extern enum abstract QPaintDevicePaintDeviceMetric(Int) from Int to Int {
 	var PdmWidth;
 	var PdmHeight;

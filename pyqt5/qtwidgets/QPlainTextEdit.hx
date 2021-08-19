@@ -148,8 +148,8 @@ extern class QPlainTextEdit extends QAbstractScrollArea {
 	function setTabStopDistance(distance:Float):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "LineWrapMode")
-@:native("QPlainTextEdit.LineWrapMode")
+@:pythonImport("PyQt5.QtWidgets", "QPlainTextEdit")
+@:native("QPlainTextEdit")
 extern enum abstract QPlainTextEditLineWrapMode(Int) from Int to Int {
 	var NoWrap;
 	var WidgetWidth;

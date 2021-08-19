@@ -34,8 +34,8 @@ extern class QAbstractTransition extends QObject {
 	function setTransitionType(type:QAbstractTransitionTransitionType):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "TransitionType")
-@:native("QAbstractTransition.TransitionType")
+@:pythonImport("PyQt5.QtCore", "QAbstractTransition")
+@:native("QAbstractTransition")
 extern enum abstract QAbstractTransitionTransitionType(Int) from Int to Int {
 	var ExternalTransition;
 	var InternalTransition;

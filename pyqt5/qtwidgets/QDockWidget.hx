@@ -43,8 +43,8 @@ extern class QDockWidget extends QWidget {
 	function event(event:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "DockWidgetFeature")
-@:native("QDockWidget.DockWidgetFeature")
+@:pythonImport("PyQt5.QtWidgets", "QDockWidget")
+@:native("QDockWidget")
 extern enum abstract QDockWidgetDockWidgetFeature(Int) from Int to Int {
 	var DockWidgetClosable;
 	var DockWidgetMovable;

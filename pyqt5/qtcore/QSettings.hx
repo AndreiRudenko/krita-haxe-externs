@@ -54,24 +54,24 @@ extern class QSettings extends QObject {
 	function event(event:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "Status")
-@:native("QSettings.Status")
+@:pythonImport("PyQt5.QtCore", "QSettings")
+@:native("QSettings")
 extern enum abstract QSettingsStatus(Int) from Int to Int {
 	var NoError;
 	var AccessError;
 	var FormatError;
 }
 
-@:pythonImport("PyQt5.QtCore", "Format")
-@:native("QSettings.Format")
+@:pythonImport("PyQt5.QtCore", "QSettings")
+@:native("QSettings")
 extern enum abstract QSettingsFormat(Int) from Int to Int {
 	var NativeFormat;
 	var IniFormat;
 	var InvalidFormat;
 }
 
-@:pythonImport("PyQt5.QtCore", "Scope")
-@:native("QSettings.Scope")
+@:pythonImport("PyQt5.QtCore", "QSettings")
+@:native("QSettings")
 extern enum abstract QSettingsScope(Int) from Int to Int {
 	var UserScope;
 	var SystemScope;

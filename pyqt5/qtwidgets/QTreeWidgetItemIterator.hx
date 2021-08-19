@@ -15,8 +15,8 @@ extern class QTreeWidgetItemIterator {
 	function value():QTreeWidgetItem;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "IteratorFlag")
-@:native("QTreeWidgetItemIterator.IteratorFlag")
+@:pythonImport("PyQt5.QtWidgets", "QTreeWidgetItemIterator")
+@:native("QTreeWidgetItemIterator")
 extern enum abstract QTreeWidgetItemIteratorIteratorFlag(Int) from Int to Int {
 	var All;
 	var Hidden;

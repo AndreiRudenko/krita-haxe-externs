@@ -88,8 +88,8 @@ extern class QTextLayout {
 extern class FormatRange {
 }
 
-@:pythonImport("PyQt5.QtGui", "CursorMode")
-@:native("QTextLayout.CursorMode")
+@:pythonImport("PyQt5.QtGui", "QTextLayout")
+@:native("QTextLayout")
 extern enum abstract QTextLayoutCursorMode(Int) from Int to Int {
 	var SkipCharacters;
 	var SkipWords;
@@ -128,15 +128,15 @@ extern class QTextLine {
 	function glyphRuns(?from:Int, ?length:Int):QList<QGlyphRun>;
 }
 
-@:pythonImport("PyQt5.QtGui", "Edge")
-@:native("QTextLine.Edge")
+@:pythonImport("PyQt5.QtGui", "QTextLine")
+@:native("QTextLine")
 extern enum abstract QTextLineEdge(Int) from Int to Int {
 	var Leading;
 	var Trailing;
 }
 
-@:pythonImport("PyQt5.QtGui", "CursorPosition")
-@:native("QTextLine.CursorPosition")
+@:pythonImport("PyQt5.QtGui", "QTextLine")
+@:native("QTextLine")
 extern enum abstract QTextLineCursorPosition(Int) from Int to Int {
 	var CursorBetweenCharacters;
 	var CursorOnCharacter;

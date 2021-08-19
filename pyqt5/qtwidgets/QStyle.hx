@@ -59,8 +59,8 @@ extern class QStyle extends QObject {
 	function proxy():QStyle;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StateFlag")
-@:native("QStyle.StateFlag")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleStateFlag(Int) from Int to Int {
 	var State_None;
 	var State_Enabled;
@@ -92,8 +92,8 @@ extern enum abstract QStyleStateFlag(Int) from Int to Int {
 	var State_Mini;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "PrimitiveElement")
-@:native("QStyle.PrimitiveElement")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStylePrimitiveElement(Int) from Int to Int {
 	var PE_Frame;
 	var PE_FrameDefaultButton;
@@ -151,8 +151,8 @@ extern enum abstract QStylePrimitiveElement(Int) from Int to Int {
 	var PE_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ControlElement")
-@:native("QStyle.ControlElement")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleControlElement(Int) from Int to Int {
 	var CE_PushButton;
 	var CE_PushButtonBevel;
@@ -204,8 +204,8 @@ extern enum abstract QStyleControlElement(Int) from Int to Int {
 	var CE_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SubElement")
-@:native("QStyle.SubElement")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleSubElement(Int) from Int to Int {
 	var SE_PushButtonContents;
 	var SE_PushButtonFocusRect;
@@ -270,8 +270,8 @@ extern enum abstract QStyleSubElement(Int) from Int to Int {
 	var SE_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ComplexControl")
-@:native("QStyle.ComplexControl")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleComplexControl(Int) from Int to Int {
 	var CC_SpinBox;
 	var CC_ComboBox;
@@ -285,8 +285,8 @@ extern enum abstract QStyleComplexControl(Int) from Int to Int {
 	var CC_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SubControl")
-@:native("QStyle.SubControl")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleSubControl(Int) from Int to Int {
 	var SC_None;
 	var SC_ScrollBarAddLine;
@@ -333,8 +333,8 @@ extern enum abstract QStyleSubControl(Int) from Int to Int {
 	var SC_All;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "PixelMetric")
-@:native("QStyle.PixelMetric")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStylePixelMetric(Int) from Int to Int {
 	var PM_ButtonMargin;
 	var PM_ButtonDefaultIndicator;
@@ -437,8 +437,8 @@ extern enum abstract QStylePixelMetric(Int) from Int to Int {
 	var PM_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ContentsType")
-@:native("QStyle.ContentsType")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleContentsType(Int) from Int to Int {
 	var CT_PushButton;
 	var CT_CheckBox;
@@ -466,8 +466,8 @@ extern enum abstract QStyleContentsType(Int) from Int to Int {
 	var CT_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StyleHint")
-@:native("QStyle.StyleHint")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleStyleHint(Int) from Int to Int {
 	var SH_EtchDisabledText;
 	var SH_DitherDisabledText;
@@ -590,8 +590,8 @@ extern enum abstract QStyleStyleHint(Int) from Int to Int {
 	var SH_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StandardPixmap")
-@:native("QStyle.StandardPixmap")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleStandardPixmap(Int) from Int to Int {
 	var SP_TitleBarMenuButton;
 	var SP_TitleBarMinButton;
@@ -674,8 +674,8 @@ extern enum abstract QStyleStandardPixmap(Int) from Int to Int {
 	var SP_CustomBase;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "RequestSoftwareInputPanel")
-@:native("QStyle.RequestSoftwareInputPanel")
+@:pythonImport("PyQt5.QtWidgets", "QStyle")
+@:native("QStyle")
 extern enum abstract QStyleRequestSoftwareInputPanel(Int) from Int to Int {
 	var RSIP_OnMouseClickAndAlreadyFocused;
 	var RSIP_OnMouseClick;

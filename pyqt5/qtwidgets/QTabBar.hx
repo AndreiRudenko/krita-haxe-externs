@@ -102,8 +102,8 @@ extern class QTabBar extends QWidget {
 	function setTabVisible(index:Int, visible:Bool):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Shape")
-@:native("QTabBar.Shape")
+@:pythonImport("PyQt5.QtWidgets", "QTabBar")
+@:native("QTabBar")
 extern enum abstract QTabBarShape(Int) from Int to Int {
 	var RoundedNorth;
 	var RoundedSouth;
@@ -115,15 +115,15 @@ extern enum abstract QTabBarShape(Int) from Int to Int {
 	var TriangularEast;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ButtonPosition")
-@:native("QTabBar.ButtonPosition")
+@:pythonImport("PyQt5.QtWidgets", "QTabBar")
+@:native("QTabBar")
 extern enum abstract QTabBarButtonPosition(Int) from Int to Int {
 	var LeftSide;
 	var RightSide;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SelectionBehavior")
-@:native("QTabBar.SelectionBehavior")
+@:pythonImport("PyQt5.QtWidgets", "QTabBar")
+@:native("QTabBar")
 extern enum abstract QTabBarSelectionBehavior(Int) from Int to Int {
 	var SelectLeftTab;
 	var SelectRightTab;

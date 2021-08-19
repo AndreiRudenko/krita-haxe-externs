@@ -15,15 +15,15 @@ extern class QSurface {
 	function supportsOpenGL():Bool;
 }
 
-@:pythonImport("PyQt5.QtGui", "SurfaceClass")
-@:native("QSurface.SurfaceClass")
+@:pythonImport("PyQt5.QtGui", "QSurface")
+@:native("QSurface")
 extern enum abstract QSurfaceSurfaceClass(Int) from Int to Int {
 	var Window;
 	var Offscreen;
 }
 
-@:pythonImport("PyQt5.QtGui", "SurfaceType")
-@:native("QSurface.SurfaceType")
+@:pythonImport("PyQt5.QtGui", "QSurface")
+@:native("QSurface")
 extern enum abstract QSurfaceSurfaceType(Int) from Int to Int {
 	var RasterSurface;
 	var OpenGLSurface;

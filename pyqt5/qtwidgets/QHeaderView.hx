@@ -133,8 +133,8 @@ extern class QHeaderView extends QAbstractItemView {
 	function isFirstSectionMovable():Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ResizeMode")
-@:native("QHeaderView.ResizeMode")
+@:pythonImport("PyQt5.QtWidgets", "QHeaderView")
+@:native("QHeaderView")
 extern enum abstract QHeaderViewResizeMode(Int) from Int to Int {
 	var Interactive;
 	var Fixed;

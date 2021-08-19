@@ -20,8 +20,8 @@ extern class QFileIconProvider {
 	function options():QFileIconProviderOptions;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "IconType")
-@:native("QFileIconProvider.IconType")
+@:pythonImport("PyQt5.QtWidgets", "QFileIconProvider")
+@:native("QFileIconProvider")
 extern enum abstract QFileIconProviderIconType(Int) from Int to Int {
 	var Computer;
 	var Desktop;
@@ -32,8 +32,8 @@ extern enum abstract QFileIconProviderIconType(Int) from Int to Int {
 	var File;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Option")
-@:native("QFileIconProvider.Option")
+@:pythonImport("PyQt5.QtWidgets", "QFileIconProvider")
+@:native("QFileIconProvider")
 extern enum abstract QFileIconProviderOption(Int) from Int to Int {
 	var DontUseCustomDirectoryIcons;
 }

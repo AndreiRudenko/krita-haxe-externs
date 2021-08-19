@@ -40,15 +40,15 @@ extern class QCommandLineParser {
 	function setOptionsAfterPositionalArgumentsMode(mode:QCommandLineParserOptionsAfterPositionalArgumentsMode):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "SingleDashWordOptionMode")
-@:native("QCommandLineParser.SingleDashWordOptionMode")
+@:pythonImport("PyQt5.QtCore", "QCommandLineParser")
+@:native("QCommandLineParser")
 extern enum abstract QCommandLineParserSingleDashWordOptionMode(Int) from Int to Int {
 	var ParseAsCompactedShortOptions;
 	var ParseAsLongOptions;
 }
 
-@:pythonImport("PyQt5.QtCore", "OptionsAfterPositionalArgumentsMode")
-@:native("QCommandLineParser.OptionsAfterPositionalArgumentsMode")
+@:pythonImport("PyQt5.QtCore", "QCommandLineParser")
+@:native("QCommandLineParser")
 extern enum abstract QCommandLineParserOptionsAfterPositionalArgumentsMode(Int) from Int to Int {
 	var ParseAsOptions;
 	var ParseAsPositionalArguments;

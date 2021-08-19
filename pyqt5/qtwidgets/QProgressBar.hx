@@ -43,8 +43,8 @@ extern class QProgressBar extends QWidget {
 	function paintEvent(?v:QPaintEvent):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Direction")
-@:native("QProgressBar.Direction")
+@:pythonImport("PyQt5.QtWidgets", "QProgressBar")
+@:native("QProgressBar")
 extern enum abstract QProgressBarDirection(Int) from Int to Int {
 	var TopToBottom;
 	var BottomToTop;

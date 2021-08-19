@@ -27,8 +27,8 @@ extern class QMimeDatabase {
 	function allMimeTypes():QList<QMimeType>;
 }
 
-@:pythonImport("PyQt5.QtCore", "MatchMode")
-@:native("QMimeDatabase.MatchMode")
+@:pythonImport("PyQt5.QtCore", "QMimeDatabase")
+@:native("QMimeDatabase")
 extern enum abstract QMimeDatabaseMatchMode(Int) from Int to Int {
 	var MatchDefault;
 	var MatchExtension;

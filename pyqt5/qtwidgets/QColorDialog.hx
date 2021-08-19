@@ -40,8 +40,8 @@ extern class QColorDialog extends QDialog {
 	function setVisible(visible:Bool):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ColorDialogOption")
-@:native("QColorDialog.ColorDialogOption")
+@:pythonImport("PyQt5.QtWidgets", "QColorDialog")
+@:native("QColorDialog")
 extern enum abstract QColorDialogColorDialogOption(Int) from Int to Int {
 	var ShowAlphaChannel;
 	var NoButtons;

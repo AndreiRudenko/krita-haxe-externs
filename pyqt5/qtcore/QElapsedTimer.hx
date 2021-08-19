@@ -21,8 +21,8 @@ extern class QElapsedTimer {
 	function nsecsElapsed():Int;
 }
 
-@:pythonImport("PyQt5.QtCore", "ClockType")
-@:native("QElapsedTimer.ClockType")
+@:pythonImport("PyQt5.QtCore", "QElapsedTimer")
+@:native("QElapsedTimer")
 extern enum abstract QElapsedTimerClockType(Int) from Int to Int {
 	var SystemTime;
 	var MonotonicClock;

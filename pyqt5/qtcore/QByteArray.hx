@@ -96,8 +96,8 @@ extern class QByteArray {
 	function isLower():Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "Base64Option")
-@:native("QByteArray.Base64Option")
+@:pythonImport("PyQt5.QtCore", "QByteArray")
+@:native("QByteArray")
 extern enum abstract QByteArrayBase64Option(Int) from Int to Int {
 	var Base64Encoding;
 	var Base64UrlEncoding;
@@ -107,8 +107,8 @@ extern enum abstract QByteArrayBase64Option(Int) from Int to Int {
 	var AbortOnBase64DecodingErrors;
 }
 
-@:pythonImport("PyQt5.QtCore", "Base64DecodingStatus")
-@:native("QByteArray.Base64DecodingStatus")
+@:pythonImport("PyQt5.QtCore", "QByteArray")
+@:native("QByteArray")
 extern enum abstract QByteArrayBase64DecodingStatus(Int) from Int to Int {
 	var Ok;
 	var IllegalInputLength;

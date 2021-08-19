@@ -116,8 +116,8 @@ extern class QComboBox extends QWidget {
 	function placeholderText():QString;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "InsertPolicy")
-@:native("QComboBox.InsertPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QComboBox")
+@:native("QComboBox")
 extern enum abstract QComboBoxInsertPolicy(Int) from Int to Int {
 	var NoInsert;
 	var InsertAtTop;
@@ -128,8 +128,8 @@ extern enum abstract QComboBoxInsertPolicy(Int) from Int to Int {
 	var InsertAlphabetically;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SizeAdjustPolicy")
-@:native("QComboBox.SizeAdjustPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QComboBox")
+@:native("QComboBox")
 extern enum abstract QComboBoxSizeAdjustPolicy(Int) from Int to Int {
 	var AdjustToContents;
 	var AdjustToContentsOnFirstShow;

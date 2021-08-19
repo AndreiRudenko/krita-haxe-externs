@@ -17,8 +17,8 @@ extern class QLibraryInfo {
 	function new();
 }
 
-@:pythonImport("PyQt5.QtCore", "LibraryLocation")
-@:native("QLibraryInfo.LibraryLocation")
+@:pythonImport("PyQt5.QtCore", "QLibraryInfo")
+@:native("QLibraryInfo")
 extern enum abstract QLibraryInfoLibraryLocation(Int) from Int to Int {
 	var PrefixPath;
 	var DocumentationPath;

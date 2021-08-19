@@ -15,16 +15,16 @@ extern class QScrollerProperties {
 	function setScrollMetric(metric:QScrollerPropertiesScrollMetric, value:QVariant):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "OvershootPolicy")
-@:native("QScrollerProperties.OvershootPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QScrollerProperties")
+@:native("QScrollerProperties")
 extern enum abstract QScrollerPropertiesOvershootPolicy(Int) from Int to Int {
 	var OvershootWhenScrollable;
 	var OvershootAlwaysOff;
 	var OvershootAlwaysOn;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "FrameRates")
-@:native("QScrollerProperties.FrameRates")
+@:pythonImport("PyQt5.QtWidgets", "QScrollerProperties")
+@:native("QScrollerProperties")
 extern enum abstract QScrollerPropertiesFrameRates(Int) from Int to Int {
 	var Standard;
 	var Fps60;
@@ -32,8 +32,8 @@ extern enum abstract QScrollerPropertiesFrameRates(Int) from Int to Int {
 	var Fps20;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ScrollMetric")
-@:native("QScrollerProperties.ScrollMetric")
+@:pythonImport("PyQt5.QtWidgets", "QScrollerProperties")
+@:native("QScrollerProperties")
 extern enum abstract QScrollerPropertiesScrollMetric(Int) from Int to Int {
 	var MousePressEventDelay;
 	var DragStartDistance;

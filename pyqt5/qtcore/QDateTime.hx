@@ -63,8 +63,8 @@ extern class QDate {
 	function endOfDay(?spec:QtTimeSpec, ?offsetSeconds:Int):QDateTime;
 }
 
-@:pythonImport("PyQt5.QtCore", "MonthNameType")
-@:native("QDate.MonthNameType")
+@:pythonImport("PyQt5.QtCore", "QDate")
+@:native("QDate")
 extern enum abstract QDateMonthNameType(Int) from Int to Int {
 	var DateFormat;
 	var StandaloneFormat;
@@ -169,8 +169,8 @@ extern class QDateTime {
 	function setSecsSinceEpoch(secs:Int):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "YearRange")
-@:native("QDateTime.YearRange")
+@:pythonImport("PyQt5.QtCore", "QDateTime")
+@:native("QDateTime")
 extern enum abstract QDateTimeYearRange(Int) from Int to Int {
 	var First;
 	var Last;

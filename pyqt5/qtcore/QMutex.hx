@@ -25,8 +25,8 @@ extern class QMutex {
 	function isRecursive():Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "RecursionMode")
-@:native("QMutex.RecursionMode")
+@:pythonImport("PyQt5.QtCore", "QMutex")
+@:native("QMutex")
 extern enum abstract QMutexRecursionMode(Int) from Int to Int {
 	var NonRecursive;
 	var Recursive;

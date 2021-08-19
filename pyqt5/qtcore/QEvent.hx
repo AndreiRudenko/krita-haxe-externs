@@ -19,8 +19,8 @@ extern class QEvent {
 	function ignore():Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "Type")
-@:native("QEvent.Type")
+@:pythonImport("PyQt5.QtCore", "QEvent")
+@:native("QEvent")
 extern enum abstract QEventType(Int) from Int to Int {
 	var None;
 	var Timer;

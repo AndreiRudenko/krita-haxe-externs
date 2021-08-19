@@ -30,8 +30,8 @@ typedef QtMouseEventFlags = QFlags<QtMouseEventFlag>;
 extern class Qt {
 }
 
-@:pythonImport("PyQt5.QtCore", "GlobalColor")
-@:native("Qt.GlobalColor")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtGlobalColor(Int) from Int to Int {
 	var color0;
 	var color1;
@@ -55,8 +55,8 @@ extern enum abstract QtGlobalColor(Int) from Int to Int {
 	var transparent;
 }
 
-@:pythonImport("PyQt5.QtCore", "KeyboardModifier")
-@:native("Qt.KeyboardModifier")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtKeyboardModifier(Int) from Int to Int {
 	var NoModifier;
 	var ShiftModifier;
@@ -68,8 +68,8 @@ extern enum abstract QtKeyboardModifier(Int) from Int to Int {
 	var KeyboardModifierMask;
 }
 
-@:pythonImport("PyQt5.QtCore", "Modifier")
-@:native("Qt.Modifier")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtModifier(Int) from Int to Int {
 	var META;
 	var SHIFT;
@@ -79,8 +79,8 @@ extern enum abstract QtModifier(Int) from Int to Int {
 	var UNICODE_ACCEL;
 }
 
-@:pythonImport("PyQt5.QtCore", "MouseButton")
-@:native("Qt.MouseButton")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtMouseButton(Int) from Int to Int {
 	var NoButton;
 	var AllButtons;
@@ -119,15 +119,15 @@ extern enum abstract QtMouseButton(Int) from Int to Int {
 	var ExtraButton24;
 }
 
-@:pythonImport("PyQt5.QtCore", "Orientation")
-@:native("Qt.Orientation")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtOrientation(Int) from Int to Int {
 	var Horizontal;
 	var Vertical;
 }
 
-@:pythonImport("PyQt5.QtCore", "FocusPolicy")
-@:native("Qt.FocusPolicy")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtFocusPolicy(Int) from Int to Int {
 	var NoFocus;
 	var TabFocus;
@@ -136,15 +136,15 @@ extern enum abstract QtFocusPolicy(Int) from Int to Int {
 	var WheelFocus;
 }
 
-@:pythonImport("PyQt5.QtCore", "SortOrder")
-@:native("Qt.SortOrder")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtSortOrder(Int) from Int to Int {
 	var AscendingOrder;
 	var DescendingOrder;
 }
 
-@:pythonImport("PyQt5.QtCore", "AlignmentFlag")
-@:native("Qt.AlignmentFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtAlignmentFlag(Int) from Int to Int {
 	var AlignLeft;
 	var AlignLeading;
@@ -162,8 +162,8 @@ extern enum abstract QtAlignmentFlag(Int) from Int to Int {
 	var AlignBaseline;
 }
 
-@:pythonImport("PyQt5.QtCore", "TextFlag")
-@:native("Qt.TextFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTextFlag(Int) from Int to Int {
 	var TextSingleLine;
 	var TextDontClip;
@@ -177,8 +177,8 @@ extern enum abstract QtTextFlag(Int) from Int to Int {
 	var TextJustificationForced;
 }
 
-@:pythonImport("PyQt5.QtCore", "TextElideMode")
-@:native("Qt.TextElideMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTextElideMode(Int) from Int to Int {
 	var ElideLeft;
 	var ElideRight;
@@ -186,8 +186,8 @@ extern enum abstract QtTextElideMode(Int) from Int to Int {
 	var ElideNone;
 }
 
-@:pythonImport("PyQt5.QtCore", "WindowType")
-@:native("Qt.WindowType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtWindowType(Int) from Int to Int {
 	var Widget;
 	var Window;
@@ -229,8 +229,8 @@ extern enum abstract QtWindowType(Int) from Int to Int {
 	var MaximizeUsingFullscreenGeometryHint;
 }
 
-@:pythonImport("PyQt5.QtCore", "WindowState")
-@:native("Qt.WindowState")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtWindowState(Int) from Int to Int {
 	var WindowNoState;
 	var WindowMinimized;
@@ -239,8 +239,8 @@ extern enum abstract QtWindowState(Int) from Int to Int {
 	var WindowActive;
 }
 
-@:pythonImport("PyQt5.QtCore", "WidgetAttribute")
-@:native("Qt.WidgetAttribute")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtWidgetAttribute(Int) from Int to Int {
 	var WA_Disabled;
 	var WA_UnderMouse;
@@ -348,8 +348,8 @@ extern enum abstract QtWidgetAttribute(Int) from Int to Int {
 	var WA_StyleSheetTarget;
 }
 
-@:pythonImport("PyQt5.QtCore", "ImageConversionFlag")
-@:native("Qt.ImageConversionFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtImageConversionFlag(Int) from Int to Int {
 	var AutoColor;
 	var ColorOnly;
@@ -367,15 +367,15 @@ extern enum abstract QtImageConversionFlag(Int) from Int to Int {
 	var NoFormatConversion;
 }
 
-@:pythonImport("PyQt5.QtCore", "BGMode")
-@:native("Qt.BGMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtBGMode(Int) from Int to Int {
 	var TransparentMode;
 	var OpaqueMode;
 }
 
-@:pythonImport("PyQt5.QtCore", "Key")
-@:native("Qt.Key")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtKey(Int) from Int to Int {
 	var Key_Escape;
 	var Key_Tab;
@@ -848,8 +848,8 @@ extern enum abstract QtKey(Int) from Int to Int {
 	var Key_Dead_Longsolidusoverlay;
 }
 
-@:pythonImport("PyQt5.QtCore", "ArrowType")
-@:native("Qt.ArrowType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtArrowType(Int) from Int to Int {
 	var NoArrow;
 	var UpArrow;
@@ -858,8 +858,8 @@ extern enum abstract QtArrowType(Int) from Int to Int {
 	var RightArrow;
 }
 
-@:pythonImport("PyQt5.QtCore", "PenStyle")
-@:native("Qt.PenStyle")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtPenStyle(Int) from Int to Int {
 	var NoPen;
 	var SolidLine;
@@ -871,8 +871,8 @@ extern enum abstract QtPenStyle(Int) from Int to Int {
 	var MPenStyle;
 }
 
-@:pythonImport("PyQt5.QtCore", "PenCapStyle")
-@:native("Qt.PenCapStyle")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtPenCapStyle(Int) from Int to Int {
 	var FlatCap;
 	var SquareCap;
@@ -880,8 +880,8 @@ extern enum abstract QtPenCapStyle(Int) from Int to Int {
 	var MPenCapStyle;
 }
 
-@:pythonImport("PyQt5.QtCore", "PenJoinStyle")
-@:native("Qt.PenJoinStyle")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtPenJoinStyle(Int) from Int to Int {
 	var MiterJoin;
 	var BevelJoin;
@@ -890,8 +890,8 @@ extern enum abstract QtPenJoinStyle(Int) from Int to Int {
 	var SvgMiterJoin;
 }
 
-@:pythonImport("PyQt5.QtCore", "BrushStyle")
-@:native("Qt.BrushStyle")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtBrushStyle(Int) from Int to Int {
 	var NoBrush;
 	var SolidPattern;
@@ -914,8 +914,8 @@ extern enum abstract QtBrushStyle(Int) from Int to Int {
 	var TexturePattern;
 }
 
-@:pythonImport("PyQt5.QtCore", "UIEffect")
-@:native("Qt.UIEffect")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtUIEffect(Int) from Int to Int {
 	var UI_General;
 	var UI_AnimateMenu;
@@ -926,8 +926,8 @@ extern enum abstract QtUIEffect(Int) from Int to Int {
 	var UI_AnimateToolBox;
 }
 
-@:pythonImport("PyQt5.QtCore", "CursorShape")
-@:native("Qt.CursorShape")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtCursorShape(Int) from Int to Int {
 	var ArrowCursor;
 	var UpArrowCursor;
@@ -956,8 +956,8 @@ extern enum abstract QtCursorShape(Int) from Int to Int {
 	var DragLinkCursor;
 }
 
-@:pythonImport("PyQt5.QtCore", "TextFormat")
-@:native("Qt.TextFormat")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTextFormat(Int) from Int to Int {
 	var PlainText;
 	var RichText;
@@ -965,16 +965,16 @@ extern enum abstract QtTextFormat(Int) from Int to Int {
 	var MarkdownText;
 }
 
-@:pythonImport("PyQt5.QtCore", "AspectRatioMode")
-@:native("Qt.AspectRatioMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtAspectRatioMode(Int) from Int to Int {
 	var IgnoreAspectRatio;
 	var KeepAspectRatio;
 	var KeepAspectRatioByExpanding;
 }
 
-@:pythonImport("PyQt5.QtCore", "DockWidgetArea")
-@:native("Qt.DockWidgetArea")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtDockWidgetArea(Int) from Int to Int {
 	var LeftDockWidgetArea;
 	var RightDockWidgetArea;
@@ -985,16 +985,16 @@ extern enum abstract QtDockWidgetArea(Int) from Int to Int {
 	var NoDockWidgetArea;
 }
 
-@:pythonImport("PyQt5.QtCore", "TimerType")
-@:native("Qt.TimerType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTimerType(Int) from Int to Int {
 	var PreciseTimer;
 	var CoarseTimer;
 	var VeryCoarseTimer;
 }
 
-@:pythonImport("PyQt5.QtCore", "ToolBarArea")
-@:native("Qt.ToolBarArea")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtToolBarArea(Int) from Int to Int {
 	var LeftToolBarArea;
 	var RightToolBarArea;
@@ -1005,8 +1005,8 @@ extern enum abstract QtToolBarArea(Int) from Int to Int {
 	var NoToolBarArea;
 }
 
-@:pythonImport("PyQt5.QtCore", "DateFormat")
-@:native("Qt.DateFormat")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtDateFormat(Int) from Int to Int {
 	var TextDate;
 	var ISODate;
@@ -1021,8 +1021,8 @@ extern enum abstract QtDateFormat(Int) from Int to Int {
 	var RFC2822Date;
 }
 
-@:pythonImport("PyQt5.QtCore", "TimeSpec")
-@:native("Qt.TimeSpec")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTimeSpec(Int) from Int to Int {
 	var LocalTime;
 	var UTC;
@@ -1030,8 +1030,8 @@ extern enum abstract QtTimeSpec(Int) from Int to Int {
 	var TimeZone;
 }
 
-@:pythonImport("PyQt5.QtCore", "DayOfWeek")
-@:native("Qt.DayOfWeek")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtDayOfWeek(Int) from Int to Int {
 	var Monday;
 	var Tuesday;
@@ -1042,23 +1042,23 @@ extern enum abstract QtDayOfWeek(Int) from Int to Int {
 	var Sunday;
 }
 
-@:pythonImport("PyQt5.QtCore", "ScrollBarPolicy")
-@:native("Qt.ScrollBarPolicy")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtScrollBarPolicy(Int) from Int to Int {
 	var ScrollBarAsNeeded;
 	var ScrollBarAlwaysOff;
 	var ScrollBarAlwaysOn;
 }
 
-@:pythonImport("PyQt5.QtCore", "CaseSensitivity")
-@:native("Qt.CaseSensitivity")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtCaseSensitivity(Int) from Int to Int {
 	var CaseInsensitive;
 	var CaseSensitive;
 }
 
-@:pythonImport("PyQt5.QtCore", "Corner")
-@:native("Qt.Corner")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtCorner(Int) from Int to Int {
 	var TopLeftCorner;
 	var TopRightCorner;
@@ -1066,8 +1066,8 @@ extern enum abstract QtCorner(Int) from Int to Int {
 	var BottomRightCorner;
 }
 
-@:pythonImport("PyQt5.QtCore", "ConnectionType")
-@:native("Qt.ConnectionType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtConnectionType(Int) from Int to Int {
 	var AutoConnection;
 	var DirectConnection;
@@ -1076,8 +1076,8 @@ extern enum abstract QtConnectionType(Int) from Int to Int {
 	var UniqueConnection;
 }
 
-@:pythonImport("PyQt5.QtCore", "ShortcutContext")
-@:native("Qt.ShortcutContext")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtShortcutContext(Int) from Int to Int {
 	var WidgetShortcut;
 	var WindowShortcut;
@@ -1085,30 +1085,30 @@ extern enum abstract QtShortcutContext(Int) from Int to Int {
 	var WidgetWithChildrenShortcut;
 }
 
-@:pythonImport("PyQt5.QtCore", "FillRule")
-@:native("Qt.FillRule")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtFillRule(Int) from Int to Int {
 	var OddEvenFill;
 	var WindingFill;
 }
 
-@:pythonImport("PyQt5.QtCore", "ClipOperation")
-@:native("Qt.ClipOperation")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtClipOperation(Int) from Int to Int {
 	var NoClip;
 	var ReplaceClip;
 	var IntersectClip;
 }
 
-@:pythonImport("PyQt5.QtCore", "TransformationMode")
-@:native("Qt.TransformationMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTransformationMode(Int) from Int to Int {
 	var FastTransformation;
 	var SmoothTransformation;
 }
 
-@:pythonImport("PyQt5.QtCore", "FocusReason")
-@:native("Qt.FocusReason")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtFocusReason(Int) from Int to Int {
 	var MouseFocusReason;
 	var TabFocusReason;
@@ -1121,8 +1121,8 @@ extern enum abstract QtFocusReason(Int) from Int to Int {
 	var NoFocusReason;
 }
 
-@:pythonImport("PyQt5.QtCore", "ContextMenuPolicy")
-@:native("Qt.ContextMenuPolicy")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtContextMenuPolicy(Int) from Int to Int {
 	var NoContextMenu;
 	var PreventContextMenu;
@@ -1131,8 +1131,8 @@ extern enum abstract QtContextMenuPolicy(Int) from Int to Int {
 	var CustomContextMenu;
 }
 
-@:pythonImport("PyQt5.QtCore", "InputMethodQuery")
-@:native("Qt.InputMethodQuery")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtInputMethodQuery(Int) from Int to Int {
 	var ImMicroFocus;
 	var ImFont;
@@ -1156,8 +1156,8 @@ extern enum abstract QtInputMethodQuery(Int) from Int to Int {
 	var ImInputItemClipRectangle;
 }
 
-@:pythonImport("PyQt5.QtCore", "ToolButtonStyle")
-@:native("Qt.ToolButtonStyle")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtToolButtonStyle(Int) from Int to Int {
 	var ToolButtonIconOnly;
 	var ToolButtonTextOnly;
@@ -1166,16 +1166,16 @@ extern enum abstract QtToolButtonStyle(Int) from Int to Int {
 	var ToolButtonFollowStyle;
 }
 
-@:pythonImport("PyQt5.QtCore", "LayoutDirection")
-@:native("Qt.LayoutDirection")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtLayoutDirection(Int) from Int to Int {
 	var LeftToRight;
 	var RightToLeft;
 	var LayoutDirectionAuto;
 }
 
-@:pythonImport("PyQt5.QtCore", "DropAction")
-@:native("Qt.DropAction")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtDropAction(Int) from Int to Int {
 	var CopyAction;
 	var MoveAction;
@@ -1185,16 +1185,16 @@ extern enum abstract QtDropAction(Int) from Int to Int {
 	var IgnoreAction;
 }
 
-@:pythonImport("PyQt5.QtCore", "CheckState")
-@:native("Qt.CheckState")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtCheckState(Int) from Int to Int {
 	var Unchecked;
 	var PartiallyChecked;
 	var Checked;
 }
 
-@:pythonImport("PyQt5.QtCore", "ItemDataRole")
-@:native("Qt.ItemDataRole")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtItemDataRole(Int) from Int to Int {
 	var DisplayRole;
 	var DecorationRole;
@@ -1216,8 +1216,8 @@ extern enum abstract QtItemDataRole(Int) from Int to Int {
 	var UserRole;
 }
 
-@:pythonImport("PyQt5.QtCore", "ItemFlag")
-@:native("Qt.ItemFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtItemFlag(Int) from Int to Int {
 	var NoItemFlags;
 	var ItemIsSelectable;
@@ -1232,8 +1232,8 @@ extern enum abstract QtItemFlag(Int) from Int to Int {
 	var ItemIsAutoTristate;
 }
 
-@:pythonImport("PyQt5.QtCore", "MatchFlag")
-@:native("Qt.MatchFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtMatchFlag(Int) from Int to Int {
 	var MatchExactly;
 	var MatchFixedString;
@@ -1248,16 +1248,16 @@ extern enum abstract QtMatchFlag(Int) from Int to Int {
 	var MatchRegularExpression;
 }
 
-@:pythonImport("PyQt5.QtCore", "WindowModality")
-@:native("Qt.WindowModality")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtWindowModality(Int) from Int to Int {
 	var NonModal;
 	var WindowModal;
 	var ApplicationModal;
 }
 
-@:pythonImport("PyQt5.QtCore", "ApplicationAttribute")
-@:native("Qt.ApplicationAttribute")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtApplicationAttribute(Int) from Int to Int {
 	var AA_ImmediateWidgetCreation;
 	var AA_MSWindowsUseDirect3DByDefault;
@@ -1294,8 +1294,8 @@ extern enum abstract QtApplicationAttribute(Int) from Int to Int {
 	var AA_DisableNativeVirtualKeyboard;
 }
 
-@:pythonImport("PyQt5.QtCore", "ItemSelectionMode")
-@:native("Qt.ItemSelectionMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtItemSelectionMode(Int) from Int to Int {
 	var ContainsItemShape;
 	var IntersectsItemShape;
@@ -1303,8 +1303,8 @@ extern enum abstract QtItemSelectionMode(Int) from Int to Int {
 	var IntersectsItemBoundingRect;
 }
 
-@:pythonImport("PyQt5.QtCore", "TextInteractionFlag")
-@:native("Qt.TextInteractionFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTextInteractionFlag(Int) from Int to Int {
 	var NoTextInteraction;
 	var TextSelectableByMouse;
@@ -1316,38 +1316,38 @@ extern enum abstract QtTextInteractionFlag(Int) from Int to Int {
 	var TextBrowserInteraction;
 }
 
-@:pythonImport("PyQt5.QtCore", "MaskMode")
-@:native("Qt.MaskMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtMaskMode(Int) from Int to Int {
 	var MaskInColor;
 	var MaskOutColor;
 }
 
-@:pythonImport("PyQt5.QtCore", "Axis")
-@:native("Qt.Axis")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtAxis(Int) from Int to Int {
 	var XAxis;
 	var YAxis;
 	var ZAxis;
 }
 
-@:pythonImport("PyQt5.QtCore", "EventPriority")
-@:native("Qt.EventPriority")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtEventPriority(Int) from Int to Int {
 	var HighEventPriority;
 	var NormalEventPriority;
 	var LowEventPriority;
 }
 
-@:pythonImport("PyQt5.QtCore", "SizeMode")
-@:native("Qt.SizeMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtSizeMode(Int) from Int to Int {
 	var AbsoluteSize;
 	var RelativeSize;
 }
 
-@:pythonImport("PyQt5.QtCore", "SizeHint")
-@:native("Qt.SizeHint")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtSizeHint(Int) from Int to Int {
 	var MinimumSize;
 	var PreferredSize;
@@ -1355,8 +1355,8 @@ extern enum abstract QtSizeHint(Int) from Int to Int {
 	var MinimumDescent;
 }
 
-@:pythonImport("PyQt5.QtCore", "WindowFrameSection")
-@:native("Qt.WindowFrameSection")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtWindowFrameSection(Int) from Int to Int {
 	var NoSection;
 	var LeftSection;
@@ -1370,16 +1370,16 @@ extern enum abstract QtWindowFrameSection(Int) from Int to Int {
 	var TitleBarArea;
 }
 
-@:pythonImport("PyQt5.QtCore", "TileRule")
-@:native("Qt.TileRule")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTileRule(Int) from Int to Int {
 	var StretchTile;
 	var RepeatTile;
 	var RoundTile;
 }
 
-@:pythonImport("PyQt5.QtCore", "InputMethodHint")
-@:native("Qt.InputMethodHint")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtInputMethodHint(Int) from Int to Int {
 	var ImhNone;
 	var ImhHiddenText;
@@ -1406,8 +1406,8 @@ extern enum abstract QtInputMethodHint(Int) from Int to Int {
 	var ImhNoTextHandles;
 }
 
-@:pythonImport("PyQt5.QtCore", "AnchorPoint")
-@:native("Qt.AnchorPoint")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtAnchorPoint(Int) from Int to Int {
 	var AnchorLeft;
 	var AnchorHorizontalCenter;
@@ -1417,15 +1417,15 @@ extern enum abstract QtAnchorPoint(Int) from Int to Int {
 	var AnchorBottom;
 }
 
-@:pythonImport("PyQt5.QtCore", "CoordinateSystem")
-@:native("Qt.CoordinateSystem")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtCoordinateSystem(Int) from Int to Int {
 	var DeviceCoordinates;
 	var LogicalCoordinates;
 }
 
-@:pythonImport("PyQt5.QtCore", "TouchPointState")
-@:native("Qt.TouchPointState")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTouchPointState(Int) from Int to Int {
 	var TouchPointPressed;
 	var TouchPointMoved;
@@ -1433,8 +1433,8 @@ extern enum abstract QtTouchPointState(Int) from Int to Int {
 	var TouchPointReleased;
 }
 
-@:pythonImport("PyQt5.QtCore", "GestureState")
-@:native("Qt.GestureState")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtGestureState(Int) from Int to Int {
 	var GestureStarted;
 	var GestureUpdated;
@@ -1442,8 +1442,8 @@ extern enum abstract QtGestureState(Int) from Int to Int {
 	var GestureCanceled;
 }
 
-@:pythonImport("PyQt5.QtCore", "GestureType")
-@:native("Qt.GestureType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtGestureType(Int) from Int to Int {
 	var TapGesture;
 	var TapAndHoldGesture;
@@ -1453,16 +1453,16 @@ extern enum abstract QtGestureType(Int) from Int to Int {
 	var CustomGesture;
 }
 
-@:pythonImport("PyQt5.QtCore", "GestureFlag")
-@:native("Qt.GestureFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtGestureFlag(Int) from Int to Int {
 	var DontStartGestureOnChildren;
 	var ReceivePartialGestures;
 	var IgnoredGesturesPropagateToParent;
 }
 
-@:pythonImport("PyQt5.QtCore", "NavigationMode")
-@:native("Qt.NavigationMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtNavigationMode(Int) from Int to Int {
 	var NavigationModeNone;
 	var NavigationModeKeypadTabOrder;
@@ -1471,15 +1471,15 @@ extern enum abstract QtNavigationMode(Int) from Int to Int {
 	var NavigationModeCursorForceVisible;
 }
 
-@:pythonImport("PyQt5.QtCore", "CursorMoveStyle")
-@:native("Qt.CursorMoveStyle")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtCursorMoveStyle(Int) from Int to Int {
 	var LogicalMoveStyle;
 	var VisualMoveStyle;
 }
 
-@:pythonImport("PyQt5.QtCore", "ScreenOrientation")
-@:native("Qt.ScreenOrientation")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtScreenOrientation(Int) from Int to Int {
 	var PrimaryOrientation;
 	var PortraitOrientation;
@@ -1488,15 +1488,15 @@ extern enum abstract QtScreenOrientation(Int) from Int to Int {
 	var InvertedLandscapeOrientation;
 }
 
-@:pythonImport("PyQt5.QtCore", "FindChildOption")
-@:native("Qt.FindChildOption")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtFindChildOption(Int) from Int to Int {
 	var FindDirectChildrenOnly;
 	var FindChildrenRecursively;
 }
 
-@:pythonImport("PyQt5.QtCore", "WhiteSpaceMode")
-@:native("Qt.WhiteSpaceMode")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtWhiteSpaceMode(Int) from Int to Int {
 	var WhiteSpaceNormal;
 	var WhiteSpacePre;
@@ -1504,15 +1504,15 @@ extern enum abstract QtWhiteSpaceMode(Int) from Int to Int {
 	var WhiteSpaceModeUndefined;
 }
 
-@:pythonImport("PyQt5.QtCore", "HitTestAccuracy")
-@:native("Qt.HitTestAccuracy")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtHitTestAccuracy(Int) from Int to Int {
 	var ExactHit;
 	var FuzzyHit;
 }
 
-@:pythonImport("PyQt5.QtCore", "ApplicationState")
-@:native("Qt.ApplicationState")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtApplicationState(Int) from Int to Int {
 	var ApplicationSuspended;
 	var ApplicationHidden;
@@ -1520,8 +1520,8 @@ extern enum abstract QtApplicationState(Int) from Int to Int {
 	var ApplicationActive;
 }
 
-@:pythonImport("PyQt5.QtCore", "Edge")
-@:native("Qt.Edge")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtEdge(Int) from Int to Int {
 	var TopEdge;
 	var LeftEdge;
@@ -1529,8 +1529,8 @@ extern enum abstract QtEdge(Int) from Int to Int {
 	var BottomEdge;
 }
 
-@:pythonImport("PyQt5.QtCore", "NativeGestureType")
-@:native("Qt.NativeGestureType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtNativeGestureType(Int) from Int to Int {
 	var BeginNativeGesture;
 	var EndNativeGesture;
@@ -1541,8 +1541,8 @@ extern enum abstract QtNativeGestureType(Int) from Int to Int {
 	var SwipeNativeGesture;
 }
 
-@:pythonImport("PyQt5.QtCore", "ScrollPhase")
-@:native("Qt.ScrollPhase")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtScrollPhase(Int) from Int to Int {
 	var ScrollBegin;
 	var ScrollUpdate;
@@ -1551,8 +1551,8 @@ extern enum abstract QtScrollPhase(Int) from Int to Int {
 	var ScrollMomentum;
 }
 
-@:pythonImport("PyQt5.QtCore", "MouseEventSource")
-@:native("Qt.MouseEventSource")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtMouseEventSource(Int) from Int to Int {
 	var MouseEventNotSynthesized;
 	var MouseEventSynthesizedBySystem;
@@ -1560,14 +1560,14 @@ extern enum abstract QtMouseEventSource(Int) from Int to Int {
 	var MouseEventSynthesizedByApplication;
 }
 
-@:pythonImport("PyQt5.QtCore", "MouseEventFlag")
-@:native("Qt.MouseEventFlag")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtMouseEventFlag(Int) from Int to Int {
 	var MouseEventCreatedDoubleClick;
 }
 
-@:pythonImport("PyQt5.QtCore", "TabFocusBehavior")
-@:native("Qt.TabFocusBehavior")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtTabFocusBehavior(Int) from Int to Int {
 	var NoTabFocus;
 	var TabFocusTextControls;
@@ -1575,15 +1575,15 @@ extern enum abstract QtTabFocusBehavior(Int) from Int to Int {
 	var TabFocusAllControls;
 }
 
-@:pythonImport("PyQt5.QtCore", "ItemSelectionOperation")
-@:native("Qt.ItemSelectionOperation")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtItemSelectionOperation(Int) from Int to Int {
 	var ReplaceSelection;
 	var AddToSelection;
 }
 
-@:pythonImport("PyQt5.QtCore", "EnterKeyType")
-@:native("Qt.EnterKeyType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtEnterKeyType(Int) from Int to Int {
 	var EnterKeyDefault;
 	var EnterKeyReturn;
@@ -1595,15 +1595,15 @@ extern enum abstract QtEnterKeyType(Int) from Int to Int {
 	var EnterKeyPrevious;
 }
 
-@:pythonImport("PyQt5.QtCore", "ChecksumType")
-@:native("Qt.ChecksumType")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtChecksumType(Int) from Int to Int {
 	var ChecksumIso3309;
 	var ChecksumItuV41;
 }
 
-@:pythonImport("PyQt5.QtCore", "HighDpiScaleFactorRoundingPolicy")
-@:native("Qt.HighDpiScaleFactorRoundingPolicy")
+@:pythonImport("PyQt5.QtCore", "Qt")
+@:native("Qt")
 extern enum abstract QtHighDpiScaleFactorRoundingPolicy(Int) from Int to Int {
 	var Round;
 	var Ceil;

@@ -33,8 +33,8 @@ extern class QActionGroup extends QObject {
 	function setExclusionPolicy(policy:QActionGroupExclusionPolicy):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ExclusionPolicy")
-@:native("QActionGroup.ExclusionPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QActionGroup")
+@:native("QActionGroup")
 extern enum abstract QActionGroupExclusionPolicy(Int) from Int to Int {
 	var None;
 	var Exclusive;

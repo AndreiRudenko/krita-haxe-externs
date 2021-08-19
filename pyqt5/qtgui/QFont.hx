@@ -85,8 +85,8 @@ extern class QFont {
 	function setFamilies(?v:QStringList):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "StyleHint")
-@:native("QFont.StyleHint")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontStyleHint(Int) from Int to Int {
 	var Helvetica;
 	var SansSerif;
@@ -103,8 +103,8 @@ extern enum abstract QFontStyleHint(Int) from Int to Int {
 	var Fantasy;
 }
 
-@:pythonImport("PyQt5.QtGui", "StyleStrategy")
-@:native("QFont.StyleStrategy")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontStyleStrategy(Int) from Int to Int {
 	var PreferDefault;
 	var PreferBitmap;
@@ -122,8 +122,8 @@ extern enum abstract QFontStyleStrategy(Int) from Int to Int {
 	var PreferNoShaping;
 }
 
-@:pythonImport("PyQt5.QtGui", "Weight")
-@:native("QFont.Weight")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontWeight(Int) from Int to Int {
 	var Thin;
 	var ExtraLight;
@@ -136,16 +136,16 @@ extern enum abstract QFontWeight(Int) from Int to Int {
 	var Black;
 }
 
-@:pythonImport("PyQt5.QtGui", "Style")
-@:native("QFont.Style")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontStyle(Int) from Int to Int {
 	var StyleNormal;
 	var StyleItalic;
 	var StyleOblique;
 }
 
-@:pythonImport("PyQt5.QtGui", "Stretch")
-@:native("QFont.Stretch")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontStretch(Int) from Int to Int {
 	var AnyStretch;
 	var UltraCondensed;
@@ -159,8 +159,8 @@ extern enum abstract QFontStretch(Int) from Int to Int {
 	var UltraExpanded;
 }
 
-@:pythonImport("PyQt5.QtGui", "Capitalization")
-@:native("QFont.Capitalization")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontCapitalization(Int) from Int to Int {
 	var MixedCase;
 	var AllUppercase;
@@ -169,15 +169,15 @@ extern enum abstract QFontCapitalization(Int) from Int to Int {
 	var Capitalize;
 }
 
-@:pythonImport("PyQt5.QtGui", "SpacingType")
-@:native("QFont.SpacingType")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontSpacingType(Int) from Int to Int {
 	var PercentageSpacing;
 	var AbsoluteSpacing;
 }
 
-@:pythonImport("PyQt5.QtGui", "HintingPreference")
-@:native("QFont.HintingPreference")
+@:pythonImport("PyQt5.QtGui", "QFont")
+@:native("QFont")
 extern enum abstract QFontHintingPreference(Int) from Int to Int {
 	var PreferDefaultHinting;
 	var PreferNoHinting;

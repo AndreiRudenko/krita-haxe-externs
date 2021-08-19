@@ -32,8 +32,8 @@ extern class QTextItem {
 	function font():QFont;
 }
 
-@:pythonImport("PyQt5.QtGui", "RenderFlag")
-@:native("QTextItem.RenderFlag")
+@:pythonImport("PyQt5.QtGui", "QTextItem")
+@:native("QTextItem")
 extern enum abstract QTextItemRenderFlag(Int) from Int to Int {
 	var RightToLeft;
 	var Overline;
@@ -74,8 +74,8 @@ extern class QPaintEngine {
 	function hasFeature(feature:QPaintEnginePaintEngineFeatures):Bool;
 }
 
-@:pythonImport("PyQt5.QtGui", "PaintEngineFeature")
-@:native("QPaintEngine.PaintEngineFeature")
+@:pythonImport("PyQt5.QtGui", "QPaintEngine")
+@:native("QPaintEngine")
 extern enum abstract QPaintEnginePaintEngineFeature(Int) from Int to Int {
 	var PrimitiveTransform;
 	var PatternTransform;
@@ -99,8 +99,8 @@ extern enum abstract QPaintEnginePaintEngineFeature(Int) from Int to Int {
 	var AllFeatures;
 }
 
-@:pythonImport("PyQt5.QtGui", "DirtyFlag")
-@:native("QPaintEngine.DirtyFlag")
+@:pythonImport("PyQt5.QtGui", "QPaintEngine")
+@:native("QPaintEngine")
 extern enum abstract QPaintEngineDirtyFlag(Int) from Int to Int {
 	var DirtyPen;
 	var DirtyBrush;
@@ -118,8 +118,8 @@ extern enum abstract QPaintEngineDirtyFlag(Int) from Int to Int {
 	var AllDirty;
 }
 
-@:pythonImport("PyQt5.QtGui", "PolygonDrawMode")
-@:native("QPaintEngine.PolygonDrawMode")
+@:pythonImport("PyQt5.QtGui", "QPaintEngine")
+@:native("QPaintEngine")
 extern enum abstract QPaintEnginePolygonDrawMode(Int) from Int to Int {
 	var OddEvenMode;
 	var WindingMode;
@@ -127,8 +127,8 @@ extern enum abstract QPaintEnginePolygonDrawMode(Int) from Int to Int {
 	var PolylineMode;
 }
 
-@:pythonImport("PyQt5.QtGui", "Type")
-@:native("QPaintEngine.Type")
+@:pythonImport("PyQt5.QtGui", "QPaintEngine")
+@:native("QPaintEngine")
 extern enum abstract QPaintEngineType(Int) from Int to Int {
 	var X11;
 	var Windows;

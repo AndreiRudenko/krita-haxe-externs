@@ -34,8 +34,8 @@ extern class QFileDevice extends QIODevice {
 	function setFileTime(newDate:QDateTime, fileTime:QFileDeviceFileTime):Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "FileError")
-@:native("QFileDevice.FileError")
+@:pythonImport("PyQt5.QtCore", "QFileDevice")
+@:native("QFileDevice")
 extern enum abstract QFileDeviceFileError(Int) from Int to Int {
 	var NoError;
 	var ReadError;
@@ -54,8 +54,8 @@ extern enum abstract QFileDeviceFileError(Int) from Int to Int {
 	var CopyError;
 }
 
-@:pythonImport("PyQt5.QtCore", "Permission")
-@:native("QFileDevice.Permission")
+@:pythonImport("PyQt5.QtCore", "QFileDevice")
+@:native("QFileDevice")
 extern enum abstract QFileDevicePermission(Int) from Int to Int {
 	var ReadOwner;
 	var WriteOwner;
@@ -71,22 +71,22 @@ extern enum abstract QFileDevicePermission(Int) from Int to Int {
 	var ExeOther;
 }
 
-@:pythonImport("PyQt5.QtCore", "FileHandleFlag")
-@:native("QFileDevice.FileHandleFlag")
+@:pythonImport("PyQt5.QtCore", "QFileDevice")
+@:native("QFileDevice")
 extern enum abstract QFileDeviceFileHandleFlag(Int) from Int to Int {
 	var AutoCloseHandle;
 	var DontCloseHandle;
 }
 
-@:pythonImport("PyQt5.QtCore", "MemoryMapFlags")
-@:native("QFileDevice.MemoryMapFlags")
+@:pythonImport("PyQt5.QtCore", "QFileDevice")
+@:native("QFileDevice")
 extern enum abstract QFileDeviceMemoryMapFlags(Int) from Int to Int {
 	var NoOptions;
 	var MapPrivateOption;
 }
 
-@:pythonImport("PyQt5.QtCore", "FileTime")
-@:native("QFileDevice.FileTime")
+@:pythonImport("PyQt5.QtCore", "QFileDevice")
+@:native("QFileDevice")
 extern enum abstract QFileDeviceFileTime(Int) from Int to Int {
 	var FileAccessTime;
 	var FileBirthTime;

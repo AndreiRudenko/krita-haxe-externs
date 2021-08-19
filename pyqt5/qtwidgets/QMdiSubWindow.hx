@@ -59,8 +59,8 @@ extern class QMdiSubWindow extends QWidget {
 	function childEvent(childEvent:QChildEvent):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SubWindowOption")
-@:native("QMdiSubWindow.SubWindowOption")
+@:pythonImport("PyQt5.QtWidgets", "QMdiSubWindow")
+@:native("QMdiSubWindow")
 extern enum abstract QMdiSubWindowSubWindowOption(Int) from Int to Int {
 	var RubberBandResize;
 	var RubberBandMove;

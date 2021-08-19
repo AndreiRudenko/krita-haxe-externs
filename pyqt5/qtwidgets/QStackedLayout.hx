@@ -38,8 +38,8 @@ extern class QStackedLayout extends QLayout {
 	function heightForWidth(width:Int):Int;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StackingMode")
-@:native("QStackedLayout.StackingMode")
+@:pythonImport("PyQt5.QtWidgets", "QStackedLayout")
+@:native("QStackedLayout")
 extern enum abstract QStackedLayoutStackingMode(Int) from Int to Int {
 	var StackOne;
 	var StackAll;

@@ -12,8 +12,8 @@ extern class QJsonParseError {
 	function errorString():QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "ParseError")
-@:native("QJsonParseError.ParseError")
+@:pythonImport("PyQt5.QtCore", "QJsonParseError")
+@:native("QJsonParseError")
 extern enum abstract QJsonParseErrorParseError(Int) from Int to Int {
 	var NoError;
 	var UnterminatedObject;
@@ -61,15 +61,15 @@ extern class QJsonDocument {
 	function swap(other:QJsonDocument):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "DataValidation")
-@:native("QJsonDocument.DataValidation")
+@:pythonImport("PyQt5.QtCore", "QJsonDocument")
+@:native("QJsonDocument")
 extern enum abstract QJsonDocumentDataValidation(Int) from Int to Int {
 	var Validate;
 	var BypassValidation;
 }
 
-@:pythonImport("PyQt5.QtCore", "JsonFormat")
-@:native("QJsonDocument.JsonFormat")
+@:pythonImport("PyQt5.QtCore", "QJsonDocument")
+@:native("QJsonDocument")
 extern enum abstract QJsonDocumentJsonFormat(Int) from Int to Int {
 	var Indented;
 	var Compact;

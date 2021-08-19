@@ -67,8 +67,8 @@ extern class QLayout extends QObject {
 	function replaceWidget(from:QWidget, to:QWidget, ?options:QtFindChildOptions):QLayoutItem;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SizeConstraint")
-@:native("QLayout.SizeConstraint")
+@:pythonImport("PyQt5.QtWidgets", "QLayout")
+@:native("QLayout")
 extern enum abstract QLayoutSizeConstraint(Int) from Int to Int {
 	var SetDefaultConstraint;
 	var SetNoConstraint;

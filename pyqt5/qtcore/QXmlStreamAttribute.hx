@@ -166,8 +166,8 @@ extern class QXmlStreamReader {
 	function setEntityExpansionLimit(limit:Int):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "TokenType")
-@:native("QXmlStreamReader.TokenType")
+@:pythonImport("PyQt5.QtCore", "QXmlStreamReader")
+@:native("QXmlStreamReader")
 extern enum abstract QXmlStreamReaderTokenType(Int) from Int to Int {
 	var NoToken;
 	var Invalid;
@@ -182,16 +182,16 @@ extern enum abstract QXmlStreamReaderTokenType(Int) from Int to Int {
 	var ProcessingInstruction;
 }
 
-@:pythonImport("PyQt5.QtCore", "ReadElementTextBehaviour")
-@:native("QXmlStreamReader.ReadElementTextBehaviour")
+@:pythonImport("PyQt5.QtCore", "QXmlStreamReader")
+@:native("QXmlStreamReader")
 extern enum abstract QXmlStreamReaderReadElementTextBehaviour(Int) from Int to Int {
 	var ErrorOnUnexpectedElement;
 	var IncludeChildElements;
 	var SkipChildElements;
 }
 
-@:pythonImport("PyQt5.QtCore", "Error")
-@:native("QXmlStreamReader.Error")
+@:pythonImport("PyQt5.QtCore", "QXmlStreamReader")
+@:native("QXmlStreamReader")
 extern enum abstract QXmlStreamReaderError(Int) from Int to Int {
 	var NoError;
 	var UnexpectedElementError;

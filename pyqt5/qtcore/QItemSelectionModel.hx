@@ -70,8 +70,8 @@ extern class QItemSelectionModel extends QObject {
 	function setModel(model:QAbstractItemModel):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "SelectionFlag")
-@:native("QItemSelectionModel.SelectionFlag")
+@:pythonImport("PyQt5.QtCore", "QItemSelectionModel")
+@:native("QItemSelectionModel")
 extern enum abstract QItemSelectionModelSelectionFlag(Int) from Int to Int {
 	var NoUpdate;
 	var Clear;

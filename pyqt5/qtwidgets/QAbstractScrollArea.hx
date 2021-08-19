@@ -59,8 +59,8 @@ extern class QAbstractScrollArea extends QFrame {
 	function setSizeAdjustPolicy(policy:QAbstractScrollAreaSizeAdjustPolicy):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SizeAdjustPolicy")
-@:native("QAbstractScrollArea.SizeAdjustPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractScrollArea")
+@:native("QAbstractScrollArea")
 extern enum abstract QAbstractScrollAreaSizeAdjustPolicy(Int) from Int to Int {
 	var AdjustIgnored;
 	var AdjustToContentsOnFirstShow;

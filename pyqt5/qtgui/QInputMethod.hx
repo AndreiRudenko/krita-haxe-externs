@@ -45,8 +45,8 @@ extern class QInputMethod extends QObject {
 	function inputItemClipRectangle():QRectF;
 }
 
-@:pythonImport("PyQt5.QtGui", "Action")
-@:native("QInputMethod.Action")
+@:pythonImport("PyQt5.QtGui", "QInputMethod")
+@:native("QInputMethod")
 extern enum abstract QInputMethodAction(Int) from Int to Int {
 	var Click;
 	var ContextMenu;

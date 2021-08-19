@@ -19,8 +19,8 @@ extern class QOperatingSystemVersion {
 	function name():QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "OSType")
-@:native("QOperatingSystemVersion.OSType")
+@:pythonImport("PyQt5.QtCore", "QOperatingSystemVersion")
+@:native("QOperatingSystemVersion")
 extern enum abstract QOperatingSystemVersionOSType(Int) from Int to Int {
 	var Unknown;
 	var Windows;

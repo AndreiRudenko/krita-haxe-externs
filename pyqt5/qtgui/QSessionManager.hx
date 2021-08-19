@@ -28,8 +28,8 @@ extern class QSessionManager extends QObject {
 	function requestPhase2():Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "RestartHint")
-@:native("QSessionManager.RestartHint")
+@:pythonImport("PyQt5.QtGui", "QSessionManager")
+@:native("QSessionManager")
 extern enum abstract QSessionManagerRestartHint(Int) from Int to Int {
 	var RestartIfRunning;
 	var RestartAnyway;

@@ -93,8 +93,8 @@ extern class QDateTimeEdit extends QAbstractSpinBox {
 	function setCalendar(calendar:QCalendar):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Section")
-@:native("QDateTimeEdit.Section")
+@:pythonImport("PyQt5.QtWidgets", "QDateTimeEdit")
+@:native("QDateTimeEdit")
 extern enum abstract QDateTimeEditSection(Int) from Int to Int {
 	var NoSection;
 	var AmPmSection;

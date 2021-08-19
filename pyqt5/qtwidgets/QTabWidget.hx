@@ -83,8 +83,8 @@ extern class QTabWidget extends QWidget {
 	function setTabVisible(index:Int, visible:Bool):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "TabPosition")
-@:native("QTabWidget.TabPosition")
+@:pythonImport("PyQt5.QtWidgets", "QTabWidget")
+@:native("QTabWidget")
 extern enum abstract QTabWidgetTabPosition(Int) from Int to Int {
 	var North;
 	var South;
@@ -92,8 +92,8 @@ extern enum abstract QTabWidgetTabPosition(Int) from Int to Int {
 	var East;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "TabShape")
-@:native("QTabWidget.TabShape")
+@:pythonImport("PyQt5.QtWidgets", "QTabWidget")
+@:native("QTabWidget")
 extern enum abstract QTabWidgetTabShape(Int) from Int to Int {
 	var Rounded;
 	var Triangular;

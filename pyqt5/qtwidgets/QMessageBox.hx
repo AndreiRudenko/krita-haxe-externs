@@ -78,8 +78,8 @@ extern class QMessageBox extends QDialog {
 	function checkBox():QCheckBox;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ButtonRole")
-@:native("QMessageBox.ButtonRole")
+@:pythonImport("PyQt5.QtWidgets", "QMessageBox")
+@:native("QMessageBox")
 extern enum abstract QMessageBoxButtonRole(Int) from Int to Int {
 	var InvalidRole;
 	var AcceptRole;
@@ -93,8 +93,8 @@ extern enum abstract QMessageBoxButtonRole(Int) from Int to Int {
 	var ApplyRole;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Icon")
-@:native("QMessageBox.Icon")
+@:pythonImport("PyQt5.QtWidgets", "QMessageBox")
+@:native("QMessageBox")
 extern enum abstract QMessageBoxIcon(Int) from Int to Int {
 	var NoIcon;
 	var Information;
@@ -103,8 +103,8 @@ extern enum abstract QMessageBoxIcon(Int) from Int to Int {
 	var Question;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StandardButton")
-@:native("QMessageBox.StandardButton")
+@:pythonImport("PyQt5.QtWidgets", "QMessageBox")
+@:native("QMessageBox")
 extern enum abstract QMessageBoxStandardButton(Int) from Int to Int {
 	var NoButton;
 	var Ok;

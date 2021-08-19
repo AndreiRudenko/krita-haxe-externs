@@ -168,8 +168,8 @@ extern class QTextEdit extends QAbstractScrollArea {
 extern class ExtraSelection {
 }
 
-@:pythonImport("PyQt5.QtWidgets", "LineWrapMode")
-@:native("QTextEdit.LineWrapMode")
+@:pythonImport("PyQt5.QtWidgets", "QTextEdit")
+@:native("QTextEdit")
 extern enum abstract QTextEditLineWrapMode(Int) from Int to Int {
 	var NoWrap;
 	var WidgetWidth;
@@ -177,8 +177,8 @@ extern enum abstract QTextEditLineWrapMode(Int) from Int to Int {
 	var FixedColumnWidth;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "AutoFormattingFlag")
-@:native("QTextEdit.AutoFormattingFlag")
+@:pythonImport("PyQt5.QtWidgets", "QTextEdit")
+@:native("QTextEdit")
 extern enum abstract QTextEditAutoFormattingFlag(Int) from Int to Int {
 	var AutoNone;
 	var AutoBulletList;

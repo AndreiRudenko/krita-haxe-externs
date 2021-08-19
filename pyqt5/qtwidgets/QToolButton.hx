@@ -48,8 +48,8 @@ extern class QToolButton extends QAbstractButton {
 	function hitButton(pos:QPoint):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ToolButtonPopupMode")
-@:native("QToolButton.ToolButtonPopupMode")
+@:pythonImport("PyQt5.QtWidgets", "QToolButton")
+@:native("QToolButton")
 extern enum abstract QToolButtonToolButtonPopupMode(Int) from Int to Int {
 	var DelayedPopup;
 	var MenuButtonPopup;

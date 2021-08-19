@@ -76,8 +76,8 @@ extern class QWizard extends QDialog {
 	function visitedIds():QList<Int>;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "WizardButton")
-@:native("QWizard.WizardButton")
+@:pythonImport("PyQt5.QtWidgets", "QWizard")
+@:native("QWizard")
 extern enum abstract QWizardWizardButton(Int) from Int to Int {
 	var BackButton;
 	var NextButton;
@@ -91,8 +91,8 @@ extern enum abstract QWizardWizardButton(Int) from Int to Int {
 	var Stretch;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "WizardPixmap")
-@:native("QWizard.WizardPixmap")
+@:pythonImport("PyQt5.QtWidgets", "QWizard")
+@:native("QWizard")
 extern enum abstract QWizardWizardPixmap(Int) from Int to Int {
 	var WatermarkPixmap;
 	var LogoPixmap;
@@ -100,8 +100,8 @@ extern enum abstract QWizardWizardPixmap(Int) from Int to Int {
 	var BackgroundPixmap;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "WizardStyle")
-@:native("QWizard.WizardStyle")
+@:pythonImport("PyQt5.QtWidgets", "QWizard")
+@:native("QWizard")
 extern enum abstract QWizardWizardStyle(Int) from Int to Int {
 	var ClassicStyle;
 	var ModernStyle;
@@ -109,8 +109,8 @@ extern enum abstract QWizardWizardStyle(Int) from Int to Int {
 	var AeroStyle;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "WizardOption")
-@:native("QWizard.WizardOption")
+@:pythonImport("PyQt5.QtWidgets", "QWizard")
+@:native("QWizard")
 extern enum abstract QWizardWizardOption(Int) from Int to Int {
 	var IndependentPages;
 	var IgnoreSubTitles;

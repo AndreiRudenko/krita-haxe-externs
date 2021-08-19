@@ -34,8 +34,8 @@ extern class QImageIOHandler {
 	function currentImageRect():QRect;
 }
 
-@:pythonImport("PyQt5.QtGui", "ImageOption")
-@:native("QImageIOHandler.ImageOption")
+@:pythonImport("PyQt5.QtGui", "QImageIOHandler")
+@:native("QImageIOHandler")
 extern enum abstract QImageIOHandlerImageOption(Int) from Int to Int {
 	var Size;
 	var ClipRect;
@@ -58,8 +58,8 @@ extern enum abstract QImageIOHandlerImageOption(Int) from Int to Int {
 	var TransformedByDefault;
 }
 
-@:pythonImport("PyQt5.QtGui", "Transformation")
-@:native("QImageIOHandler.Transformation")
+@:pythonImport("PyQt5.QtGui", "QImageIOHandler")
+@:native("QImageIOHandler")
 extern enum abstract QImageIOHandlerTransformation(Int) from Int to Int {
 	var TransformationNone;
 	var TransformationMirror;

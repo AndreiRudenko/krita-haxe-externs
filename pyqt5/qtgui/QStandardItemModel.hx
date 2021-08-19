@@ -182,8 +182,8 @@ extern class QStandardItem {
 	function clearData():Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "ItemType")
-@:native("QStandardItem.ItemType")
+@:pythonImport("PyQt5.QtGui", "QStandardItem")
+@:native("QStandardItem")
 extern enum abstract QStandardItemItemType(Int) from Int to Int {
 	var Type;
 	var UserType;

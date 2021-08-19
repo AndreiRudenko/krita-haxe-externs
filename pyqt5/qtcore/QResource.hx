@@ -36,8 +36,8 @@ extern class QResource {
 	function uncompressedData():QByteArray;
 }
 
-@:pythonImport("PyQt5.QtCore", "Compression")
-@:native("QResource.Compression")
+@:pythonImport("PyQt5.QtCore", "QResource")
+@:native("QResource")
 extern enum abstract QResourceCompression(Int) from Int to Int {
 	var NoCompression;
 	var ZlibCompression;

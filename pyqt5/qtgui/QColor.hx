@@ -111,8 +111,8 @@ extern class QColor {
 	function toExtendedRgb():QColor;
 }
 
-@:pythonImport("PyQt5.QtGui", "Spec")
-@:native("QColor.Spec")
+@:pythonImport("PyQt5.QtGui", "QColor")
+@:native("QColor")
 extern enum abstract QColorSpec(Int) from Int to Int {
 	var Invalid;
 	var Rgb;
@@ -122,8 +122,8 @@ extern enum abstract QColorSpec(Int) from Int to Int {
 	var ExtendedRgb;
 }
 
-@:pythonImport("PyQt5.QtGui", "NameFormat")
-@:native("QColor.NameFormat")
+@:pythonImport("PyQt5.QtGui", "QColor")
+@:native("QColor")
 extern enum abstract QColorNameFormat(Int) from Int to Int {
 	var HexRgb;
 	var HexArgb;

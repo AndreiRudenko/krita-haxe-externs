@@ -85,8 +85,8 @@ extern class QMainWindow extends QWidget {
 	function resizeDocks(docks:QList<QDockWidget>, sizes:QList<Int>, orientation:QtOrientation):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "DockOption")
-@:native("QMainWindow.DockOption")
+@:pythonImport("PyQt5.QtWidgets", "QMainWindow")
+@:native("QMainWindow")
 extern enum abstract QMainWindowDockOption(Int) from Int to Int {
 	var AnimatedDocks;
 	var AllowNestedDocks;

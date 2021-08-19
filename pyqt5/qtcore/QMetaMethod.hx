@@ -31,16 +31,16 @@ extern class QMetaMethod {
 	function parameterType(index:Int):Int;
 }
 
-@:pythonImport("PyQt5.QtCore", "Access")
-@:native("QMetaMethod.Access")
+@:pythonImport("PyQt5.QtCore", "QMetaMethod")
+@:native("QMetaMethod")
 extern enum abstract QMetaMethodAccess(Int) from Int to Int {
 	var Private;
 	var Protected;
 	var Public;
 }
 
-@:pythonImport("PyQt5.QtCore", "MethodType")
-@:native("QMetaMethod.MethodType")
+@:pythonImport("PyQt5.QtCore", "QMetaMethod")
+@:native("QMetaMethod")
 extern enum abstract QMetaMethodMethodType(Int) from Int to Int {
 	var Method;
 	var Signal;

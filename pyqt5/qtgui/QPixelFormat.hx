@@ -31,8 +31,8 @@ extern class QPixelFormat {
 	function subEnum():UInt;
 }
 
-@:pythonImport("PyQt5.QtGui", "ColorModel")
-@:native("QPixelFormat.ColorModel")
+@:pythonImport("PyQt5.QtGui", "QPixelFormat")
+@:native("QPixelFormat")
 extern enum abstract QPixelFormatColorModel(Int) from Int to Int {
 	var RGB;
 	var BGR;
@@ -45,29 +45,29 @@ extern enum abstract QPixelFormatColorModel(Int) from Int to Int {
 	var Alpha;
 }
 
-@:pythonImport("PyQt5.QtGui", "AlphaUsage")
-@:native("QPixelFormat.AlphaUsage")
+@:pythonImport("PyQt5.QtGui", "QPixelFormat")
+@:native("QPixelFormat")
 extern enum abstract QPixelFormatAlphaUsage(Int) from Int to Int {
 	var UsesAlpha;
 	var IgnoresAlpha;
 }
 
-@:pythonImport("PyQt5.QtGui", "AlphaPosition")
-@:native("QPixelFormat.AlphaPosition")
+@:pythonImport("PyQt5.QtGui", "QPixelFormat")
+@:native("QPixelFormat")
 extern enum abstract QPixelFormatAlphaPosition(Int) from Int to Int {
 	var AtBeginning;
 	var AtEnd;
 }
 
-@:pythonImport("PyQt5.QtGui", "AlphaPremultiplied")
-@:native("QPixelFormat.AlphaPremultiplied")
+@:pythonImport("PyQt5.QtGui", "QPixelFormat")
+@:native("QPixelFormat")
 extern enum abstract QPixelFormatAlphaPremultiplied(Int) from Int to Int {
 	var NotPremultiplied;
 	var Premultiplied;
 }
 
-@:pythonImport("PyQt5.QtGui", "TypeInterpretation")
-@:native("QPixelFormat.TypeInterpretation")
+@:pythonImport("PyQt5.QtGui", "QPixelFormat")
+@:native("QPixelFormat")
 extern enum abstract QPixelFormatTypeInterpretation(Int) from Int to Int {
 	var UnsignedInteger;
 	var UnsignedShort;
@@ -75,8 +75,8 @@ extern enum abstract QPixelFormatTypeInterpretation(Int) from Int to Int {
 	var FloatingPoint;
 }
 
-@:pythonImport("PyQt5.QtGui", "YUVLayout")
-@:native("QPixelFormat.YUVLayout")
+@:pythonImport("PyQt5.QtGui", "QPixelFormat")
+@:native("QPixelFormat")
 extern enum abstract QPixelFormatYUVLayout(Int) from Int to Int {
 	var YUV444;
 	var YUV422;
@@ -96,8 +96,8 @@ extern enum abstract QPixelFormatYUVLayout(Int) from Int to Int {
 	var Y16;
 }
 
-@:pythonImport("PyQt5.QtGui", "ByteOrder")
-@:native("QPixelFormat.ByteOrder")
+@:pythonImport("PyQt5.QtGui", "QPixelFormat")
+@:native("QPixelFormat")
 extern enum abstract QPixelFormatByteOrder(Int) from Int to Int {
 	var LittleEndian;
 	var BigEndian;

@@ -36,8 +36,8 @@ extern class QSystemTrayIcon extends QObject {
 	function event(event:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ActivationReason")
-@:native("QSystemTrayIcon.ActivationReason")
+@:pythonImport("PyQt5.QtWidgets", "QSystemTrayIcon")
+@:native("QSystemTrayIcon")
 extern enum abstract QSystemTrayIconActivationReason(Int) from Int to Int {
 	var Unknown;
 	var Context;
@@ -46,8 +46,8 @@ extern enum abstract QSystemTrayIconActivationReason(Int) from Int to Int {
 	var MiddleClick;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "MessageIcon")
-@:native("QSystemTrayIcon.MessageIcon")
+@:pythonImport("PyQt5.QtWidgets", "QSystemTrayIcon")
+@:native("QSystemTrayIcon")
 extern enum abstract QSystemTrayIconMessageIcon(Int) from Int to Int {
 	var NoIcon;
 	var Information;

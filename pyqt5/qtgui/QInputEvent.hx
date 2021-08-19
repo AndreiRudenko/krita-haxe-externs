@@ -123,8 +123,8 @@ extern class QTabletEvent extends QInputEvent {
 	function deviceType():QTabletEventTabletDevice;
 }
 
-@:pythonImport("PyQt5.QtGui", "TabletDevice")
-@:native("QTabletEvent.TabletDevice")
+@:pythonImport("PyQt5.QtGui", "QTabletEvent")
+@:native("QTabletEvent")
 extern enum abstract QTabletEventTabletDevice(Int) from Int to Int {
 	var NoDevice;
 	var Puck;
@@ -135,8 +135,8 @@ extern enum abstract QTabletEventTabletDevice(Int) from Int to Int {
 	var RotationStylus;
 }
 
-@:pythonImport("PyQt5.QtGui", "PointerType")
-@:native("QTabletEvent.PointerType")
+@:pythonImport("PyQt5.QtGui", "QTabletEvent")
+@:native("QTabletEvent")
 extern enum abstract QTabletEventPointerType(Int) from Int to Int {
 	var UnknownPointer;
 	var Pen;
@@ -239,8 +239,8 @@ extern class QContextMenuEvent extends QInputEvent {
 	function reason():QContextMenuEventReason;
 }
 
-@:pythonImport("PyQt5.QtGui", "Reason")
-@:native("QContextMenuEvent.Reason")
+@:pythonImport("PyQt5.QtGui", "QContextMenuEvent")
+@:native("QContextMenuEvent")
 extern enum abstract QContextMenuEventReason(Int) from Int to Int {
 	var Mouse;
 	var Keyboard;
@@ -262,8 +262,8 @@ extern class QInputMethodEvent extends QEvent {
 	function replacementLength():Int;
 }
 
-@:pythonImport("PyQt5.QtGui", "AttributeType")
-@:native("QInputMethodEvent.AttributeType")
+@:pythonImport("PyQt5.QtGui", "QInputMethodEvent")
+@:native("QInputMethodEvent")
 extern enum abstract QInputMethodEventAttributeType(Int) from Int to Int {
 	var TextFormat;
 	var Cursor;
@@ -434,8 +434,8 @@ extern class TouchPoint {
 	function ellipseDiameters():QSizeF;
 }
 
-@:pythonImport("PyQt5.QtGui", "InfoFlag")
-@:native("TouchPoint.InfoFlag")
+@:pythonImport("PyQt5.QtGui", "TouchPoint")
+@:native("TouchPoint")
 extern enum abstract TouchPointInfoFlag(Int) from Int to Int {
 	var Pen;
 	var Token;
@@ -473,8 +473,8 @@ extern class QScrollEvent extends QEvent {
 	function scrollState():QScrollEventScrollState;
 }
 
-@:pythonImport("PyQt5.QtGui", "ScrollState")
-@:native("QScrollEvent.ScrollState")
+@:pythonImport("PyQt5.QtGui", "QScrollEvent")
+@:native("QScrollEvent")
 extern enum abstract QScrollEventScrollState(Int) from Int to Int {
 	var ScrollStarted;
 	var ScrollUpdated;
@@ -521,8 +521,8 @@ extern class QPlatformSurfaceEvent extends QEvent {
 	function surfaceEventType():QPlatformSurfaceEventSurfaceEventType;
 }
 
-@:pythonImport("PyQt5.QtGui", "SurfaceEventType")
-@:native("QPlatformSurfaceEvent.SurfaceEventType")
+@:pythonImport("PyQt5.QtGui", "QPlatformSurfaceEvent")
+@:native("QPlatformSurfaceEvent")
 extern enum abstract QPlatformSurfaceEventSurfaceEventType(Int) from Int to Int {
 	var SurfaceCreated;
 	var SurfaceAboutToBeDestroyed;

@@ -94,15 +94,15 @@ extern class QTreeWidgetItem {
 	function emitDataChanged():Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ItemType")
-@:native("QTreeWidgetItem.ItemType")
+@:pythonImport("PyQt5.QtWidgets", "QTreeWidgetItem")
+@:native("QTreeWidgetItem")
 extern enum abstract QTreeWidgetItemItemType(Int) from Int to Int {
 	var Type;
 	var UserType;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ChildIndicatorPolicy")
-@:native("QTreeWidgetItem.ChildIndicatorPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QTreeWidgetItem")
+@:native("QTreeWidgetItem")
 extern enum abstract QTreeWidgetItemChildIndicatorPolicy(Int) from Int to Int {
 	var ShowIndicator;
 	var DontShowIndicator;

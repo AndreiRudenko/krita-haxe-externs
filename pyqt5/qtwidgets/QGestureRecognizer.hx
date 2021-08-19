@@ -21,8 +21,8 @@ extern class QGestureRecognizer {
 	function reset(state:QGesture):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ResultFlag")
-@:native("QGestureRecognizer.ResultFlag")
+@:pythonImport("PyQt5.QtWidgets", "QGestureRecognizer")
+@:native("QGestureRecognizer")
 extern enum abstract QGestureRecognizerResultFlag(Int) from Int to Int {
 	var Ignore;
 	var MayBeGesture;

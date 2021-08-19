@@ -16,15 +16,15 @@ extern class QSystemSemaphore {
 	function errorString():QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "AccessMode")
-@:native("QSystemSemaphore.AccessMode")
+@:pythonImport("PyQt5.QtCore", "QSystemSemaphore")
+@:native("QSystemSemaphore")
 extern enum abstract QSystemSemaphoreAccessMode(Int) from Int to Int {
 	var Open;
 	var Create;
 }
 
-@:pythonImport("PyQt5.QtCore", "SystemSemaphoreError")
-@:native("QSystemSemaphore.SystemSemaphoreError")
+@:pythonImport("PyQt5.QtCore", "QSystemSemaphore")
+@:native("QSystemSemaphore")
 extern enum abstract QSystemSemaphoreSystemSemaphoreError(Int) from Int to Int {
 	var NoError;
 	var PermissionDenied;

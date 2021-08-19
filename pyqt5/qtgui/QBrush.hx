@@ -57,8 +57,8 @@ extern class QGradient {
 	function setCoordinateMode(mode:QGradientCoordinateMode):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "CoordinateMode")
-@:native("QGradient.CoordinateMode")
+@:pythonImport("PyQt5.QtGui", "QGradient")
+@:native("QGradient")
 extern enum abstract QGradientCoordinateMode(Int) from Int to Int {
 	var LogicalMode;
 	var StretchToDeviceMode;
@@ -66,8 +66,8 @@ extern enum abstract QGradientCoordinateMode(Int) from Int to Int {
 	var ObjectMode;
 }
 
-@:pythonImport("PyQt5.QtGui", "Type")
-@:native("QGradient.Type")
+@:pythonImport("PyQt5.QtGui", "QGradient")
+@:native("QGradient")
 extern enum abstract QGradientType(Int) from Int to Int {
 	var LinearGradient;
 	var RadialGradient;
@@ -75,16 +75,16 @@ extern enum abstract QGradientType(Int) from Int to Int {
 	var NoGradient;
 }
 
-@:pythonImport("PyQt5.QtGui", "Spread")
-@:native("QGradient.Spread")
+@:pythonImport("PyQt5.QtGui", "QGradient")
+@:native("QGradient")
 extern enum abstract QGradientSpread(Int) from Int to Int {
 	var PadSpread;
 	var ReflectSpread;
 	var RepeatSpread;
 }
 
-@:pythonImport("PyQt5.QtGui", "Preset")
-@:native("QGradient.Preset")
+@:pythonImport("PyQt5.QtGui", "QGradient")
+@:native("QGradient")
 extern enum abstract QGradientPreset(Int) from Int to Int {
 	var WarmFlame;
 	var NightFade;

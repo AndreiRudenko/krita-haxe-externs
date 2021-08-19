@@ -130,15 +130,15 @@ extern class QImage extends QPaintDevice {
 	function applyColorTransform(transform:QColorTransform):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "InvertMode")
-@:native("QImage.InvertMode")
+@:pythonImport("PyQt5.QtGui", "QImage")
+@:native("QImage")
 extern enum abstract QImageInvertMode(Int) from Int to Int {
 	var InvertRgb;
 	var InvertRgba;
 }
 
-@:pythonImport("PyQt5.QtGui", "Format")
-@:native("QImage.Format")
+@:pythonImport("PyQt5.QtGui", "QImage")
+@:native("QImage")
 extern enum abstract QImageFormat(Int) from Int to Int {
 	var Format_Invalid;
 	var Format_Mono;

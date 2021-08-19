@@ -19,8 +19,8 @@ extern class QCryptographicHash {
 	function result():QByteArray;
 }
 
-@:pythonImport("PyQt5.QtCore", "Algorithm")
-@:native("QCryptographicHash.Algorithm")
+@:pythonImport("PyQt5.QtCore", "QCryptographicHash")
+@:native("QCryptographicHash")
 extern enum abstract QCryptographicHashAlgorithm(Int) from Int to Int {
 	var Md4;
 	var Md5;

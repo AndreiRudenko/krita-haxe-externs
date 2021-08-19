@@ -34,8 +34,8 @@ extern class QSizePolicy {
 	function setRetainSizeWhenHidden(retainSize:Bool):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "PolicyFlag")
-@:native("QSizePolicy.PolicyFlag")
+@:pythonImport("PyQt5.QtWidgets", "QSizePolicy")
+@:native("QSizePolicy")
 extern enum abstract QSizePolicyPolicyFlag(Int) from Int to Int {
 	var GrowFlag;
 	var ExpandFlag;
@@ -43,8 +43,8 @@ extern enum abstract QSizePolicyPolicyFlag(Int) from Int to Int {
 	var IgnoreFlag;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Policy")
-@:native("QSizePolicy.Policy")
+@:pythonImport("PyQt5.QtWidgets", "QSizePolicy")
+@:native("QSizePolicy")
 extern enum abstract QSizePolicyPolicy(Int) from Int to Int {
 	var Fixed;
 	var Minimum;
@@ -55,8 +55,8 @@ extern enum abstract QSizePolicyPolicy(Int) from Int to Int {
 	var Ignored;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ControlType")
-@:native("QSizePolicy.ControlType")
+@:pythonImport("PyQt5.QtWidgets", "QSizePolicy")
+@:native("QSizePolicy")
 extern enum abstract QSizePolicyControlType(Int) from Int to Int {
 	var DefaultType;
 	var ButtonBox;

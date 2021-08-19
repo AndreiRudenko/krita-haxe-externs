@@ -42,8 +42,8 @@ extern class QPageSize {
 	function rectPixels(resolution:Int):QRect;
 }
 
-@:pythonImport("PyQt5.QtGui", "PageSizeId")
-@:native("QPageSize.PageSizeId")
+@:pythonImport("PyQt5.QtGui", "QPageSize")
+@:native("QPageSize")
 extern enum abstract QPageSizePageSizeId(Int) from Int to Int {
 	var A4;
 	var B5;
@@ -174,8 +174,8 @@ extern enum abstract QPageSizePageSizeId(Int) from Int to Int {
 	var LastPageSize;
 }
 
-@:pythonImport("PyQt5.QtGui", "Unit")
-@:native("QPageSize.Unit")
+@:pythonImport("PyQt5.QtGui", "QPageSize")
+@:native("QPageSize")
 extern enum abstract QPageSizeUnit(Int) from Int to Int {
 	var Millimeter;
 	var Point;
@@ -185,8 +185,8 @@ extern enum abstract QPageSizeUnit(Int) from Int to Int {
 	var Cicero;
 }
 
-@:pythonImport("PyQt5.QtGui", "SizeMatchPolicy")
-@:native("QPageSize.SizeMatchPolicy")
+@:pythonImport("PyQt5.QtGui", "QPageSize")
+@:native("QPageSize")
 extern enum abstract QPageSizeSizeMatchPolicy(Int) from Int to Int {
 	var FuzzyMatch;
 	var FuzzyOrientationMatch;

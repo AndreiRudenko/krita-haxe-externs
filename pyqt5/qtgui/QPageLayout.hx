@@ -44,8 +44,8 @@ extern class QPageLayout {
 	function paintRectPixels(resolution:Int):QRect;
 }
 
-@:pythonImport("PyQt5.QtGui", "Unit")
-@:native("QPageLayout.Unit")
+@:pythonImport("PyQt5.QtGui", "QPageLayout")
+@:native("QPageLayout")
 extern enum abstract QPageLayoutUnit(Int) from Int to Int {
 	var Millimeter;
 	var Point;
@@ -55,15 +55,15 @@ extern enum abstract QPageLayoutUnit(Int) from Int to Int {
 	var Cicero;
 }
 
-@:pythonImport("PyQt5.QtGui", "Orientation")
-@:native("QPageLayout.Orientation")
+@:pythonImport("PyQt5.QtGui", "QPageLayout")
+@:native("QPageLayout")
 extern enum abstract QPageLayoutOrientation(Int) from Int to Int {
 	var Portrait;
 	var Landscape;
 }
 
-@:pythonImport("PyQt5.QtGui", "Mode")
-@:native("QPageLayout.Mode")
+@:pythonImport("PyQt5.QtGui", "QPageLayout")
+@:native("QPageLayout")
 extern enum abstract QPageLayoutMode(Int) from Int to Int {
 	var StandardMode;
 	var FullPageMode;

@@ -67,8 +67,8 @@ extern class QIODevice extends QObject {
 	function skip(maxSize:Int):Int;
 }
 
-@:pythonImport("PyQt5.QtCore", "OpenModeFlag")
-@:native("QIODevice.OpenModeFlag")
+@:pythonImport("PyQt5.QtCore", "QIODevice")
+@:native("QIODevice")
 extern enum abstract QIODeviceOpenModeFlag(Int) from Int to Int {
 	var NotOpen;
 	var ReadOnly;

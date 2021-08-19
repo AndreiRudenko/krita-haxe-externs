@@ -47,8 +47,8 @@ extern class QTimeLine extends QObject {
 	function setEasingCurve(curve:QEasingCurve):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "CurveShape")
-@:native("QTimeLine.CurveShape")
+@:pythonImport("PyQt5.QtCore", "QTimeLine")
+@:native("QTimeLine")
 extern enum abstract QTimeLineCurveShape(Int) from Int to Int {
 	var EaseInCurve;
 	var EaseOutCurve;
@@ -58,15 +58,15 @@ extern enum abstract QTimeLineCurveShape(Int) from Int to Int {
 	var CosineCurve;
 }
 
-@:pythonImport("PyQt5.QtCore", "Direction")
-@:native("QTimeLine.Direction")
+@:pythonImport("PyQt5.QtCore", "QTimeLine")
+@:native("QTimeLine")
 extern enum abstract QTimeLineDirection(Int) from Int to Int {
 	var Forward;
 	var Backward;
 }
 
-@:pythonImport("PyQt5.QtCore", "State")
-@:native("QTimeLine.State")
+@:pythonImport("PyQt5.QtCore", "QTimeLine")
+@:native("QTimeLine")
 extern enum abstract QTimeLineState(Int) from Int to Int {
 	var NotRunning;
 	var Paused;

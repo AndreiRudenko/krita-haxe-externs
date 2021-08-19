@@ -25,8 +25,8 @@ extern class QGesture extends QObject {
 	function gestureCancelPolicy():QGestureGestureCancelPolicy;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "GestureCancelPolicy")
-@:native("QGesture.GestureCancelPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QGesture")
+@:native("QGesture")
 extern enum abstract QGestureGestureCancelPolicy(Int) from Int to Int {
 	var CancelNone;
 	var CancelAllInContext;
@@ -75,8 +75,8 @@ extern class QPinchGesture extends QGesture {
 	function setRotationAngle(value:Float):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ChangeFlag")
-@:native("QPinchGesture.ChangeFlag")
+@:pythonImport("PyQt5.QtWidgets", "QPinchGesture")
+@:native("QPinchGesture")
 extern enum abstract QPinchGestureChangeFlag(Int) from Int to Int {
 	var ScaleFactorChanged;
 	var RotationAngleChanged;
@@ -94,8 +94,8 @@ extern class QSwipeGesture extends QGesture {
 	function setSwipeAngle(value:Float):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SwipeDirection")
-@:native("QSwipeGesture.SwipeDirection")
+@:pythonImport("PyQt5.QtWidgets", "QSwipeGesture")
+@:native("QSwipeGesture")
 extern enum abstract QSwipeGestureSwipeDirection(Int) from Int to Int {
 	var NoDirection;
 	var Left;

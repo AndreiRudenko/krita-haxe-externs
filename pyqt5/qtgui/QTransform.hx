@@ -66,8 +66,8 @@ extern class QTransform {
 	function dy():Float;
 }
 
-@:pythonImport("PyQt5.QtGui", "TransformationType")
-@:native("QTransform.TransformationType")
+@:pythonImport("PyQt5.QtGui", "QTransform")
+@:native("QTransform")
 extern enum abstract QTransformTransformationType(Int) from Int to Int {
 	var TxNone;
 	var TxTranslate;

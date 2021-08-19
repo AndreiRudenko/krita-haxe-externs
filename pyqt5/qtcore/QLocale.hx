@@ -106,8 +106,8 @@ extern class QLocale {
 	function collation():QLocale;
 }
 
-@:pythonImport("PyQt5.QtCore", "Language")
-@:native("QLocale.Language")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleLanguage(Int) from Int to Int {
 	var C;
 	var Abkhazian;
@@ -496,8 +496,8 @@ extern enum abstract QLocaleLanguage(Int) from Int to Int {
 	var Silesian;
 }
 
-@:pythonImport("PyQt5.QtCore", "Country")
-@:native("QLocale.Country")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleCountry(Int) from Int to Int {
 	var AnyCountry;
 	var Afghanistan;
@@ -773,8 +773,8 @@ extern enum abstract QLocaleCountry(Int) from Int to Int {
 	var Europe;
 }
 
-@:pythonImport("PyQt5.QtCore", "NumberOption")
-@:native("QLocale.NumberOption")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleNumberOption(Int) from Int to Int {
 	var OmitGroupSeparator;
 	var RejectGroupSeparator;
@@ -785,16 +785,16 @@ extern enum abstract QLocaleNumberOption(Int) from Int to Int {
 	var RejectTrailingZeroesAfterDot;
 }
 
-@:pythonImport("PyQt5.QtCore", "FormatType")
-@:native("QLocale.FormatType")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleFormatType(Int) from Int to Int {
 	var LongFormat;
 	var ShortFormat;
 	var NarrowFormat;
 }
 
-@:pythonImport("PyQt5.QtCore", "MeasurementSystem")
-@:native("QLocale.MeasurementSystem")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleMeasurementSystem(Int) from Int to Int {
 	var MetricSystem;
 	var ImperialSystem;
@@ -802,8 +802,8 @@ extern enum abstract QLocaleMeasurementSystem(Int) from Int to Int {
 	var ImperialUKSystem;
 }
 
-@:pythonImport("PyQt5.QtCore", "Script")
-@:native("QLocale.Script")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleScript(Int) from Int to Int {
 	var AnyScript;
 	var ArabicScript;
@@ -951,29 +951,29 @@ extern enum abstract QLocaleScript(Int) from Int to Int {
 	var JamoScript;
 }
 
-@:pythonImport("PyQt5.QtCore", "CurrencySymbolFormat")
-@:native("QLocale.CurrencySymbolFormat")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleCurrencySymbolFormat(Int) from Int to Int {
 	var CurrencyIsoCode;
 	var CurrencySymbol;
 	var CurrencyDisplayName;
 }
 
-@:pythonImport("PyQt5.QtCore", "QuotationStyle")
-@:native("QLocale.QuotationStyle")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleQuotationStyle(Int) from Int to Int {
 	var StandardQuotation;
 	var AlternateQuotation;
 }
 
-@:pythonImport("PyQt5.QtCore", "FloatingPointPrecisionOption")
-@:native("QLocale.FloatingPointPrecisionOption")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleFloatingPointPrecisionOption(Int) from Int to Int {
 	var FloatingPointShortest;
 }
 
-@:pythonImport("PyQt5.QtCore", "DataSizeFormat")
-@:native("QLocale.DataSizeFormat")
+@:pythonImport("PyQt5.QtCore", "QLocale")
+@:native("QLocale")
 extern enum abstract QLocaleDataSizeFormat(Int) from Int to Int {
 	var DataSizeIecFormat;
 	var DataSizeTraditionalFormat;

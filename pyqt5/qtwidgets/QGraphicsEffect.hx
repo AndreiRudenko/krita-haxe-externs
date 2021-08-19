@@ -35,8 +35,8 @@ extern class QGraphicsEffect extends QObject {
 	function sourcePixmap(?system:QtCoordinateSystem, offset:QPoint, ?mode:QGraphicsEffectPixmapPadMode):QPixmap;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ChangeFlag")
-@:native("QGraphicsEffect.ChangeFlag")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsEffect")
+@:native("QGraphicsEffect")
 extern enum abstract QGraphicsEffectChangeFlag(Int) from Int to Int {
 	var SourceAttached;
 	var SourceDetached;
@@ -44,8 +44,8 @@ extern enum abstract QGraphicsEffectChangeFlag(Int) from Int to Int {
 	var SourceInvalidated;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "PixmapPadMode")
-@:native("QGraphicsEffect.PixmapPadMode")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsEffect")
+@:native("QGraphicsEffect")
 extern enum abstract QGraphicsEffectPixmapPadMode(Int) from Int to Int {
 	var NoPad;
 	var PadToTransparentBorder;
@@ -83,8 +83,8 @@ extern class QGraphicsBlurEffect extends QGraphicsEffect {
 	function draw(painter:QPainter):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "BlurHint")
-@:native("QGraphicsBlurEffect.BlurHint")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsBlurEffect")
+@:native("QGraphicsBlurEffect")
 extern enum abstract QGraphicsBlurEffectBlurHint(Int) from Int to Int {
 	var PerformanceHint;
 	var QualityHint;

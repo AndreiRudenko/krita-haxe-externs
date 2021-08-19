@@ -29,8 +29,8 @@ extern class QColorSpace {
 	function transformationToColorSpace(colorspace:QColorSpace):QColorTransform;
 }
 
-@:pythonImport("PyQt5.QtGui", "NamedColorSpace")
-@:native("QColorSpace.NamedColorSpace")
+@:pythonImport("PyQt5.QtGui", "QColorSpace")
+@:native("QColorSpace")
 extern enum abstract QColorSpaceNamedColorSpace(Int) from Int to Int {
 	var SRgb;
 	var SRgbLinear;
@@ -39,8 +39,8 @@ extern enum abstract QColorSpaceNamedColorSpace(Int) from Int to Int {
 	var ProPhotoRgb;
 }
 
-@:pythonImport("PyQt5.QtGui", "Primaries")
-@:native("QColorSpace.Primaries")
+@:pythonImport("PyQt5.QtGui", "QColorSpace")
+@:native("QColorSpace")
 extern enum abstract QColorSpacePrimaries(Int) from Int to Int {
 	var Custom;
 	var SRgb;
@@ -49,8 +49,8 @@ extern enum abstract QColorSpacePrimaries(Int) from Int to Int {
 	var ProPhotoRgb;
 }
 
-@:pythonImport("PyQt5.QtGui", "TransferFunction")
-@:native("QColorSpace.TransferFunction")
+@:pythonImport("PyQt5.QtGui", "QColorSpace")
+@:native("QColorSpace")
 extern enum abstract QColorSpaceTransferFunction(Int) from Int to Int {
 	var Custom;
 	var Linear;

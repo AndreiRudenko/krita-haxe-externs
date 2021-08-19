@@ -33,8 +33,8 @@ extern class QRegularExpression {
 	function optimize():Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "PatternOption")
-@:native("QRegularExpression.PatternOption")
+@:pythonImport("PyQt5.QtCore", "QRegularExpression")
+@:native("QRegularExpression")
 extern enum abstract QRegularExpressionPatternOption(Int) from Int to Int {
 	var NoPatternOption;
 	var CaseInsensitiveOption;
@@ -48,8 +48,8 @@ extern enum abstract QRegularExpressionPatternOption(Int) from Int to Int {
 	var DontAutomaticallyOptimizeOption;
 }
 
-@:pythonImport("PyQt5.QtCore", "MatchType")
-@:native("QRegularExpression.MatchType")
+@:pythonImport("PyQt5.QtCore", "QRegularExpression")
+@:native("QRegularExpression")
 extern enum abstract QRegularExpressionMatchType(Int) from Int to Int {
 	var NormalMatch;
 	var PartialPreferCompleteMatch;
@@ -57,8 +57,8 @@ extern enum abstract QRegularExpressionMatchType(Int) from Int to Int {
 	var NoMatch;
 }
 
-@:pythonImport("PyQt5.QtCore", "MatchOption")
-@:native("QRegularExpression.MatchOption")
+@:pythonImport("PyQt5.QtCore", "QRegularExpression")
+@:native("QRegularExpression")
 extern enum abstract QRegularExpressionMatchOption(Int) from Int to Int {
 	var NoMatchOption;
 	var AnchoredMatchOption;

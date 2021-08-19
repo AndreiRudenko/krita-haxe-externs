@@ -38,8 +38,8 @@ extern class QGlyphRun {
 	function swap(other:QGlyphRun):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "GlyphRunFlag")
-@:native("QGlyphRun.GlyphRunFlag")
+@:pythonImport("PyQt5.QtGui", "QGlyphRun")
+@:native("QGlyphRun")
 extern enum abstract QGlyphRunGlyphRunFlag(Int) from Int to Int {
 	var Overline;
 	var Underline;

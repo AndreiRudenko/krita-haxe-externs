@@ -23,15 +23,15 @@ extern class QTouchDevice {
 	function setMaximumTouchPoints(max:Int):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "DeviceType")
-@:native("QTouchDevice.DeviceType")
+@:pythonImport("PyQt5.QtGui", "QTouchDevice")
+@:native("QTouchDevice")
 extern enum abstract QTouchDeviceDeviceType(Int) from Int to Int {
 	var TouchScreen;
 	var TouchPad;
 }
 
-@:pythonImport("PyQt5.QtGui", "CapabilityFlag")
-@:native("QTouchDevice.CapabilityFlag")
+@:pythonImport("PyQt5.QtGui", "QTouchDevice")
+@:native("QTouchDevice")
 extern enum abstract QTouchDeviceCapabilityFlag(Int) from Int to Int {
 	var Position;
 	var Area;

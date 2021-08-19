@@ -136,31 +136,31 @@ extern class QGraphicsView extends QAbstractScrollArea {
 	function rubberBandRect():QRect;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "CacheModeFlag")
-@:native("QGraphicsView.CacheModeFlag")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsView")
+@:native("QGraphicsView")
 extern enum abstract QGraphicsViewCacheModeFlag(Int) from Int to Int {
 	var CacheNone;
 	var CacheBackground;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "DragMode")
-@:native("QGraphicsView.DragMode")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsView")
+@:native("QGraphicsView")
 extern enum abstract QGraphicsViewDragMode(Int) from Int to Int {
 	var NoDrag;
 	var ScrollHandDrag;
 	var RubberBandDrag;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ViewportAnchor")
-@:native("QGraphicsView.ViewportAnchor")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsView")
+@:native("QGraphicsView")
 extern enum abstract QGraphicsViewViewportAnchor(Int) from Int to Int {
 	var NoAnchor;
 	var AnchorViewCenter;
 	var AnchorUnderMouse;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ViewportUpdateMode")
-@:native("QGraphicsView.ViewportUpdateMode")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsView")
+@:native("QGraphicsView")
 extern enum abstract QGraphicsViewViewportUpdateMode(Int) from Int to Int {
 	var FullViewportUpdate;
 	var MinimalViewportUpdate;
@@ -169,8 +169,8 @@ extern enum abstract QGraphicsViewViewportUpdateMode(Int) from Int to Int {
 	var NoViewportUpdate;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "OptimizationFlag")
-@:native("QGraphicsView.OptimizationFlag")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsView")
+@:native("QGraphicsView")
 extern enum abstract QGraphicsViewOptimizationFlag(Int) from Int to Int {
 	var DontClipPainter;
 	var DontSavePainterState;

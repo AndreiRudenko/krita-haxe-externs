@@ -29,8 +29,8 @@ extern class QRubberBand extends QWidget {
 	function moveEvent(?v:QMoveEvent):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Shape")
-@:native("QRubberBand.Shape")
+@:pythonImport("PyQt5.QtWidgets", "QRubberBand")
+@:native("QRubberBand")
 extern enum abstract QRubberBandShape(Int) from Int to Int {
 	var Line;
 	var Rectangle;

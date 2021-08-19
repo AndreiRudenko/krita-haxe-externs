@@ -2,8 +2,8 @@ package pyqt5.qtcore;
 
 import pyqt5.qtcore.QString;
 
-@:pythonImport("PyQt5.QtCore", "QCborSimpleType")
-@:native("QCborError.QCborSimpleType")
+@:pythonImport("PyQt5.QtCore", "QCborError")
+@:native("QCborError")
 extern enum abstract QCborErrorQCborSimpleType(Int) from Int to Int {
 	var False;
 	var True;
@@ -18,8 +18,8 @@ extern class QCborError {
 	function toString():QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "Code")
-@:native("QCborError.Code")
+@:pythonImport("PyQt5.QtCore", "QCborError")
+@:native("QCborError")
 extern enum abstract QCborErrorCode(Int) from Int to Int {
 	var UnknownError;
 	var AdvancePastEnd;
@@ -38,8 +38,8 @@ extern enum abstract QCborErrorCode(Int) from Int to Int {
 	var NoError;
 }
 
-@:pythonImport("PyQt5.QtCore", "QCborKnownTags")
-@:native("QCborError.QCborKnownTags")
+@:pythonImport("PyQt5.QtCore", "QCborError")
+@:native("QCborError")
 extern enum abstract QCborErrorQCborKnownTags(Int) from Int to Int {
 	var DateTimeString;
 	var UnixTime_t;

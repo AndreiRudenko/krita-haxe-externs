@@ -243,16 +243,16 @@ extern class QGraphicsItem {
 	function updateMicroFocus():Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "CacheMode")
-@:native("QGraphicsItem.CacheMode")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsItem")
+@:native("QGraphicsItem")
 extern enum abstract QGraphicsItemCacheMode(Int) from Int to Int {
 	var NoCache;
 	var ItemCoordinateCache;
 	var DeviceCoordinateCache;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "GraphicsItemChange")
-@:native("QGraphicsItem.GraphicsItemChange")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsItem")
+@:native("QGraphicsItem")
 extern enum abstract QGraphicsItemGraphicsItemChange(Int) from Int to Int {
 	var ItemPositionChange;
 	var ItemMatrixChange;
@@ -290,8 +290,8 @@ extern enum abstract QGraphicsItemGraphicsItemChange(Int) from Int to Int {
 	var ItemTransformOriginPointHasChanged;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "GraphicsItemFlag")
-@:native("QGraphicsItem.GraphicsItemFlag")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsItem")
+@:native("QGraphicsItem")
 extern enum abstract QGraphicsItemGraphicsItemFlag(Int) from Int to Int {
 	var ItemIsMovable;
 	var ItemIsSelectable;
@@ -312,8 +312,8 @@ extern enum abstract QGraphicsItemGraphicsItemFlag(Int) from Int to Int {
 	var ItemContainsChildrenInShape;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "PanelModality")
-@:native("QGraphicsItem.PanelModality")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsItem")
+@:native("QGraphicsItem")
 extern enum abstract QGraphicsItemPanelModality(Int) from Int to Int {
 	var NonModal;
 	var PanelModal;
@@ -456,8 +456,8 @@ extern class QGraphicsPixmapItem extends QGraphicsItem {
 	function setShapeMode(mode:QGraphicsPixmapItemShapeMode):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ShapeMode")
-@:native("QGraphicsPixmapItem.ShapeMode")
+@:pythonImport("PyQt5.QtWidgets", "QGraphicsPixmapItem")
+@:native("QGraphicsPixmapItem")
 extern enum abstract QGraphicsPixmapItemShapeMode(Int) from Int to Int {
 	var MaskShape;
 	var BoundingRectShape;

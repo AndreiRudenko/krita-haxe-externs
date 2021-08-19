@@ -43,8 +43,8 @@ extern class QDataWidgetMapper extends QObject {
 	function toPrevious():Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SubmitPolicy")
-@:native("QDataWidgetMapper.SubmitPolicy")
+@:pythonImport("PyQt5.QtWidgets", "QDataWidgetMapper")
+@:native("QDataWidgetMapper")
 extern enum abstract QDataWidgetMapperSubmitPolicy(Int) from Int to Int {
 	var AutoSubmit;
 	var ManualSubmit;

@@ -25,8 +25,8 @@ extern class QTextBoundaryFinder {
 	function boundaryReasons():QTextBoundaryFinderBoundaryReasons;
 }
 
-@:pythonImport("PyQt5.QtCore", "BoundaryReason")
-@:native("QTextBoundaryFinder.BoundaryReason")
+@:pythonImport("PyQt5.QtCore", "QTextBoundaryFinder")
+@:native("QTextBoundaryFinder")
 extern enum abstract QTextBoundaryFinderBoundaryReason(Int) from Int to Int {
 	var NotAtBoundary;
 	var SoftHyphen;
@@ -36,8 +36,8 @@ extern enum abstract QTextBoundaryFinderBoundaryReason(Int) from Int to Int {
 	var MandatoryBreak;
 }
 
-@:pythonImport("PyQt5.QtCore", "BoundaryType")
-@:native("QTextBoundaryFinder.BoundaryType")
+@:pythonImport("PyQt5.QtCore", "QTextBoundaryFinder")
+@:native("QTextBoundaryFinder")
 extern enum abstract QTextBoundaryFinderBoundaryType(Int) from Int to Int {
 	var Grapheme;
 	var Word;

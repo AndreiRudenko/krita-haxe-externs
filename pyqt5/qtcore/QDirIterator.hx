@@ -25,8 +25,8 @@ extern class QDirIterator {
 	function path():QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "IteratorFlag")
-@:native("QDirIterator.IteratorFlag")
+@:pythonImport("PyQt5.QtCore", "QDirIterator")
+@:native("QDirIterator")
 extern enum abstract QDirIteratorIteratorFlag(Int) from Int to Int {
 	var NoIteratorFlags;
 	var FollowSymlinks;

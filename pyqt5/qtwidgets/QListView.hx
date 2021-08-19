@@ -89,37 +89,37 @@ extern class QListView extends QAbstractItemView {
 	function itemAlignment():QtAlignment;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Movement")
-@:native("QListView.Movement")
+@:pythonImport("PyQt5.QtWidgets", "QListView")
+@:native("QListView")
 extern enum abstract QListViewMovement(Int) from Int to Int {
 	var Static;
 	var Free;
 	var Snap;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Flow")
-@:native("QListView.Flow")
+@:pythonImport("PyQt5.QtWidgets", "QListView")
+@:native("QListView")
 extern enum abstract QListViewFlow(Int) from Int to Int {
 	var LeftToRight;
 	var TopToBottom;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ResizeMode")
-@:native("QListView.ResizeMode")
+@:pythonImport("PyQt5.QtWidgets", "QListView")
+@:native("QListView")
 extern enum abstract QListViewResizeMode(Int) from Int to Int {
 	var Fixed;
 	var Adjust;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "LayoutMode")
-@:native("QListView.LayoutMode")
+@:pythonImport("PyQt5.QtWidgets", "QListView")
+@:native("QListView")
 extern enum abstract QListViewLayoutMode(Int) from Int to Int {
 	var SinglePass;
 	var Batched;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ViewMode")
-@:native("QListView.ViewMode")
+@:pythonImport("PyQt5.QtWidgets", "QListView")
+@:native("QListView")
 extern enum abstract QListViewViewMode(Int) from Int to Int {
 	var ListMode;
 	var IconMode;

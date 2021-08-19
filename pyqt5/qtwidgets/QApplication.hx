@@ -85,8 +85,8 @@ extern class QApplication extends QGuiApplication {
 	function event(?v:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ColorSpec")
-@:native("QApplication.ColorSpec")
+@:pythonImport("PyQt5.QtWidgets", "QApplication")
+@:native("QApplication")
 extern enum abstract QApplicationColorSpec(Int) from Int to Int {
 	var NormalColor;
 	var CustomColor;

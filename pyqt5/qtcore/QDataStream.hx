@@ -77,8 +77,8 @@ extern class QDataStream {
 	function abortTransaction():Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "Version")
-@:native("QDataStream.Version")
+@:pythonImport("PyQt5.QtCore", "QDataStream")
+@:native("QDataStream")
 extern enum abstract QDataStreamVersion(Int) from Int to Int {
 	var Qt_1_0;
 	var Qt_2_0;
@@ -114,15 +114,15 @@ extern enum abstract QDataStreamVersion(Int) from Int to Int {
 	var Qt_5_15;
 }
 
-@:pythonImport("PyQt5.QtCore", "ByteOrder")
-@:native("QDataStream.ByteOrder")
+@:pythonImport("PyQt5.QtCore", "QDataStream")
+@:native("QDataStream")
 extern enum abstract QDataStreamByteOrder(Int) from Int to Int {
 	var BigEndian;
 	var LittleEndian;
 }
 
-@:pythonImport("PyQt5.QtCore", "Status")
-@:native("QDataStream.Status")
+@:pythonImport("PyQt5.QtCore", "QDataStream")
+@:native("QDataStream")
 extern enum abstract QDataStreamStatus(Int) from Int to Int {
 	var Ok;
 	var ReadPastEnd;
@@ -130,8 +130,8 @@ extern enum abstract QDataStreamStatus(Int) from Int to Int {
 	var WriteFailed;
 }
 
-@:pythonImport("PyQt5.QtCore", "FloatingPointPrecision")
-@:native("QDataStream.FloatingPointPrecision")
+@:pythonImport("PyQt5.QtCore", "QDataStream")
+@:native("QDataStream")
 extern enum abstract QDataStreamFloatingPointPrecision(Int) from Int to Int {
 	var SinglePrecision;
 	var DoublePrecision;

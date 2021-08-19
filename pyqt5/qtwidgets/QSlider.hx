@@ -28,8 +28,8 @@ extern class QSlider extends QAbstractSlider {
 	function mouseMoveEvent(ev:QMouseEvent):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "TickPosition")
-@:native("QSlider.TickPosition")
+@:pythonImport("PyQt5.QtWidgets", "QSlider")
+@:native("QSlider")
 extern enum abstract QSliderTickPosition(Int) from Int to Int {
 	var NoTicks;
 	var TicksAbove;

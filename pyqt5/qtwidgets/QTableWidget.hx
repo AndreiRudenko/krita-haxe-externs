@@ -82,8 +82,8 @@ extern class QTableWidgetItem {
 	function isSelected():Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ItemType")
-@:native("QTableWidgetItem.ItemType")
+@:pythonImport("PyQt5.QtWidgets", "QTableWidgetItem")
+@:native("QTableWidgetItem")
 extern enum abstract QTableWidgetItemItemType(Int) from Int to Int {
 	var Type;
 	var UserType;

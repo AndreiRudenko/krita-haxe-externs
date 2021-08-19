@@ -56,8 +56,8 @@ extern class QSurfaceFormat {
 	function setColorSpace(colorSpace:QSurfaceFormatColorSpace):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "FormatOption")
-@:native("QSurfaceFormat.FormatOption")
+@:pythonImport("PyQt5.QtGui", "QSurfaceFormat")
+@:native("QSurfaceFormat")
 extern enum abstract QSurfaceFormatFormatOption(Int) from Int to Int {
 	var StereoBuffers;
 	var DebugContext;
@@ -65,8 +65,8 @@ extern enum abstract QSurfaceFormatFormatOption(Int) from Int to Int {
 	var ResetNotification;
 }
 
-@:pythonImport("PyQt5.QtGui", "SwapBehavior")
-@:native("QSurfaceFormat.SwapBehavior")
+@:pythonImport("PyQt5.QtGui", "QSurfaceFormat")
+@:native("QSurfaceFormat")
 extern enum abstract QSurfaceFormatSwapBehavior(Int) from Int to Int {
 	var DefaultSwapBehavior;
 	var SingleBuffer;
@@ -74,8 +74,8 @@ extern enum abstract QSurfaceFormatSwapBehavior(Int) from Int to Int {
 	var TripleBuffer;
 }
 
-@:pythonImport("PyQt5.QtGui", "RenderableType")
-@:native("QSurfaceFormat.RenderableType")
+@:pythonImport("PyQt5.QtGui", "QSurfaceFormat")
+@:native("QSurfaceFormat")
 extern enum abstract QSurfaceFormatRenderableType(Int) from Int to Int {
 	var DefaultRenderableType;
 	var OpenGL;
@@ -83,16 +83,16 @@ extern enum abstract QSurfaceFormatRenderableType(Int) from Int to Int {
 	var OpenVG;
 }
 
-@:pythonImport("PyQt5.QtGui", "OpenGLContextProfile")
-@:native("QSurfaceFormat.OpenGLContextProfile")
+@:pythonImport("PyQt5.QtGui", "QSurfaceFormat")
+@:native("QSurfaceFormat")
 extern enum abstract QSurfaceFormatOpenGLContextProfile(Int) from Int to Int {
 	var NoProfile;
 	var CoreProfile;
 	var CompatibilityProfile;
 }
 
-@:pythonImport("PyQt5.QtGui", "ColorSpace")
-@:native("QSurfaceFormat.ColorSpace")
+@:pythonImport("PyQt5.QtGui", "QSurfaceFormat")
+@:native("QSurfaceFormat")
 extern enum abstract QSurfaceFormatColorSpace(Int) from Int to Int {
 	var DefaultColorSpace;
 	var sRGBColorSpace;

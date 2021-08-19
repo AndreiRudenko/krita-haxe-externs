@@ -72,8 +72,8 @@ extern class QLineF {
 	function center():QPointF;
 }
 
-@:pythonImport("PyQt5.QtCore", "IntersectType")
-@:native("QLineF.IntersectType")
+@:pythonImport("PyQt5.QtCore", "QLineF")
+@:native("QLineF")
 extern enum abstract QLineFIntersectType(Int) from Int to Int {
 	var NoIntersection;
 	var BoundedIntersection;

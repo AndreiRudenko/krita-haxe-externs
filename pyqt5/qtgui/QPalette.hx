@@ -57,8 +57,8 @@ extern class QPalette {
 	function swap(other:QPalette):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "ColorGroup")
-@:native("QPalette.ColorGroup")
+@:pythonImport("PyQt5.QtGui", "QPalette")
+@:native("QPalette")
 extern enum abstract QPaletteColorGroup(Int) from Int to Int {
 	var Active;
 	var Disabled;
@@ -69,8 +69,8 @@ extern enum abstract QPaletteColorGroup(Int) from Int to Int {
 	var Normal;
 }
 
-@:pythonImport("PyQt5.QtGui", "ColorRole")
-@:native("QPalette.ColorRole")
+@:pythonImport("PyQt5.QtGui", "QPalette")
+@:native("QPalette")
 extern enum abstract QPaletteColorRole(Int) from Int to Int {
 	var WindowText;
 	var Foreground;

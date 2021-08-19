@@ -52,8 +52,8 @@ extern class QAbstractSlider extends QWidget {
 	function changeEvent(e:QEvent):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SliderAction")
-@:native("QAbstractSlider.SliderAction")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractSlider")
+@:native("QAbstractSlider")
 extern enum abstract QAbstractSliderSliderAction(Int) from Int to Int {
 	var SliderNoAction;
 	var SliderSingleStepAdd;
@@ -65,8 +65,8 @@ extern enum abstract QAbstractSliderSliderAction(Int) from Int to Int {
 	var SliderMove;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SliderChange")
-@:native("QAbstractSlider.SliderChange")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractSlider")
+@:native("QAbstractSlider")
 extern enum abstract QAbstractSliderSliderChange(Int) from Int to Int {
 	var SliderRangeChange;
 	var SliderOrientationChange;

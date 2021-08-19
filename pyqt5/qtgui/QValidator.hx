@@ -20,8 +20,8 @@ extern class QValidator extends QObject {
 	function locale():QLocale;
 }
 
-@:pythonImport("PyQt5.QtGui", "State")
-@:native("QValidator.State")
+@:pythonImport("PyQt5.QtGui", "QValidator")
+@:native("QValidator")
 extern enum abstract QValidatorState(Int) from Int to Int {
 	var Invalid;
 	var Intermediate;
@@ -61,8 +61,8 @@ extern class QDoubleValidator extends QValidator {
 	function notation():QDoubleValidatorNotation;
 }
 
-@:pythonImport("PyQt5.QtGui", "Notation")
-@:native("QDoubleValidator.Notation")
+@:pythonImport("PyQt5.QtGui", "QDoubleValidator")
+@:native("QDoubleValidator")
 extern enum abstract QDoubleValidatorNotation(Int) from Int to Int {
 	var StandardNotation;
 	var ScientificNotation;

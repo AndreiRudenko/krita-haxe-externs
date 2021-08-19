@@ -81,15 +81,15 @@ extern class QProcess extends QIODevice {
 	function processId():Int;
 }
 
-@:pythonImport("PyQt5.QtCore", "ExitStatus")
-@:native("QProcess.ExitStatus")
+@:pythonImport("PyQt5.QtCore", "QProcess")
+@:native("QProcess")
 extern enum abstract QProcessExitStatus(Int) from Int to Int {
 	var NormalExit;
 	var CrashExit;
 }
 
-@:pythonImport("PyQt5.QtCore", "ProcessError")
-@:native("QProcess.ProcessError")
+@:pythonImport("PyQt5.QtCore", "QProcess")
+@:native("QProcess")
 extern enum abstract QProcessProcessError(Int) from Int to Int {
 	var FailedToStart;
 	var Crashed;
@@ -99,23 +99,23 @@ extern enum abstract QProcessProcessError(Int) from Int to Int {
 	var UnknownError;
 }
 
-@:pythonImport("PyQt5.QtCore", "ProcessState")
-@:native("QProcess.ProcessState")
+@:pythonImport("PyQt5.QtCore", "QProcess")
+@:native("QProcess")
 extern enum abstract QProcessProcessState(Int) from Int to Int {
 	var NotRunning;
 	var Starting;
 	var Running;
 }
 
-@:pythonImport("PyQt5.QtCore", "ProcessChannel")
-@:native("QProcess.ProcessChannel")
+@:pythonImport("PyQt5.QtCore", "QProcess")
+@:native("QProcess")
 extern enum abstract QProcessProcessChannel(Int) from Int to Int {
 	var StandardOutput;
 	var StandardError;
 }
 
-@:pythonImport("PyQt5.QtCore", "ProcessChannelMode")
-@:native("QProcess.ProcessChannelMode")
+@:pythonImport("PyQt5.QtCore", "QProcess")
+@:native("QProcess")
 extern enum abstract QProcessProcessChannelMode(Int) from Int to Int {
 	var SeparateChannels;
 	var MergedChannels;
@@ -124,8 +124,8 @@ extern enum abstract QProcessProcessChannelMode(Int) from Int to Int {
 	var ForwardedErrorChannel;
 }
 
-@:pythonImport("PyQt5.QtCore", "InputChannelMode")
-@:native("QProcess.InputChannelMode")
+@:pythonImport("PyQt5.QtCore", "QProcess")
+@:native("QProcess")
 extern enum abstract QProcessInputChannelMode(Int) from Int to Int {
 	var ManagedInputChannel;
 	var ForwardedInputChannel;

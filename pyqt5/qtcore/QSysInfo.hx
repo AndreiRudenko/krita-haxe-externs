@@ -16,14 +16,14 @@ extern class QSysInfo {
 	static function machineHostName():QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "Sizes")
-@:native("QSysInfo.Sizes")
+@:pythonImport("PyQt5.QtCore", "QSysInfo")
+@:native("QSysInfo")
 extern enum abstract QSysInfoSizes(Int) from Int to Int {
 	var WordSize;
 }
 
-@:pythonImport("PyQt5.QtCore", "Endian")
-@:native("QSysInfo.Endian")
+@:pythonImport("PyQt5.QtCore", "QSysInfo")
+@:native("QSysInfo")
 extern enum abstract QSysInfoEndian(Int) from Int to Int {
 	var BigEndian;
 	var LittleEndian;

@@ -35,16 +35,16 @@ extern class QFrame extends QWidget {
 	function initStyleOption(option:QStyleOptionFrame):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Shadow")
-@:native("QFrame.Shadow")
+@:pythonImport("PyQt5.QtWidgets", "QFrame")
+@:native("QFrame")
 extern enum abstract QFrameShadow(Int) from Int to Int {
 	var Plain;
 	var Raised;
 	var Sunken;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Shape")
-@:native("QFrame.Shape")
+@:pythonImport("PyQt5.QtWidgets", "QFrame")
+@:native("QFrame")
 extern enum abstract QFrameShape(Int) from Int to Int {
 	var NoFrame;
 	var Box;
@@ -55,8 +55,8 @@ extern enum abstract QFrameShape(Int) from Int to Int {
 	var StyledPanel;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StyleMask")
-@:native("QFrame.StyleMask")
+@:pythonImport("PyQt5.QtWidgets", "QFrame")
+@:native("QFrame")
 extern enum abstract QFrameStyleMask(Int) from Int to Int {
 	var Shadow_Mask;
 	var Shape_Mask;

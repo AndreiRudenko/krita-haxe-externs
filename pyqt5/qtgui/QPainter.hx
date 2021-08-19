@@ -228,8 +228,8 @@ extern class QPainter {
 	function drawGlyphRun(position:QPointF, glyphRun:QGlyphRun):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "RenderHint")
-@:native("QPainter.RenderHint")
+@:pythonImport("PyQt5.QtGui", "QPainter")
+@:native("QPainter")
 extern enum abstract QPainterRenderHint(Int) from Int to Int {
 	var Antialiasing;
 	var TextAntialiasing;
@@ -240,8 +240,8 @@ extern enum abstract QPainterRenderHint(Int) from Int to Int {
 	var LosslessImageRendering;
 }
 
-@:pythonImport("PyQt5.QtGui", "CompositionMode")
-@:native("QPainter.CompositionMode")
+@:pythonImport("PyQt5.QtGui", "QPainter")
+@:native("QPainter")
 extern enum abstract QPainterCompositionMode(Int) from Int to Int {
 	var CompositionMode_SourceOver;
 	var CompositionMode_DestinationOver;
@@ -289,8 +289,8 @@ extern class PixmapFragment {
 	static function create(pos:QPointF, sourceRect:QRectF, ?scaleX:Float, ?scaleY:Float, ?rotation:Float, ?opacity:Float):PixmapFragment;
 }
 
-@:pythonImport("PyQt5.QtGui", "PixmapFragmentHint")
-@:native("QPainter.PixmapFragmentHint")
+@:pythonImport("PyQt5.QtGui", "QPainter")
+@:native("QPainter")
 extern enum abstract QPainterPixmapFragmentHint(Int) from Int to Int {
 	var OpaqueHint;
 }

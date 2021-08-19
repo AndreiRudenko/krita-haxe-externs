@@ -41,8 +41,8 @@ extern class QLCDNumber extends QFrame {
 	function paintEvent(?v:QPaintEvent):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Mode")
-@:native("QLCDNumber.Mode")
+@:pythonImport("PyQt5.QtWidgets", "QLCDNumber")
+@:native("QLCDNumber")
 extern enum abstract QLCDNumberMode(Int) from Int to Int {
 	var Hex;
 	var Dec;
@@ -50,8 +50,8 @@ extern enum abstract QLCDNumberMode(Int) from Int to Int {
 	var Bin;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SegmentStyle")
-@:native("QLCDNumber.SegmentStyle")
+@:pythonImport("PyQt5.QtWidgets", "QLCDNumber")
+@:native("QLCDNumber")
 extern enum abstract QLCDNumberSegmentStyle(Int) from Int to Int {
 	var Outline;
 	var Filled;

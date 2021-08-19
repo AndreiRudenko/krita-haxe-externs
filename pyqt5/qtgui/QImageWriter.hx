@@ -48,8 +48,8 @@ extern class QImageWriter {
 	function setTransformation(orientation:QImageIOHandlerTransformations):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "ImageWriterError")
-@:native("QImageWriter.ImageWriterError")
+@:pythonImport("PyQt5.QtGui", "QImageWriter")
+@:native("QImageWriter")
 extern enum abstract QImageWriterImageWriterError(Int) from Int to Int {
 	var UnknownError;
 	var DeviceError;

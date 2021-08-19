@@ -54,8 +54,8 @@ extern class QIcon {
 	function isMask():Bool;
 }
 
-@:pythonImport("PyQt5.QtGui", "Mode")
-@:native("QIcon.Mode")
+@:pythonImport("PyQt5.QtGui", "QIcon")
+@:native("QIcon")
 extern enum abstract QIconMode(Int) from Int to Int {
 	var Normal;
 	var Disabled;
@@ -63,8 +63,8 @@ extern enum abstract QIconMode(Int) from Int to Int {
 	var Selected;
 }
 
-@:pythonImport("PyQt5.QtGui", "State")
-@:native("QIcon.State")
+@:pythonImport("PyQt5.QtGui", "QIcon")
+@:native("QIcon")
 extern enum abstract QIconState(Int) from Int to Int {
 	var On;
 	var Off;

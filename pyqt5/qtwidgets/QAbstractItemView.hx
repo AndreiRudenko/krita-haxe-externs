@@ -160,8 +160,8 @@ extern class QAbstractItemView extends QAbstractScrollArea {
 	function isPersistentEditorOpen(index:QModelIndex):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "DragDropMode")
-@:native("QAbstractItemView.DragDropMode")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewDragDropMode(Int) from Int to Int {
 	var NoDragDrop;
 	var DragOnly;
@@ -170,8 +170,8 @@ extern enum abstract QAbstractItemViewDragDropMode(Int) from Int to Int {
 	var InternalMove;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "EditTrigger")
-@:native("QAbstractItemView.EditTrigger")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewEditTrigger(Int) from Int to Int {
 	var NoEditTriggers;
 	var CurrentChanged;
@@ -182,8 +182,8 @@ extern enum abstract QAbstractItemViewEditTrigger(Int) from Int to Int {
 	var AllEditTriggers;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ScrollHint")
-@:native("QAbstractItemView.ScrollHint")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewScrollHint(Int) from Int to Int {
 	var EnsureVisible;
 	var PositionAtTop;
@@ -191,23 +191,23 @@ extern enum abstract QAbstractItemViewScrollHint(Int) from Int to Int {
 	var PositionAtCenter;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ScrollMode")
-@:native("QAbstractItemView.ScrollMode")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewScrollMode(Int) from Int to Int {
 	var ScrollPerItem;
 	var ScrollPerPixel;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SelectionBehavior")
-@:native("QAbstractItemView.SelectionBehavior")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewSelectionBehavior(Int) from Int to Int {
 	var SelectItems;
 	var SelectRows;
 	var SelectColumns;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SelectionMode")
-@:native("QAbstractItemView.SelectionMode")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewSelectionMode(Int) from Int to Int {
 	var NoSelection;
 	var SingleSelection;
@@ -216,8 +216,8 @@ extern enum abstract QAbstractItemViewSelectionMode(Int) from Int to Int {
 	var ContiguousSelection;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "CursorAction")
-@:native("QAbstractItemView.CursorAction")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewCursorAction(Int) from Int to Int {
 	var MoveUp;
 	var MoveDown;
@@ -231,8 +231,8 @@ extern enum abstract QAbstractItemViewCursorAction(Int) from Int to Int {
 	var MovePrevious;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "State")
-@:native("QAbstractItemView.State")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewState(Int) from Int to Int {
 	var NoState;
 	var DraggingState;
@@ -243,8 +243,8 @@ extern enum abstract QAbstractItemViewState(Int) from Int to Int {
 	var AnimatingState;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "DropIndicatorPosition")
-@:native("QAbstractItemView.DropIndicatorPosition")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractItemView")
+@:native("QAbstractItemView")
 extern enum abstract QAbstractItemViewDropIndicatorPosition(Int) from Int to Int {
 	var OnItem;
 	var AboveItem;

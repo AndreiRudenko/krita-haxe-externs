@@ -35,8 +35,8 @@ extern class QRegExp {
 	function swap(other:QRegExp):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "PatternSyntax")
-@:native("QRegExp.PatternSyntax")
+@:pythonImport("PyQt5.QtCore", "QRegExp")
+@:native("QRegExp")
 extern enum abstract QRegExpPatternSyntax(Int) from Int to Int {
 	var RegExp;
 	var RegExp2;
@@ -46,8 +46,8 @@ extern enum abstract QRegExpPatternSyntax(Int) from Int to Int {
 	var W3CXmlSchema11;
 }
 
-@:pythonImport("PyQt5.QtCore", "CaretMode")
-@:native("QRegExp.CaretMode")
+@:pythonImport("PyQt5.QtCore", "QRegExp")
+@:native("QRegExp")
 extern enum abstract QRegExpCaretMode(Int) from Int to Int {
 	var CaretAtZero;
 	var CaretAtOffset;

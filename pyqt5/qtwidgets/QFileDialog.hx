@@ -101,15 +101,15 @@ extern class QFileDialog extends QDialog {
 	function selectedMimeTypeFilter():QString;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ViewMode")
-@:native("QFileDialog.ViewMode")
+@:pythonImport("PyQt5.QtWidgets", "QFileDialog")
+@:native("QFileDialog")
 extern enum abstract QFileDialogViewMode(Int) from Int to Int {
 	var Detail;
 	var List;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "FileMode")
-@:native("QFileDialog.FileMode")
+@:pythonImport("PyQt5.QtWidgets", "QFileDialog")
+@:native("QFileDialog")
 extern enum abstract QFileDialogFileMode(Int) from Int to Int {
 	var AnyFile;
 	var ExistingFile;
@@ -118,15 +118,15 @@ extern enum abstract QFileDialogFileMode(Int) from Int to Int {
 	var DirectoryOnly;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "AcceptMode")
-@:native("QFileDialog.AcceptMode")
+@:pythonImport("PyQt5.QtWidgets", "QFileDialog")
+@:native("QFileDialog")
 extern enum abstract QFileDialogAcceptMode(Int) from Int to Int {
 	var AcceptOpen;
 	var AcceptSave;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "DialogLabel")
-@:native("QFileDialog.DialogLabel")
+@:pythonImport("PyQt5.QtWidgets", "QFileDialog")
+@:native("QFileDialog")
 extern enum abstract QFileDialogDialogLabel(Int) from Int to Int {
 	var LookIn;
 	var FileName;
@@ -135,8 +135,8 @@ extern enum abstract QFileDialogDialogLabel(Int) from Int to Int {
 	var Reject;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "Option")
-@:native("QFileDialog.Option")
+@:pythonImport("PyQt5.QtWidgets", "QFileDialog")
+@:native("QFileDialog")
 extern enum abstract QFileDialogOption(Int) from Int to Int {
 	var ShowDirsOnly;
 	var DontResolveSymlinks;

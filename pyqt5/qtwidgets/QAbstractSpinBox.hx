@@ -78,31 +78,31 @@ extern class QAbstractSpinBox extends QWidget {
 	function isGroupSeparatorShown():Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StepEnabledFlag")
-@:native("QAbstractSpinBox.StepEnabledFlag")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractSpinBox")
+@:native("QAbstractSpinBox")
 extern enum abstract QAbstractSpinBoxStepEnabledFlag(Int) from Int to Int {
 	var StepNone;
 	var StepUpEnabled;
 	var StepDownEnabled;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ButtonSymbols")
-@:native("QAbstractSpinBox.ButtonSymbols")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractSpinBox")
+@:native("QAbstractSpinBox")
 extern enum abstract QAbstractSpinBoxButtonSymbols(Int) from Int to Int {
 	var UpDownArrows;
 	var PlusMinus;
 	var NoButtons;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "CorrectionMode")
-@:native("QAbstractSpinBox.CorrectionMode")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractSpinBox")
+@:native("QAbstractSpinBox")
 extern enum abstract QAbstractSpinBoxCorrectionMode(Int) from Int to Int {
 	var CorrectToPreviousValue;
 	var CorrectToNearestValue;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "StepType")
-@:native("QAbstractSpinBox.StepType")
+@:pythonImport("PyQt5.QtWidgets", "QAbstractSpinBox")
+@:native("QAbstractSpinBox")
 extern enum abstract QAbstractSpinBoxStepType(Int) from Int to Int {
 	var DefaultStepType;
 	var AdaptiveDecimalStepType;

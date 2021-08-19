@@ -36,8 +36,8 @@ extern class QTextCodec {
 	function convertFromUnicode(in_:QChar, length:Int, state:ConverterState):QByteArray;
 }
 
-@:pythonImport("PyQt5.QtCore", "ConversionFlag")
-@:native("QTextCodec.ConversionFlag")
+@:pythonImport("PyQt5.QtCore", "QTextCodec")
+@:native("QTextCodec")
 extern enum abstract QTextCodecConversionFlag(Int) from Int to Int {
 	var DefaultConversion;
 	var ConvertInvalidToNull;

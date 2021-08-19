@@ -30,8 +30,8 @@ extern class QIconEngine {
 	function scaledPixmap(size:QSize, mode:QIconMode, state:QIconState, scale:Float):QPixmap;
 }
 
-@:pythonImport("PyQt5.QtGui", "IconEngineHook")
-@:native("QIconEngine.IconEngineHook")
+@:pythonImport("PyQt5.QtGui", "QIconEngine")
+@:native("QIconEngine")
 extern enum abstract QIconEngineIconEngineHook(Int) from Int to Int {
 	var AvailableSizesHook;
 	var IconNameHook;

@@ -22,8 +22,8 @@ extern class QMetaType {
 	function name():QByteArray;
 }
 
-@:pythonImport("PyQt5.QtCore", "Type")
-@:native("QMetaType.Type")
+@:pythonImport("PyQt5.QtCore", "QMetaType")
+@:native("QMetaType")
 extern enum abstract QMetaTypeType(Int) from Int to Int {
 	var UnknownType;
 	var Void;
@@ -110,8 +110,8 @@ extern enum abstract QMetaTypeType(Int) from Int to Int {
 	var User;
 }
 
-@:pythonImport("PyQt5.QtCore", "TypeFlag")
-@:native("QMetaType.TypeFlag")
+@:pythonImport("PyQt5.QtCore", "QMetaType")
+@:native("QMetaType")
 extern enum abstract QMetaTypeTypeFlag(Int) from Int to Int {
 	var NeedsConstruction;
 	var NeedsDestruction;

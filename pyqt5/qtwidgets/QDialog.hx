@@ -38,8 +38,8 @@ extern class QDialog extends QWidget {
 	function eventFilter(?v:QObject, ?v:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "DialogCode")
-@:native("QDialog.DialogCode")
+@:pythonImport("PyQt5.QtWidgets", "QDialog")
+@:native("QDialog")
 extern enum abstract QDialogDialogCode(Int) from Int to Int {
 	var Rejected;
 	var Accepted;

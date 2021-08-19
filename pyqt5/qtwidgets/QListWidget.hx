@@ -67,8 +67,8 @@ extern class QListWidgetItem {
 	function isHidden():Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ItemType")
-@:native("QListWidgetItem.ItemType")
+@:pythonImport("PyQt5.QtWidgets", "QListWidgetItem")
+@:native("QListWidgetItem")
 extern enum abstract QListWidgetItemItemType(Int) from Int to Int {
 	var Type;
 	var UserType;

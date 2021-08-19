@@ -34,8 +34,8 @@ extern class QTextOption {
 	function tabStopDistance():Float;
 }
 
-@:pythonImport("PyQt5.QtGui", "WrapMode")
-@:native("QTextOption.WrapMode")
+@:pythonImport("PyQt5.QtGui", "QTextOption")
+@:native("QTextOption")
 extern enum abstract QTextOptionWrapMode(Int) from Int to Int {
 	var NoWrap;
 	var WordWrap;
@@ -44,8 +44,8 @@ extern enum abstract QTextOptionWrapMode(Int) from Int to Int {
 	var WrapAtWordBoundaryOrAnywhere;
 }
 
-@:pythonImport("PyQt5.QtGui", "Flag")
-@:native("QTextOption.Flag")
+@:pythonImport("PyQt5.QtGui", "QTextOption")
+@:native("QTextOption")
 extern enum abstract QTextOptionFlag(Int) from Int to Int {
 	var IncludeTrailingSpaces;
 	var ShowTabsAndSpaces;
@@ -55,8 +55,8 @@ extern enum abstract QTextOptionFlag(Int) from Int to Int {
 	var ShowDocumentTerminator;
 }
 
-@:pythonImport("PyQt5.QtGui", "TabType")
-@:native("QTextOption.TabType")
+@:pythonImport("PyQt5.QtGui", "QTextOption")
+@:native("QTextOption")
 extern enum abstract QTextOptionTabType(Int) from Int to Int {
 	var LeftTab;
 	var RightTab;

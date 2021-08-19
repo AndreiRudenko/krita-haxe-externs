@@ -42,8 +42,8 @@ extern class QRegion {
 	function isNull():Bool;
 }
 
-@:pythonImport("PyQt5.QtGui", "RegionType")
-@:native("QRegion.RegionType")
+@:pythonImport("PyQt5.QtGui", "QRegion")
+@:native("QRegion")
 extern enum abstract QRegionRegionType(Int) from Int to Int {
 	var Rectangle;
 	var Ellipse;

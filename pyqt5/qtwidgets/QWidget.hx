@@ -331,8 +331,8 @@ extern class QWidget extends QObject {
 	function screen():QScreen;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "RenderFlag")
-@:native("QWidget.RenderFlag")
+@:pythonImport("PyQt5.QtWidgets", "QWidget")
+@:native("QWidget")
 extern enum abstract QWidgetRenderFlag(Int) from Int to Int {
 	var DrawWindowBackground;
 	var DrawChildren;

@@ -38,23 +38,23 @@ extern class QAbstractAnimation extends QObject {
 	function updateDirection(direction:QAbstractAnimationDirection):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "Direction")
-@:native("QAbstractAnimation.Direction")
+@:pythonImport("PyQt5.QtCore", "QAbstractAnimation")
+@:native("QAbstractAnimation")
 extern enum abstract QAbstractAnimationDirection(Int) from Int to Int {
 	var Forward;
 	var Backward;
 }
 
-@:pythonImport("PyQt5.QtCore", "State")
-@:native("QAbstractAnimation.State")
+@:pythonImport("PyQt5.QtCore", "QAbstractAnimation")
+@:native("QAbstractAnimation")
 extern enum abstract QAbstractAnimationState(Int) from Int to Int {
 	var Stopped;
 	var Paused;
 	var Running;
 }
 
-@:pythonImport("PyQt5.QtCore", "DeletionPolicy")
-@:native("QAbstractAnimation.DeletionPolicy")
+@:pythonImport("PyQt5.QtCore", "QAbstractAnimation")
+@:native("QAbstractAnimation")
 extern enum abstract QAbstractAnimationDeletionPolicy(Int) from Int to Int {
 	var KeepWhenStopped;
 	var DeleteWhenStopped;

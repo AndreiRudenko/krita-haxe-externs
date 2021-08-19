@@ -67,21 +67,21 @@ extern class QMdiArea extends QAbstractScrollArea {
 	function tabsMovable():Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "AreaOption")
-@:native("QMdiArea.AreaOption")
+@:pythonImport("PyQt5.QtWidgets", "QMdiArea")
+@:native("QMdiArea")
 extern enum abstract QMdiAreaAreaOption(Int) from Int to Int {
 	var DontMaximizeSubWindowOnActivation;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "ViewMode")
-@:native("QMdiArea.ViewMode")
+@:pythonImport("PyQt5.QtWidgets", "QMdiArea")
+@:native("QMdiArea")
 extern enum abstract QMdiAreaViewMode(Int) from Int to Int {
 	var SubWindowView;
 	var TabbedView;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "WindowOrder")
-@:native("QMdiArea.WindowOrder")
+@:pythonImport("PyQt5.QtWidgets", "QMdiArea")
+@:native("QMdiArea")
 extern enum abstract QMdiAreaWindowOrder(Int) from Int to Int {
 	var CreationOrder;
 	var StackingOrder;

@@ -77,8 +77,8 @@ extern class QCalendarWidget extends QWidget {
 	function setCalendar(calendar:QCalendar):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "HorizontalHeaderFormat")
-@:native("QCalendarWidget.HorizontalHeaderFormat")
+@:pythonImport("PyQt5.QtWidgets", "QCalendarWidget")
+@:native("QCalendarWidget")
 extern enum abstract QCalendarWidgetHorizontalHeaderFormat(Int) from Int to Int {
 	var NoHorizontalHeader;
 	var SingleLetterDayNames;
@@ -86,15 +86,15 @@ extern enum abstract QCalendarWidgetHorizontalHeaderFormat(Int) from Int to Int 
 	var LongDayNames;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "VerticalHeaderFormat")
-@:native("QCalendarWidget.VerticalHeaderFormat")
+@:pythonImport("PyQt5.QtWidgets", "QCalendarWidget")
+@:native("QCalendarWidget")
 extern enum abstract QCalendarWidgetVerticalHeaderFormat(Int) from Int to Int {
 	var NoVerticalHeader;
 	var ISOWeekNumbers;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "SelectionMode")
-@:native("QCalendarWidget.SelectionMode")
+@:pythonImport("PyQt5.QtWidgets", "QCalendarWidget")
+@:native("QCalendarWidget")
 extern enum abstract QCalendarWidgetSelectionMode(Int) from Int to Int {
 	var NoSelection;
 	var SingleSelection;

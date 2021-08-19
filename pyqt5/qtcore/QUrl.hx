@@ -69,16 +69,16 @@ extern class QUrl {
 	function fileName(?options:QUrlComponentFormattingOptions):QString;
 }
 
-@:pythonImport("PyQt5.QtCore", "ParsingMode")
-@:native("QUrl.ParsingMode")
+@:pythonImport("PyQt5.QtCore", "QUrl")
+@:native("QUrl")
 extern enum abstract QUrlParsingMode(Int) from Int to Int {
 	var TolerantMode;
 	var StrictMode;
 	var DecodedMode;
 }
 
-@:pythonImport("PyQt5.QtCore", "UrlFormattingOption")
-@:native("QUrl.UrlFormattingOption")
+@:pythonImport("PyQt5.QtCore", "QUrl")
+@:native("QUrl")
 extern enum abstract QUrlUrlFormattingOption(Int) from Int to Int {
 	var None;
 	var RemoveScheme;
@@ -95,8 +95,8 @@ extern enum abstract QUrlUrlFormattingOption(Int) from Int to Int {
 	var NormalizePathSegments;
 }
 
-@:pythonImport("PyQt5.QtCore", "ComponentFormattingOption")
-@:native("QUrl.ComponentFormattingOption")
+@:pythonImport("PyQt5.QtCore", "QUrl")
+@:native("QUrl")
 extern enum abstract QUrlComponentFormattingOption(Int) from Int to Int {
 	var PrettyDecoded;
 	var EncodeSpaces;
@@ -108,8 +108,8 @@ extern enum abstract QUrlComponentFormattingOption(Int) from Int to Int {
 	var FullyDecoded;
 }
 
-@:pythonImport("PyQt5.QtCore", "UserInputResolutionOption")
-@:native("QUrl.UserInputResolutionOption")
+@:pythonImport("PyQt5.QtCore", "QUrl")
+@:native("QUrl")
 extern enum abstract QUrlUserInputResolutionOption(Int) from Int to Int {
 	var DefaultResolution;
 	var AssumeLocalFile;

@@ -26,8 +26,8 @@ extern class QPagedPaintDevice extends QPaintDevice {
 	function pageLayout():QPageLayout;
 }
 
-@:pythonImport("PyQt5.QtGui", "PageSize")
-@:native("QPagedPaintDevice.PageSize")
+@:pythonImport("PyQt5.QtGui", "QPagedPaintDevice")
+@:native("QPagedPaintDevice")
 extern enum abstract QPagedPaintDevicePageSize(Int) from Int to Int {
 	var A4;
 	var B5;
@@ -157,8 +157,8 @@ extern enum abstract QPagedPaintDevicePageSize(Int) from Int to Int {
 	var LastPageSize;
 }
 
-@:pythonImport("PyQt5.QtGui", "PdfVersion")
-@:native("QPagedPaintDevice.PdfVersion")
+@:pythonImport("PyQt5.QtGui", "QPagedPaintDevice")
+@:native("QPagedPaintDevice")
 extern enum abstract QPagedPaintDevicePdfVersion(Int) from Int to Int {
 	var PdfVersion_1_4;
 	var PdfVersion_A1b;

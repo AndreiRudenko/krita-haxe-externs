@@ -38,8 +38,8 @@ extern class QFontDialog extends QDialog {
 	function setVisible(visible:Bool):Void;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "FontDialogOption")
-@:native("QFontDialog.FontDialogOption")
+@:pythonImport("PyQt5.QtWidgets", "QFontDialog")
+@:native("QFontDialog")
 extern enum abstract QFontDialogFontDialogOption(Int) from Int to Int {
 	var NoButtons;
 	var DontUseNativeDialog;

@@ -16,8 +16,8 @@ extern class QReadWriteLock {
 	function unlock():Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "RecursionMode")
-@:native("QReadWriteLock.RecursionMode")
+@:pythonImport("PyQt5.QtCore", "QReadWriteLock")
+@:native("QReadWriteLock")
 extern enum abstract QReadWriteLockRecursionMode(Int) from Int to Int {
 	var NonRecursive;
 	var Recursive;

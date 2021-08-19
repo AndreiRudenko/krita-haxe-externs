@@ -27,8 +27,8 @@ extern class QHistoryState extends QAbstractState {
 	function setDefaultTransition(transition:QAbstractTransition):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "HistoryType")
-@:native("QHistoryState.HistoryType")
+@:pythonImport("PyQt5.QtCore", "QHistoryState")
+@:native("QHistoryState")
 extern enum abstract QHistoryStateHistoryType(Int) from Int to Int {
 	var ShallowHistory;
 	var DeepHistory;

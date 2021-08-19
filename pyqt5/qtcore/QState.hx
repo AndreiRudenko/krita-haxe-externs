@@ -38,15 +38,15 @@ extern class QState extends QAbstractState {
 	function event(e:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "ChildMode")
-@:native("QState.ChildMode")
+@:pythonImport("PyQt5.QtCore", "QState")
+@:native("QState")
 extern enum abstract QStateChildMode(Int) from Int to Int {
 	var ExclusiveStates;
 	var ParallelStates;
 }
 
-@:pythonImport("PyQt5.QtCore", "RestorePolicy")
-@:native("QState.RestorePolicy")
+@:pythonImport("PyQt5.QtCore", "QState")
+@:native("QState")
 extern enum abstract QStateRestorePolicy(Int) from Int to Int {
 	var DontRestoreProperties;
 	var RestoreProperties;

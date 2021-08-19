@@ -22,8 +22,8 @@ extern class QEventLoop extends QObject {
 	function event(event:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtCore", "ProcessEventsFlag")
-@:native("QEventLoop.ProcessEventsFlag")
+@:pythonImport("PyQt5.QtCore", "QEventLoop")
+@:native("QEventLoop")
 extern enum abstract QEventLoopProcessEventsFlag(Int) from Int to Int {
 	var AllEvents;
 	var ExcludeUserInputEvents;

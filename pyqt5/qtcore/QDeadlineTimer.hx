@@ -27,8 +27,8 @@ extern class QDeadlineTimer {
 	function setPreciseDeadline(secs:Int, ?nsecs:Int, ?type:QtTimerType):Void;
 }
 
-@:pythonImport("PyQt5.QtCore", "ForeverConstant")
-@:native("QDeadlineTimer.ForeverConstant")
+@:pythonImport("PyQt5.QtCore", "QDeadlineTimer")
+@:native("QDeadlineTimer")
 extern enum abstract QDeadlineTimerForeverConstant(Int) from Int to Int {
 	var Forever;
 }

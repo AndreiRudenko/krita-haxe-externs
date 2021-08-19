@@ -62,15 +62,15 @@ extern class WrappedEvent extends QEvent {
 	function event():QEvent;
 }
 
-@:pythonImport("PyQt5.QtCore", "EventPriority")
-@:native("QStateMachine.EventPriority")
+@:pythonImport("PyQt5.QtCore", "QStateMachine")
+@:native("QStateMachine")
 extern enum abstract QStateMachineEventPriority(Int) from Int to Int {
 	var NormalPriority;
 	var HighPriority;
 }
 
-@:pythonImport("PyQt5.QtCore", "Error")
-@:native("QStateMachine.Error")
+@:pythonImport("PyQt5.QtCore", "QStateMachine")
+@:native("QStateMachine")
 extern enum abstract QStateMachineError(Int) from Int to Int {
 	var NoError;
 	var NoInitialStateError;

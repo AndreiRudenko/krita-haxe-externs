@@ -28,8 +28,8 @@ extern class QFontComboBox extends QComboBox {
 	function event(e:QEvent):Bool;
 }
 
-@:pythonImport("PyQt5.QtWidgets", "FontFilter")
-@:native("QFontComboBox.FontFilter")
+@:pythonImport("PyQt5.QtWidgets", "QFontComboBox")
+@:native("QFontComboBox")
 extern enum abstract QFontComboBoxFontFilter(Int) from Int to Int {
 	var AllFonts;
 	var ScalableFonts;

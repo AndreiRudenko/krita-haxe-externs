@@ -27,23 +27,23 @@ extern class QKeySequence {
 	function toString(?format:QKeySequenceSequenceFormat):QString;
 }
 
-@:pythonImport("PyQt5.QtGui", "SequenceFormat")
-@:native("QKeySequence.SequenceFormat")
+@:pythonImport("PyQt5.QtGui", "QKeySequence")
+@:native("QKeySequence")
 extern enum abstract QKeySequenceSequenceFormat(Int) from Int to Int {
 	var NativeText;
 	var PortableText;
 }
 
-@:pythonImport("PyQt5.QtGui", "SequenceMatch")
-@:native("QKeySequence.SequenceMatch")
+@:pythonImport("PyQt5.QtGui", "QKeySequence")
+@:native("QKeySequence")
 extern enum abstract QKeySequenceSequenceMatch(Int) from Int to Int {
 	var NoMatch;
 	var PartialMatch;
 	var ExactMatch;
 }
 
-@:pythonImport("PyQt5.QtGui", "StandardKey")
-@:native("QKeySequence.StandardKey")
+@:pythonImport("PyQt5.QtGui", "QKeySequence")
+@:native("QKeySequence")
 extern enum abstract QKeySequenceStandardKey(Int) from Int to Int {
 	var UnknownKey;
 	var HelpContents;

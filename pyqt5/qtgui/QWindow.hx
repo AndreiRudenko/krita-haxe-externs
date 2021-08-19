@@ -170,15 +170,15 @@ extern class QWindow extends QObject {
 	function startSystemMove():Bool;
 }
 
-@:pythonImport("PyQt5.QtGui", "AncestorMode")
-@:native("QWindow.AncestorMode")
+@:pythonImport("PyQt5.QtGui", "QWindow")
+@:native("QWindow")
 extern enum abstract QWindowAncestorMode(Int) from Int to Int {
 	var ExcludeTransients;
 	var IncludeTransients;
 }
 
-@:pythonImport("PyQt5.QtGui", "Visibility")
-@:native("QWindow.Visibility")
+@:pythonImport("PyQt5.QtGui", "QWindow")
+@:native("QWindow")
 extern enum abstract QWindowVisibility(Int) from Int to Int {
 	var Hidden;
 	var AutomaticVisibility;

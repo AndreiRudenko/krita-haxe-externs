@@ -29,8 +29,8 @@ extern class QStaticText {
 	function swap(other:QStaticText):Void;
 }
 
-@:pythonImport("PyQt5.QtGui", "PerformanceHint")
-@:native("QStaticText.PerformanceHint")
+@:pythonImport("PyQt5.QtGui", "QStaticText")
+@:native("QStaticText")
 extern enum abstract QStaticTextPerformanceHint(Int) from Int to Int {
 	var ModerateCaching;
 	var AggressiveCaching;
