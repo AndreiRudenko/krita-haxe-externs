@@ -14,25 +14,25 @@ import pyqt5.qtcore.QSignal;
 extern class PresetChooser {
 	function new(?parent:QWidget);
 
-    /**
-     * Make the given preset active.
-     */
+	/**
+	 * Make the given preset active.
+	 */
 	function setCurrentPreset(resource:Resource):Void;
 
-    /**
-     * @return a Resource wrapper around the currently selected
-     * preset. 
-     */
+	/**
+	 * @return a Resource wrapper around the currently selected
+	 * preset. 
+	 */
 	function currentPreset():Resource;
 
-    /**
-     * Emitted whenever a user selects the given preset.
-     */
+	/**
+	 * Emitted whenever a user selects the given preset.
+	 */
 	var presetSelected:QSignal1<Resource>;
 
-    /**
-     * Emitted whenever a user clicks on the given preset.
-     */
+	/**
+	 * Emitted whenever a user clicks on the given preset.
+	 */
 	var presetClicked:QSignal1<Resource>;
 }
 

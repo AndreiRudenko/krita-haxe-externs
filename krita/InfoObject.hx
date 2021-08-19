@@ -12,33 +12,33 @@ import pyqt5.qtcore.QVariant;
 @:pythonImport("krita", "InfoObject")
 @:native("InfoObject")
 extern class InfoObject extends QObject {
-    /**
-     * Create a new, empty InfoObject.
-     */
+	/**
+	 * Create a new, empty InfoObject.
+	 */
 	function new(?parent:QObject);
 
-    /**
-     * Return all properties this InfoObject manages.
-     */
+	/**
+	 * Return all properties this InfoObject manages.
+	 */
 	function properties():QMap<QString, QVariant>;
 
-    /**
-     * Add all properties in the @p propertyMap to this InfoObject
-     */
+	/**
+	 * Add all properties in the @p propertyMap to this InfoObject
+	 */
 	function setProperties(propertyMap:QMap<QString, QVariant>):Void;
 
-    /**
-     * set the property identified by @p key to @p value
-     *
-     * If you want create a property that represents a color, you can use a QColor
-     * or hex string, as defined in https://doc.qt.io/qt-5/qcolor.html#setNamedColor.
-     *
-     */
+	/**
+	 * set the property identified by @p key to @p value
+	 *
+	 * If you want create a property that represents a color, you can use a QColor
+	 * or hex string, as defined in https://doc.qt.io/qt-5/qcolor.html#setNamedColor.
+	 *
+	 */
 	function setProperty(key:QString, value:QVariant):Void;
 
-    /**
-     * return the value for the property identified by key, or None if there is no such key.
-     */
+	/**
+	 * return the value for the property identified by key, or None if there is no such key.
+	 */
 	function property(key:QString):QVariant;
 }
 

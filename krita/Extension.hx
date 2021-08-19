@@ -41,10 +41,10 @@ import pyqt5.qtcore.QObject;
 extern class Extension extends QObject {
 	function new(?parent:QObject);
 
-    /**
-     * Override this function to setup your Extension. You can use it to integrate
-     * with the Krita application instance.
-     */
+	/**
+	 * Override this function to setup your Extension. You can use it to integrate
+	 * with the Krita application instance.
+	 */
 	private function setup():Void;
 
 	private function createActions(window:Window):Void;

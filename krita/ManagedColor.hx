@@ -38,125 +38,125 @@ extern class ManagedColor extends QObject {
 	@:overload(function(?parent:QObject):ManagedColor {})
 	function new(colorModel:QString, colorDepth:QString, colorProfile:QString, ?parent:QObject);
 
-    /**
-     * @brief colorForCanvas
-     * @param canvas the canvas whose color management you'd like to use. In Krita, different views have
-     * separate canvasses, and these can have different OCIO configurations active.
-     * @return the QColor as it would be displaying on the canvas. This result can be used to draw widgets with
-     * the correct configuration applied.
-     */
+	/**
+	 * @brief colorForCanvas
+	 * @param canvas the canvas whose color management you'd like to use. In Krita, different views have
+	 * separate canvasses, and these can have different OCIO configurations active.
+	 * @return the QColor as it would be displaying on the canvas. This result can be used to draw widgets with
+	 * the correct configuration applied.
+	 */
 	function colorForCanvas(canvas:Canvas):QColor;
 
-    /**
-     * colorDepth A string describing the color depth of the image:
-     * <ul>
-     * <li>U8: unsigned 8 bits integer, the most common type</li>
-     * <li>U16: unsigned 16 bits integer</li>
-     * <li>F16: half, 16 bits floating point. Only available if Krita was built with OpenEXR</li>
-     * <li>F32: 32 bits floating point</li>
-     * </ul>
-     * @return the color depth.
-     */
+	/**
+	 * colorDepth A string describing the color depth of the image:
+	 * <ul>
+	 * <li>U8: unsigned 8 bits integer, the most common type</li>
+	 * <li>U16: unsigned 16 bits integer</li>
+	 * <li>F16: half, 16 bits floating point. Only available if Krita was built with OpenEXR</li>
+	 * <li>F32: 32 bits floating point</li>
+	 * </ul>
+	 * @return the color depth.
+	 */
 	function colorDepth():QString;
 
-    /**
-     * @brief colorModel retrieve the current color model of this document:
-     * <ul>
-     * <li>A: Alpha mask</li>
-     * <li>RGBA: RGB with alpha channel (The actual order of channels is most often BGR!)</li>
-     * <li>XYZA: XYZ with alpha channel</li>
-     * <li>LABA: LAB with alpha channel</li>
-     * <li>CMYKA: CMYK with alpha channel</li>
-     * <li>GRAYA: Gray with alpha channel</li>
-     * <li>YCbCrA: YCbCr with alpha channel</li>
-     * </ul>
-     * @return the internal color model string.
-     */
+	/**
+	 * @brief colorModel retrieve the current color model of this document:
+	 * <ul>
+	 * <li>A: Alpha mask</li>
+	 * <li>RGBA: RGB with alpha channel (The actual order of channels is most often BGR!)</li>
+	 * <li>XYZA: XYZ with alpha channel</li>
+	 * <li>LABA: LAB with alpha channel</li>
+	 * <li>CMYKA: CMYK with alpha channel</li>
+	 * <li>GRAYA: Gray with alpha channel</li>
+	 * <li>YCbCrA: YCbCr with alpha channel</li>
+	 * </ul>
+	 * @return the internal color model string.
+	 */
 	function colorModel():QString;
 
-    /**
-     * @return the name of the current color profile
-     */
+	/**
+	 * @return the name of the current color profile
+	 */
 	function colorProfile():QString;
 
-    /**
-     * @brief setColorProfile set the color profile of the image to the given profile. The profile has to
-     * be registered with krita and be compatible with the current color model and depth; the image data
-     * is <i>not</i> converted.
-     * @param colorProfile
-     * @return false if the colorProfile name does not correspond to to a registered profile or if assigning
-     * the profile failed.
-     */
+	/**
+	 * @brief setColorProfile set the color profile of the image to the given profile. The profile has to
+	 * be registered with krita and be compatible with the current color model and depth; the image data
+	 * is <i>not</i> converted.
+	 * @param colorProfile
+	 * @return false if the colorProfile name does not correspond to to a registered profile or if assigning
+	 * the profile failed.
+	 */
 	function setColorProfile(colorProfile:QString):Bool;
 
-    /**
-     * @brief setColorSpace convert the nodes and the image to the given colorspace. The conversion is
-     * done with Perceptual as intent, High Quality and No LCMS Optimizations as flags and no blackpoint
-     * compensation.
-     *
-     * @param colorModel A string describing the color model of the image:
-     * <ul>
-     * <li>A: Alpha mask</li>
-     * <li>RGBA: RGB with alpha channel (The actual order of channels is most often BGR!)</li>
-     * <li>XYZA: XYZ with alpha channel</li>
-     * <li>LABA: LAB with alpha channel</li>
-     * <li>CMYKA: CMYK with alpha channel</li>
-     * <li>GRAYA: Gray with alpha channel</li>
-     * <li>YCbCrA: YCbCr with alpha channel</li>
-     * </ul>
-     * @param colorDepth A string describing the color depth of the image:
-     * <ul>
-     * <li>U8: unsigned 8 bits integer, the most common type</li>
-     * <li>U16: unsigned 16 bits integer</li>
-     * <li>F16: half, 16 bits floating point. Only available if Krita was built with OpenEXR</li>
-     * <li>F32: 32 bits floating point</li>
-     * </ul>
-     * @param colorProfile a valid color profile for this color model and color depth combination.
-     * @return false the combination of these arguments does not correspond to a colorspace.
-     */
+	/**
+	 * @brief setColorSpace convert the nodes and the image to the given colorspace. The conversion is
+	 * done with Perceptual as intent, High Quality and No LCMS Optimizations as flags and no blackpoint
+	 * compensation.
+	 *
+	 * @param colorModel A string describing the color model of the image:
+	 * <ul>
+	 * <li>A: Alpha mask</li>
+	 * <li>RGBA: RGB with alpha channel (The actual order of channels is most often BGR!)</li>
+	 * <li>XYZA: XYZ with alpha channel</li>
+	 * <li>LABA: LAB with alpha channel</li>
+	 * <li>CMYKA: CMYK with alpha channel</li>
+	 * <li>GRAYA: Gray with alpha channel</li>
+	 * <li>YCbCrA: YCbCr with alpha channel</li>
+	 * </ul>
+	 * @param colorDepth A string describing the color depth of the image:
+	 * <ul>
+	 * <li>U8: unsigned 8 bits integer, the most common type</li>
+	 * <li>U16: unsigned 16 bits integer</li>
+	 * <li>F16: half, 16 bits floating point. Only available if Krita was built with OpenEXR</li>
+	 * <li>F32: 32 bits floating point</li>
+	 * </ul>
+	 * @param colorProfile a valid color profile for this color model and color depth combination.
+	 * @return false the combination of these arguments does not correspond to a colorspace.
+	 */
 	function setColorSpace(colorModel:QString, colorDepth:QString, colorProfile:QString):Bool;
 
-    /**
-     * @brief components
-     * @return a QVector containing the channel/components of this color normalized. This includes the alphachannel.
-     */
+	/**
+	 * @brief components
+	 * @return a QVector containing the channel/components of this color normalized. This includes the alphachannel.
+	 */
 	function components():QVector<Float>;
 
-    /**
-     * @brief componentsOrdered()
-     * @return same as Components, except the values are ordered to the display.
-     */
+	/**
+	 * @brief componentsOrdered()
+	 * @return same as Components, except the values are ordered to the display.
+	 */
 	function componentsOrdered():QVector<Float>;
 
-    /**
-     * @brief setComponents
-     * Set the channel/components with normalized values. For integer colorspace, this obviously means the limit
-     * is between 0.0-1.0, but for floating point colorspaces, 2.4 or 103.5 are still meaningful (if bright) values.
-     * @param values the QVector containing the new channel/component values. These should be normalized.
-     */
+	/**
+	 * @brief setComponents
+	 * Set the channel/components with normalized values. For integer colorspace, this obviously means the limit
+	 * is between 0.0-1.0, but for floating point colorspaces, 2.4 or 103.5 are still meaningful (if bright) values.
+	 * @param values the QVector containing the new channel/component values. These should be normalized.
+	 */
 	function setComponents(values:QVector<Float>):Void;
 
-    /**
-     * Serialize this color following Create's swatch color specification available
-     * at https://web.archive.org/web/20110826002520/http://create.freedesktop.org/wiki/Swatches_-_colour_file_format/Draft
-     */
+	/**
+	 * Serialize this color following Create's swatch color specification available
+	 * at https://web.archive.org/web/20110826002520/http://create.freedesktop.org/wiki/Swatches_-_colour_file_format/Draft
+	 */
 	function toXML():QString;
 
-    /**
-     * Unserialize a color following Create's swatch color specification available
-     * at https://web.archive.org/web/20110826002520/http://create.freedesktop.org/wiki/Swatches_-_colour_file_format/Draft
-     *
-     * @param xml an XML color
-     *
-     * @return the unserialized color, or an empty color object if the function failed
-     *         to unserialize the color
-     */
+	/**
+	 * Unserialize a color following Create's swatch color specification available
+	 * at https://web.archive.org/web/20110826002520/http://create.freedesktop.org/wiki/Swatches_-_colour_file_format/Draft
+	 *
+	 * @param xml an XML color
+	 *
+	 * @return the unserialized color, or an empty color object if the function failed
+	 *         to unserialize the color
+	 */
 	function fromXML(xml:QString):Void;
 
-    /**
-     * @brief toQString create a user-visible string of the channel names and the channel values
-     * @return a string that can be used to display the values of this color to the user.
-     */
+	/**
+	 * @brief toQString create a user-visible string of the channel names and the channel values
+	 * @return a string that can be used to display the values of this color to the user.
+	 */
 	function toQString():QString;
 
 }

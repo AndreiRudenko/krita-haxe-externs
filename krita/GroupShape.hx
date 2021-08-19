@@ -13,16 +13,16 @@ import pyqt5.qtcore.QString;
 extern class GroupShape extends Shape {
 	function new(?parent:QObject);
 
-    /**
-     * @brief type returns the type.
-     * @return "groupshape"
-     */
+	/**
+	 * @brief type returns the type.
+	 * @return "groupshape"
+	 */
 	function type():QString;
 
-    /**
-     * @brief children
-     * @return the child shapes of this group shape.
-     */
+	/**
+	 * @brief children
+	 * @return the child shapes of this group shape.
+	 */
 	function children():QList<Shape>;
 }
 

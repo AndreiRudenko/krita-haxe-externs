@@ -31,16 +31,16 @@ import pyqt5.qtwidgets.QDockWidget;
 extern class DockWidget extends QDockWidget {
 	function new();
 
-    /**
-     * @@return the canvas object that this docker is currently associated with
-     */
+	/**
+	 * @@return the canvas object that this docker is currently associated with
+	 */
 	function canvas():Canvas;
 
-    /**
-     * @brief canvasChanged is called whenever the current canvas is changed
-     * in the mainwindow this dockwidget instance is shown in.
-     * @param canvas The new canvas.
-     */
+	/**
+	 * @brief canvasChanged is called whenever the current canvas is changed
+	 * in the mainwindow this dockwidget instance is shown in.
+	 * @param canvas The new canvas.
+	 */
 	private function canvasChanged(canvas:Canvas):Void;
 }
 

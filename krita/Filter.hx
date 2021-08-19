@@ -21,59 +21,59 @@ import pyqt5.qtcore.QString;
 @:pythonImport("krita", "Filter")
 @:native("Filter")
 extern class Filter extends QObject {
-    /**
-     * @brief Filter: create an empty filter object. Until a name is set, the filter cannot
-     * be applied.
-     */
+	/**
+	 * @brief Filter: create an empty filter object. Until a name is set, the filter cannot
+	 * be applied.
+	 */
 	function new();
 
-    /**
-     * @brief name the internal name of this filter.
-     * @return the name.
-     */
+	/**
+	 * @brief name the internal name of this filter.
+	 * @return the name.
+	 */
 	function name():QString;
 
-    /**
-     * @brief setName set the filter's name to the given name.
-     */
+	/**
+	 * @brief setName set the filter's name to the given name.
+	 */
 	function setName(name:QString):Void;
 
-    /**
-     * @return the configuration object for the filter
-     */
+	/**
+	 * @return the configuration object for the filter
+	 */
 	function configuration():InfoObject;
 
-    /**
-     * @brief setConfiguration set the configuration object for the filter
-     */
+	/**
+	 * @brief setConfiguration set the configuration object for the filter
+	 */
 	function setConfiguration(value:InfoObject):Void;
 
-    /**
-     * @brief Apply the filter to the given node.
-     * @param node the node to apply the filter to
-     * @param x
-     * @param y
-     * @param w
-     * @param h describe the rectangle the filter should be apply.
-     * This is always in image pixel coordinates and not relative to the x, y
-     * of the node.
-     * @return @c true if the filter was applied successfully, or
-     * @c false if the filter could not be applied because the node is locked or
-     * does not have an editable paint device.
-     */
+	/**
+	 * @brief Apply the filter to the given node.
+	 * @param node the node to apply the filter to
+	 * @param x
+	 * @param y
+	 * @param w
+	 * @param h describe the rectangle the filter should be apply.
+	 * This is always in image pixel coordinates and not relative to the x, y
+	 * of the node.
+	 * @return @c true if the filter was applied successfully, or
+	 * @c false if the filter could not be applied because the node is locked or
+	 * does not have an editable paint device.
+	 */
 	function apply(node:Node, x:Int, y:Int, w:Int, h:Int):Bool;
 
-    /**
-     * @brief startFilter starts the given filter on the given node.
-     *
-     * @param node the node to apply the filter to
-     * @param x
-     * @param y
-     * @param w
-     * @param h describe the rectangle the filter should be apply.
-     * This is always in image pixel coordinates and not relative to the x, y
-     * of the node.
-     */
+	/**
+	 * @brief startFilter starts the given filter on the given node.
+	 *
+	 * @param node the node to apply the filter to
+	 * @param x
+	 * @param y
+	 * @param w
+	 * @param h describe the rectangle the filter should be apply.
+	 * This is always in image pixel coordinates and not relative to the x, y
+	 * of the node.
+	 */
 	function startFilter(node:Node, x:Int, y:Int, w:Int, h:Int):Bool;
 }
 

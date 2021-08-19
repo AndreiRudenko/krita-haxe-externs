@@ -10,68 +10,68 @@ import pyqt5.qtcore.QSignal;
 @:pythonImport("krita", "Notifier")
 @:native("Notifier")
 extern class Notifier extends QObject {
-    /**
-     * @return true if the Notifier is active.
-     */
+	/**
+	 * @return true if the Notifier is active.
+	 */
 	function active():Bool;
 
-    /**
-     * Enable or disable the Notifier
-     */
+	/**
+	 * Enable or disable the Notifier
+	 */
 	function setActive(value:Bool):Void;
 
-    /**
-     * @brief applicationClosing is emitted when the application is about to close. This
-     * happens after any documents and windows are closed.
-     */
+	/**
+	 * @brief applicationClosing is emitted when the application is about to close. This
+	 * happens after any documents and windows are closed.
+	 */
 	var applicationClosing:QSignal0;
 
-    /**
-     * @brief imageCreated is emitted whenever a new image is created and registered with
-     * the application.
-     */
+	/**
+	 * @brief imageCreated is emitted whenever a new image is created and registered with
+	 * the application.
+	 */
 	var imageCreated:QSignal1<Document>;
 
-    /**
-     * @brief imageSaved is emitted whenever a document is saved.
-     * @param filename the filename of the document that has been saved.
-     */
+	/**
+	 * @brief imageSaved is emitted whenever a document is saved.
+	 * @param filename the filename of the document that has been saved.
+	 */
 	var imageSaved:QSignal1<QString>;
 
-    /**
-     * @brief imageClosed is emitted whenever the last view on an image is closed. The image
-     * does not exist anymore in Krita
-     * @param filename the filename of the image.
-     */
+	/**
+	 * @brief imageClosed is emitted whenever the last view on an image is closed. The image
+	 * does not exist anymore in Krita
+	 * @param filename the filename of the image.
+	 */
 	var imageClosed:QSignal1<QString>;
 
-    /**
-     * @brief viewCreated is emitted whenever a new view is created.
-     * @param view the view
-     */
+	/**
+	 * @brief viewCreated is emitted whenever a new view is created.
+	 * @param view the view
+	 */
 	var viewCreated:QSignal1<View>;
 
-    /**
-     * @brief viewClosed is emitted whenever a view is closed
-     * @param view the view
-     */
+	/**
+	 * @brief viewClosed is emitted whenever a view is closed
+	 * @param view the view
+	 */
 	var viewClosed:QSignal1<View>;
 
-    /**
-     * @brief windowCreated is emitted whenever a window is being created
-     * @param window the window; this is called from the constructor of the window, before the xmlgui file is loaded
-     */
+	/**
+	 * @brief windowCreated is emitted whenever a window is being created
+	 * @param window the window; this is called from the constructor of the window, before the xmlgui file is loaded
+	 */
 	var windowIsBeingCreated:QSignal1<Window>;
 
-    /**
-     * @brief windowIsCreated is emitted after main window is completely created
-     */
+	/**
+	 * @brief windowIsCreated is emitted after main window is completely created
+	 */
 	var windowCreated:QSignal0;
 
-    /**
-     * @brief configurationChanged is emitted every time Krita's configuration
-     * has changed.
-     */
+	/**
+	 * @brief configurationChanged is emitted every time Krita's configuration
+	 * has changed.
+	 */
 	var configurationChanged:QSignal0;
 }
 

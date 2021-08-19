@@ -14,29 +14,29 @@ import pyqt5.qtcore.QString;
 @:pythonImport("krita", "FilterMask")
 @:native("FilterMask")
 extern class FilterMask extends Node {
-    /**
-     * @brief type Krita has several types of nodes, split in layers and masks. Group
-     * layers can contain other layers, any layer can contain masks.
-     *
-     * @return The type of the node. Valid types are:
-     * <ul>
-     *  <li>paintlayer
-     *  <li>grouplayer
-     *  <li>filelayer
-     *  <li>filterlayer
-     *  <li>filllayer
-     *  <li>clonelayer
-     *  <li>vectorlayer
-     *  <li>transparencymask
-     *  <li>filtermask
-     *  <li>transformmask
-     *  <li>selectionmask
-     *  <li>colorizemask
-     * </ul>
-     *
-     * If the Node object isn't wrapping a valid Krita layer or mask object, and
-     * empty string is returned.
-     */
+	/**
+	 * @brief type Krita has several types of nodes, split in layers and masks. Group
+	 * layers can contain other layers, any layer can contain masks.
+	 *
+	 * @return The type of the node. Valid types are:
+	 * <ul>
+	 *  <li>paintlayer
+	 *  <li>grouplayer
+	 *  <li>filelayer
+	 *  <li>filterlayer
+	 *  <li>filllayer
+	 *  <li>clonelayer
+	 *  <li>vectorlayer
+	 *  <li>transparencymask
+	 *  <li>filtermask
+	 *  <li>transformmask
+	 *  <li>selectionmask
+	 *  <li>colorizemask
+	 * </ul>
+	 *
+	 * If the Node object isn't wrapping a valid Krita layer or mask object, and
+	 * empty string is returned.
+	 */
 	function type():QString;
 
 	function setFilter(filter:Filter):Void;
