@@ -1,0 +1,95 @@
+package pyqt5.qtwidgets;
+
+import pyqt5.qtwidgets.QAbstractItemView;
+import pyqt5.qtwidgets.QWidget;
+import pyqt5.qtcore.QAbstractItemModel;
+import pyqt5.qtcore.QItemSelectionModel;
+import pyqt5.qtwidgets.QHeaderView;
+import pyqt5.qtcore.Qt;
+import pyqt5.qtcore.QRect;
+import pyqt5.qtcore.QPoint;
+import pyqt5.qtwidgets.QStyleOption;
+import pyqt5.qtgui.QInputEvent;
+import pyqt5.qtcore.QEvent;
+import pyqt5.qtgui.QRegion;
+import pyqt5.qtcore.QSize;
+
+@:pythonImport("PyQt5.QtWidgets", "QTableView")
+@:native("QTableView")
+extern class QTableView extends QAbstractItemView {
+	function new(?parent:QWidget);
+
+	function setModel(model:QAbstractItemModel):Void;
+	function setRootIndex(index:QModelIndex):Void;
+	function setSelectionModel(selectionModel:QItemSelectionModel):Void;
+	function horizontalHeader():QHeaderView;
+	function verticalHeader():QHeaderView;
+	function setHorizontalHeader(header:QHeaderView):Void;
+	function setVerticalHeader(header:QHeaderView):Void;
+	function rowViewportPosition(row:Int):Int;
+	function setRowHeight(row:Int, height:Int):Void;
+	function rowHeight(row:Int):Int;
+	function rowAt(y:Int):Int;
+	function columnViewportPosition(column:Int):Int;
+	function setColumnWidth(column:Int, width:Int):Void;
+	function columnWidth(column:Int):Int;
+	function columnAt(x:Int):Int;
+	function isRowHidden(row:Int):Bool;
+	function setRowHidden(row:Int, hide:Bool):Void;
+	function isColumnHidden(column:Int):Bool;
+	function setColumnHidden(column:Int, hide:Bool):Void;
+	function showGrid():Bool;
+	function setShowGrid(show:Bool):Void;
+	function gridStyle():QtPenStyle;
+	function setGridStyle(style:QtPenStyle):Void;
+	function visualRect(index:QModelIndex):QRect;
+	function scrollTo(index:QModelIndex, ?hint:QAbstractItemViewScrollHint):Void;
+	function indexAt(p:QPoint):QModelIndex;
+	function selectRow(row:Int):Void;
+	function selectColumn(column:Int):Void;
+	function hideRow(row:Int):Void;
+	function hideColumn(column:Int):Void;
+	function showRow(row:Int):Void;
+	function showColumn(column:Int):Void;
+	function resizeRowToContents(row:Int):Void;
+	function resizeRowsToContents():Void;
+	function resizeColumnToContents(column:Int):Void;
+	function resizeColumnsToContents():Void;
+	function rowMoved(row:Int, oldIndex:Int, newIndex:Int):Void;
+	function columnMoved(column:Int, oldIndex:Int, newIndex:Int):Void;
+	function rowResized(row:Int, oldHeight:Int, newHeight:Int):Void;
+	function columnResized(column:Int, oldWidth:Int, newWidth:Int):Void;
+	function rowCountChanged(oldCount:Int, newCount:Int):Void;
+	function columnCountChanged(oldCount:Int, newCount:Int):Void;
+	function scrollContentsBy(dx:Int, dy:Int):Void;
+	function viewOptions():QStyleOptionViewItem;
+	function paintEvent(e:QPaintEvent):Void;
+	function timerEvent(event:QTimerEvent):Void;
+	function horizontalOffset():Int;
+	function verticalOffset():Int;
+	function moveCursor(cursorAction:QAbstractItemViewCursorAction, modifiers:QtKeyboardModifiers):QModelIndex;
+	function setSelection(rect:QRect, command:QItemSelectionModelSelectionFlags):Void;
+	function visualRegionForSelection(selection:QItemSelection):QRegion;
+	function selectedIndexes():QModelIndexList;
+	function updateGeometries():Void;
+	function sizeHintForRow(row:Int):Int;
+	function sizeHintForColumn(column:Int):Int;
+	function verticalScrollbarAction(action:Int):Void;
+	function horizontalScrollbarAction(action:Int):Void;
+	function isIndexHidden(index:QModelIndex):Bool;
+	function viewportSizeHint():QSize;
+	function setSortingEnabled(enable:Bool):Void;
+	function isSortingEnabled():Bool;
+	function setSpan(row:Int, column:Int, rowSpan:Int, columnSpan:Int):Void;
+	function rowSpan(row:Int, column:Int):Int;
+	function columnSpan(row:Int, column:Int):Int;
+	function sortByColumn(column:Int, order:QtSortOrder):Void;
+	function setWordWrap(on:Bool):Void;
+	function wordWrap():Bool;
+	function setCornerButtonEnabled(enable:Bool):Void;
+	function isCornerButtonEnabled():Bool;
+	function clearSpans():Void;
+	function selectionChanged(selected:QItemSelection, deselected:QItemSelection):Void;
+	function currentChanged(current:QModelIndex, previous:QModelIndex):Void;
+}
+

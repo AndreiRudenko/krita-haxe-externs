@@ -1,0 +1,11 @@
+{
+  "name": "krita_externs",
+  "license": "MIT",
+  "tags": ["krita", "externs", "python"],
+  "description": "",
+  "contributors": ["RudenkoArts"],
+  "releasenote": "",
+  "version": "0.0.1",
+  "url": "https://github.com/RudenkoArts/krita_haxe_externs",
+  "dependencies": {}
+}
