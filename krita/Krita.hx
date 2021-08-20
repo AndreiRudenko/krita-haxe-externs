@@ -8,6 +8,7 @@ import pyqt5.qtcore.QString;
 import pyqt5.qtcore.QList;
 import pyqt5.qtcore.QObject;
 import pyqt5.qtcore.QStringList;
+import krita.Resource;
 
 /**
  * Krita is a singleton class that offers the root access to the Krita object hierarchy.
@@ -180,7 +181,7 @@ extern class Krita extends QObject {
 	 * <li>workspace</li>
 	 * </ul>
 	 */
-	function resources(type:QString):QMap<QString, Resource>;
+	function resources(type:ResourceType):QMap<QString, Resource>;
 
 	/**
 	 * @brief return all recent documents registered in the RecentFiles group of the kritarc

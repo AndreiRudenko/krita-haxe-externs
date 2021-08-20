@@ -35,7 +35,7 @@ extern class Resource extends QObject {
 	 * <li>workspace: a workspace definition.
 	 * </ul>
 	 */
-	function type():QString;
+	function type():ResourceType;
 
 	/**
 	 * The user-visible name of the resource.
@@ -67,3 +67,12 @@ extern class Resource extends QObject {
 	function setImage(image:QImage):Void;
 }
 
+
+enum abstract ResourceType(String) from String to String {
+	var PATTERN = 'pattern';
+	var GRADIENT = 'gradient';
+	var BRUSH = 'brush';
+	var PRESET = 'preset';
+	var PALETTE = 'palette';
+	var WORKSPACE = 'workspace';
+}
