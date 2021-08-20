@@ -7,29 +7,7 @@ import pyqt5.qtcore.QHash;
 
 typedef QVariantList = QList<QVariant>;
 typedef QVariantHash = QHash<QString, QVariant>;
-
-@:pythonImport("PyQt5.QtCore", "QVariant")
-@:native("QVariant")
-extern class QVariant {
-	static function nameToType(name:Int):QVariantType;
-
-	@:overload(function():QVariant {})
-	@:overload(function(type:QVariantType):QVariant {})
-	function new(obj:Dynamic);
-
-	function value():Dynamic;
-	function type():QVariantType;
-	function userType():Int;
-	function typeName():Int;
-	function canConvert(targetTypeId:Int):Bool;
-	function convert(targetTypeId:Int):Bool;
-	function isValid():Bool;
-	function isNull():Bool;
-	function clear():Void;
-	function load(ds:QDataStream):Void;
-	function save(ds:QDataStream):Void;
-	function swap(other:QVariant):Void;
-}
+typedef QVariant = Dynamic;
 
 @:pythonImport("PyQt5.QtCore", "QVariant")
 @:native("QVariant")
