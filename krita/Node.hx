@@ -272,6 +272,8 @@ extern class Node extends QObject {
 	 * If the Node object isn't wrapping a valid Krita layer or mask object, and
 	 * empty string is returned.
 	 */
+	function type():NodeType;
+
 	/**
 	 * @brief icon
 	 * @return the icon associated with the layer.
@@ -542,3 +544,16 @@ extern class Node extends QObject {
 	function uniqueId():QUuid;
 }
 
+enum abstract NodeType(String) from String to String {
+	var PAINTLAYER = 'paintlayer';
+	var GROUPLAYER = 'grouplayer';
+	var FILELAYER = 'filelayer';
+	var FILTERLAYER = 'filterlayer';
+	var FILLLAYER = 'filllayer';
+	var CLONELAYER = 'clonelayer';
+	var VECTORLAYER = 'vectorlayer';
+	var TRANSPARENCYMASK = 'transparencymask';
+	var FILTERMASK = 'filtermask';
+	var TRANSFORMMASK = 'transformmask';
+	var SELECTIONMASK = 'selectionmask';
+}

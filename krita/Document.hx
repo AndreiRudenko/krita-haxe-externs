@@ -7,6 +7,7 @@ import pyqt5.qtgui.QImage;
 import pyqt5.qtcore.QRect;
 import pyqt5.qtcore.QList;
 import pyqt5.qtcore.QString;
+import krita.Node;
 
 /**
  * The Document class encapsulates a Krita Document/Image. A Krita document is an Image with
@@ -552,7 +553,7 @@ print(root.childNodes())
 	 *
 	 * @return the new Node.
 	 */
-	function createNode(name:QString, nodeType:QString):Node;
+	function createNode(name:QString, nodeType:NodeType):Node;
 
 	/**
 	 * @brief createGroupLayer
