@@ -1,0 +1,8 @@
+-lib krita_externs
+
+ExtentionTemplate
+
+--python out/extention_template/extention_template.py
+
+-dce full
+

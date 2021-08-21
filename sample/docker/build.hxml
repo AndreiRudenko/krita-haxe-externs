@@ -1,0 +1,8 @@
+-lib krita_externs
+
+DockerTemplate
+
+--python out/docker_template/docker_template.py
+
+-dce full
+

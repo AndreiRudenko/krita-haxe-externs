@@ -1,0 +1,8 @@
+--main Main
+-lib krita_externs
+
+
+--python out/script.py
+
+-dce full
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=extension_template
+X-Python-2-Compatible=false
+X-Krita-Manual=Manual.html
+Name=extension_template
+Comment=Getting an extension set up
